@@ -6,6 +6,11 @@ The objective of this assignment was to learn Python fundamentals and perform da
 
 ---
 
+## Technologies used
+- Python
+- Pandas
+- Jupyter Notebook
+
 ## Dataset Overview
 
 The dataset contains 1000 Myntra product records with 24 attributes, including:
@@ -117,7 +122,7 @@ and
 df['product_id'].duplicated().sum()
 ```
 
-also learnt to handle the duplicate values
+The process for identifying and handling duplicate records was also explored.
 
 ---
 
