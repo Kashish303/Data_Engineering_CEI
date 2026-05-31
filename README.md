@@ -182,25 +182,6 @@ Example:
 This represents a common real-world data quality challenge where business data must be transformed from presentation format into analysis-ready numerical format.
 
 ---
-
-## Key Learnings
-
-Through this assignment, I learned:
-
-* Loading datasets using Pandas
-* Exploring data using Pandas functions
-* Understanding dataset structure and data types
-* Identifying and handling missing values
-* Applying domain-based data cleaning techniques
-* Performing row filtering and column selection
-* Detecting duplicate records
-* Creating derived columns
-* Cleaning currency-formatted data
-* Exporting processed datasets
-* Working with semi-structured e-commerce data
-
----
-
 ## Outcome
 
 Successfully transformed a raw e-commerce dataset into a cleaned and analysis-ready dataset using Python and Pandas. The dataset was explored, cleaned, validated, enriched with derived features, and exported for future analysis.
