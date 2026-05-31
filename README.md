@@ -126,7 +126,7 @@ The process for identifying and handling duplicate records was also explored.
 
 ---
 
-### 6. Feature Engineering
+### 6. Derived Columns Creation
 
 Created new derived columns for analysis.
 
