@@ -1,0 +1,310 @@
+OUTPUTS:-
+
+-- -------------------------------------------------------------
+-- SECTION A :— SQL Basics (SELECT, Constraints, Primary Keys)
+-- -------------------------------------------------------------
+
+Question 1:
+
+customer_id    first_name      last_name         email                  city          state              join_date     is_premium
+101		Aarav		Sharma		aarav.s@email.com	Mumbai	     Maharashtra	2024-01-15	1
+102		Priya		Patel		priya.p@email.com	Ahmedabad    Gujarat	        2024-02-20	0
+103		Rohan		Gupta		rohan.g@email.com	Delhi  	      Delhi	        2024-03-10	1
+104		Sneha		Reddy		sneha.r@email.com	Hyderabad    Telangana	        2024-04-05	0
+105		Vikram		Singh		vikram.s@email.com	Jaipur	     Rajasthan	        2024-05-12	1
+106		Ananya		Iyer		ananya.i@email.com	Chennai	    Tamil Nadu	        2024-06-18	0
+107		Karan		Mehta		karan.m@email.com	Pune	    Maharashtra	        2024-07-22	1
+108		Divya		Nair		divya.n@email.com	Kochi	     Kerala	        2024-08-30	0
+
+
+Question 2:
+
+first_name     last_name        city
+Aarav		Sharma		Mumbai
+Priya		Patel		Ahmedabad
+Rohan		Gupta		Delhi
+Sneha		Reddy		Hyderabad
+Vikram		Singh		Jaipur
+Ananya		Iyer		Chennai
+Karan		Mehta		Pune
+Divya		Nair		Kochi
+
+
+Question 3:
+
+customer
+Clothing
+Electronics
+Home
+
+Question 5:
+
+21:19:37	INSERT INTO customers VALUES ( 100, 'Kashish', 'Soni', 'priya.p@email.com', 'Sarwar', 'Rajasthan', '2026-06-06', FALSE )
+-- Error Code: 1062. Duplicate entry 'priya.p@email.com' for key 'customers.email'	0.015 sec
+
+Question 6:
+
+Error Code: 3819. Check constraint 'products_chk_1' is violated.	0.000 sec.
+21:50:46	INSERT INTO products VALUES(199,'Soap','Home','MamaEarth',50.00,100)	1 row(s) affected	0.016 sec
+
+
+
+-- -----------------------------------------------------
+-- Section B — Filtering & Optimization (WHERE, Indexes) 
+-- -----------------------------------------------------
+
+
+Question 7:
+
+order_id       customer_id      order_date               status         total_amount
+1001		101		2024-08-01		Delivered	4498.00
+1002		102		2024-08-03		Delivered	799.00
+1004		101		2024-08-10		Delivered	3499.00
+1006		105		2024-08-15		Delivered	5898.00
+1008		103		2024-08-20		Delivered	899.00
+1010		108		2024-08-28		Delivered	1598.00
+				
+
+Question 8:
+
+product_id      product_name            category                brand           stock_qty
+203		Smart Watch		Electronics		Noise		2999.00	150
+205		Bluetooth Speaker	Electronics		JBL		3499.00	200
+					
+
+
+Question 9:
+
+customer_id    first_name      last_name         email                          city              state         join_date     is_premium
+101		Aarav		Sharma		aarav.s@email.com		Mumbai		Maharashtra	2024-01-15	1
+107		Karan		Mehta		karan.m@email.com		Pune		Maharashtra	2024-07-22	1
+
+
+Question 10:
+
+order_id       customer_id      order_date       status         total_amount 
+1004		101		2024-08-10	Delivered	3499.00
+1006		105		2024-08-15	Delivered	5898.00
+1007		106		2024-08-18	Pending		1299.00
+1008		103		2024-08-20	Delivered	899.00
+1009		107		2024-08-25	Shipped		6098.00
+				
+
+Question 12:
+
+customer_id    first_name      last_name         email                           city          state             join_date     is_premium
+101		Aarav		Sharma		aarav.s@email.com		Mumbai		Maharashtra	2024-01-15	1
+102		Priya		Patel		priya.p@email.com		Ahmedabad	Gujarat		2024-02-20	0
+103		Rohan		Gupta		rohan.g@email.com		Delhi		Delhi		2024-03-10	1
+104		Sneha		Reddy		sneha.r@email.com		Hyderabad	Telangana	2024-04-05	0
+105		Vikram		Singh		vikram.s@email.com		Jaipur		Rajasthan	2024-05-12	1
+106		Ananya		Iyer		ananya.i@email.com		Chennai		Tamil Nadu	2024-06-18	0
+107		Karan		Mehta		karan.m@email.com		Pune		Maharashtra	2024-07-22	1
+108		Divya		Nair		divya.n@email.com		Kochi		Kerala		2024-08-30	0
+							
+
+Question 13:
+
+Total_orders
+12
+
+
+Question 14:
+
+Total_revenue
+17191.00
+
+
+Question 15: 
+
+category        Average_price
+Clothing	2699.00
+Electronics	2224.00
+Home	        499.50 
+
+
+Question 16:
+
+status       order_count        total_revenue
+Delivered	6		17191.00
+Shipped		2		13596.00
+Pending		3		4495.00
+Cancelled	1		2999.00
+
+
+Question 17:
+
+category       most_expensive   cheapest        price_range
+Clothing	4599.00		799.00		3800.00
+Electronics	3499.00		899.00		2600.00
+Home		1299.00		50.00		1249.00
+
+
+Question 18:
+
+category       Average_price   product_count
+Clothing	2699.00		2
+Electronics	2224.00		4
+
+
+-- =====================================
+--   Section D — Joins & Relationships 
+-- =====================================
+
+
+Question 19:
+
+order_   order_         first_  last_    total_
+id       date           name    name     amount
+
+1001	2024-08-01	Aarav	Sharma	4498.00
+1004	2024-08-10	Aarav	Sharma	3499.00
+1002	2024-08-03	Priya	Patel	799.00
+1011	2026-06-07	Priya	Patel	1598.00
+1012	2026-06-07	Priya	Patel	1598.00
+1003	2024-08-05	Rohan	Gupta	7498.00
+1008	2024-08-20	Rohan	Gupta	899.00
+1005	2024-08-12	Sneha	Reddy	2999.00
+1006	2024-08-15	Vikram	Singh	5898.00
+1007	2024-08-18	Ananya	Iyer	1299.00
+1009	2024-08-25	Karan	Mehta	6098.00
+1010	2024-08-28	Divya	Nair	1598.00
+
+
+Question 20:
+
+
+customer_id     customer_name   city             state         customer_type  order_id  order_date     status          total_amount
+
+101		Aarav Sharma	Mumbai		Maharashtra	Premium		1001	2024-08-01	Delivered	4498.00
+101		Aarav Sharma	Mumbai		Maharashtra	Premium		1004	2024-08-10	Delivered	3499.00
+102		Priya Patel	Ahmedabad	Gujarat		Regular		1002	2024-08-03	Delivered	799.00
+102		Priya Patel	Ahmedabad	Gujarat		Regular		1011	2026-06-07	Pending		1598.00
+102		Priya Patel	Ahmedabad	Gujarat		Regular		1012	2026-06-07	Pending		1598.00
+103		Rohan Gupta	Delhi		Delhi		Premium		1003	2024-08-05	Shipped		7498.00
+103		Rohan Gupta	Delhi		Delhi		Premium		1008	2024-08-20	Delivered	899.00
+104		Sneha Reddy	Hyderabad	Telangana	Regular		1005	2024-08-12	Cancelled	2999.00
+105		Vikram Singh	Jaipur		Rajasthan	Premium		1006	2024-08-15	Delivered	5898.00
+106		Ananya Iyer	Chennai		Tamil Nadu	Regular		1007	2024-08-18	Pending		1299.00
+107		Karan Mehta	Pune		Maharashtra	Premium		1009	2024-08-25	Shipped		6098.00
+108		Divya Nair	Kochi		Kerala		Regular		1010	2024-08-28	Delivered	1598.00
+
+
+Question 21:
+
+order_    product_name      quantity     unit_price     discount_price
+id
+
+1001	Wireless Earbuds	2	1499.00		0.00
+1006	Wireless Earbuds	1	1499.00		10.00
+1002	Cotton T-Shirt		1	799.00		0.00
+1003	Smart Watch		1	2999.00		0.00
+1005	Smart Watch		1	2999.00		0.00
+1003	Running Shoes		1	4599.00		5.00
+1006	Running Shoes		1	4599.00		5.00
+1004	Bluetooth Speaker	1	3499.00		0.00
+1009	Bluetooth Speaker	1	3499.00		0.00
+1007	Bedsheet Set		1	1299.00		0.00
+1010	Bedsheet Set		1	1299.00		0.00
+1011	Bedsheet Set		1	1299.00		0.00
+1001	Laptop Stand		1	899.00		10.00
+1008	Laptop Stand		1	899.00		0.00
+1009	Cushion Covers (Set)	2	599.00		15.00
+1010	Cushion Covers (Set)	1	599.00		0.00
+1011	Cushion Covers (Set)	1	299.00		0.00
+
+
+
+Question 22:
+
+customer  first  order
+_id      _name   _id
+
+101	Aarav	1001
+101	Aarav	1004
+102	Priya	1
+102	Priya	1002
+102	Priya	1011
+102	Priya	1012
+103	Rohan	1003
+103	Rohan	1008
+104	Sneha	1005
+105	Vikram	1006
+106	Ananya	1007
+107	Karan	1009
+108	Divya	1010
+
+
+
+customer  first  order
+_id      _name   _id
+
+101	Aarav	1001
+101	Aarav	1004
+102	Priya	1
+102	Priya	1002
+102	Priya	1011
+102	Priya	1012
+103	Rohan	1003
+103	Rohan	1008
+104	Sneha	1005
+105	Vikram	1006
+106	Ananya	1007
+107	Karan	1009
+108	Divya	1010
+
+
+
+customer_id     customer_name        order_id   order_date      total_amount
+101		Aarav Sharma		1001	2024-08-01	4498.00
+101		Aarav Sharma		1004	2024-08-10	3499.00
+102		Priya Patel		1	2026-06-07	1598.00
+102		Priya Patel		1002	2024-08-03	799.00
+102		Priya Patel		1011	2026-06-07	1598.00
+102		Priya Patel		1012	2026-06-07	1598.00
+103		Rohan Gupta		1003	2024-08-05	7498.00
+103		Rohan Gupta		1008	2024-08-20	899.00
+104		Sneha Reddy		1005	2024-08-12	2999.00
+105		Vikram Singh		1006	2024-08-15	5898.00
+106		Ananya Iyer		1007	2024-08-18	1299.00
+107		Karan Mehta		1009	2024-08-25	6098.00
+108		Divya Nair		1010	2024-08-28	1598.00
+
+
+
+Question 23:
+
+ Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails 
+-- (`bussiness`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`))	0.031 sec
+
+
+-- ---------------------------------------------------------
+-- Section E — Advanced Concepts (CASE, ACID, Transactions) 
+-- ---------------------------------------------------------
+
+
+Question 24:
+
+priduct_name           unit_price       price_tier
+Soap			50.00		Budget
+Soap			50.00		Budget
+Cushion Covers (Set)	599.00		Budget
+Cotton T-Shirt		799.00		Budget
+Laptop Stand		899.00		Budget
+Bedsheet Set		1299.00		Mid-Range
+Wireless Earbuds	1499.00		Mid-Range
+Smart Watch		2999.00		Mid-Range
+Bluetooth Speaker	3499.00		Premium
+Running Shoes		4599.00		Premium
+
+
+Question 25:
+
+ Delivered_orders             Not_delivered_orders
+ 12                           12
+
+
+Question 27:
+22:27:18	COMMIT	0 row(s) affected	0.000 sec
+
+							

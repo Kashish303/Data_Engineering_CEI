@@ -1,0 +1,347 @@
+-- ---------------------------------------------
+--   STEP 2:Explore table (schema, sample data)
+-- ---------------------------------------------
+
+----- 2.1:
+
+
+1	CA-2016-152156	11/8/2016	11/11/2016	Second Class	CG-12520	Claire Gute	Consumer	United States	Henderson	Kentucky	42420	South	FUR-BO-10001798	Furniture	Bookcases	Bush Somerset Collection Bookcase	261.96	2	0	41.9136
+2	CA-2016-152156	11/8/2016	11/11/2016	Second Class	CG-12520	Claire Gute	Consumer	United States	Henderson	Kentucky	42420	South	FUR-CH-10000454	Furniture	Chairs	Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back	731.94	3	0	219.582
+3	CA-2016-138688	6/12/2016	6/16/2016	Second Class	DV-13045	Darrin Van Huff	Corporate	United States	Los Angeles	California	90036	West	OFF-LA-10000240	Office Supplies	Labels	Self-Adhesive Address Labels for Typewriters by Universal	14.62	2	0	6.8714
+4	US-2015-108966	10/11/2015	10/18/2015	Standard Class	SO-20335	Sean O'Donnell	Consumer	United States	Fort Lauderdale	Florida	33311	South	FUR-TA-10000577	Furniture	Tables	Bretford CR4500 Series Slim Rectangular Table	957.5775	5	0.45	-383.031
+5	US-2015-108966	10/11/2015	10/18/2015	Standard Class	SO-20335	Sean O'Donnell	Consumer	United States	Fort Lauderdale	Florida	33311	South	OFF-ST-10000760	Office Supplies	Storage	Eldon Fold 'N Roll Cart System	22.368	2	0.2	2.5164
+6	CA-2014-115812	6/9/2014	6/14/2014	Standard Class	BH-11710	Brosina Hoffman	Consumer	United States	Los Angeles	California	90032	West	FUR-FU-10001487	Furniture	Furnishings	Eldon Expressions Wood and Plastic Desk Accessories, Cherry Wood	48.86	7	0	14.1694
+7	CA-2014-115812	6/9/2014	6/14/2014	Standard Class	BH-11710	Brosina Hoffman	Consumer	United States	Los Angeles	California	90032	West	OFF-AR-10002833	Office Supplies	Art	Newell 322	7.28	4	0	1.9656
+8	CA-2014-115812	6/9/2014	6/14/2014	Standard Class	BH-11710	Brosina Hoffman	Consumer	United States	Los Angeles	California	90032	West	TEC-PH-10002275	Technology	Phones	Mitel 5320 IP Phone VoIP phone	907.152	6	0.2	90.7152
+9	CA-2014-115812	6/9/2014	6/14/2014	Standard Class	BH-11710	Brosina Hoffman	Consumer	United States	Los Angeles	California	90032	West	OFF-BI-10003910	Office Supplies	Binders	DXL Angle-View Binders with Locking Rings by Samsill	18.504	3	0.2	5.7825
+10	CA-2014-115812	6/9/2014	6/14/2014	Standard Class	BH-11710	Brosina Hoffman	Consumer	United States	Los Angeles	California	90032	West	OFF-AP-10002892	Office Supplies	Appliances	Belkin F5C206VTEL 6 Outlet Surge	114.9	5	0	34.47
+
+
+----- 2.2 
+
+total_rows
+9694
+
+----- 2.3
+Field          Type     NULL
+
+Row ID	        int	YES			
+Order ID	text	YES			
+Order Date	text	YES			
+Ship Date	text	YES			
+Ship Mode	text	YES			
+Customer ID	text	YES			
+Customer Name	text	YES			
+Segment		text	YES			
+Country		text	YES			
+City		text	YES			
+State		text	YES			
+Postal Code	int	YES			
+Region		text	YES			
+Product ID	text	YES			
+Category	text	YES			
+Sub-Category	text	YES			
+Product Name	text	YES			
+Sales		double	YES			
+Quantity	int	YES			
+Discount	double	YES			
+Profit		double	YES						
+	
+
+----- 2.4 
+
+Region
+ 
+South
+West
+Central
+East
+
+
+----- 2.5
+
+Category
+
+Furniture
+Office Supplies
+Technology
+
+
+
+------ 2.6
+
+first_order     last_order 
+2014-01-04	2017-12-30
+
+
+----- 2.7
+
+null order  null_date  null_customer  null_product_id  null_sale  null_profit
+
+0	       0	    0	            0	            0	     0
+
+
+
+-- --------------------------------------------------------------
+-- STEP 3 :- Apply WHERE filters (region, category, date, sales).
+-- --------------------------------------------------------------
+
+
+----- 3.1
+
+Order ID         Order Date    Customer Name     Product Name                           	Sales           Profit
+
+CA-2016-118689	10/2/2016	Tamara Chand	Canon imageCLASS 2200 Advanced Copier		17499.95	8399.976
+CA-2016-117121	12/17/2016	Adrian Barton	GBC Ibimaster 500 Manual ProClick Binding System 9892.74	4946.37
+CA-2014-116904	9/23/2014	Sanjit Chand	Ibico EPK-21 Electric Binding System		9449.95		4630.4755
+CA-2014-139892	9/8/2014	Becky Martin	Lexmark MX611dhe Monochrome Laser Printer	8159.952	-1359.992
+CA-2017-138289	1/16/2017	Andy Reiter	GBC DocuBind P400 Electric Binding System	5443.96		2504.2216
+US-2015-128587	12/24/2015	Harry Marie	Canon PC1060 Personal Laser Copier		4899.93		2302.9671
+US-2017-167402	1/13/2017	Cathy Prescott	Martin Yale Chadless Opener Electric Letter     4164.05	        83.281
+CA-2016-103982	3/3/2016	Alex Avila	High Speed Automatic Electric Letter Opener	3930.072	-786.0144
+CA-2015-120782	4/28/2015      Shirley Daniels	Fellowes PB500 Electric Punch Plastic Comb	3812.97		1906.485
+CA-2016-122903	5/27/2016      Laura Armstrong	HON 5400 Series Task Chairs for Big and Tall	3504.9		700.98
+
+
+------ 3.2 
+
+Order ID         Product Name                                          Sub-Categoty     Sales        Quantity    Profit
+
+CA-2014-145317	Cisco TelePresence System EX90 Videoconferencing Unit	Machines	22638.48	6	-1811.0784
+CA-2016-118689	Canon imageCLASS 2200 Advanced Copier			Copiers		17499.95	5	8399.976
+CA-2017-140151	Canon imageCLASS 2200 Advanced Copier			Copiers		13999.96	4	6719.9808
+CA-2017-127180	Canon imageCLASS 2200 Advanced Copier			Copiers		11199.968	4	3919.9888
+CA-2017-166709	Canon imageCLASS 2200 Advanced Copier			Copiers		10499.97	3	5039.9856
+US-2016-107440	3D Systems Cube Printer, 2nd Generation, Magenta	Machines	9099.93		7	2365.9818
+CA-2016-158841	HP Designjet T520 Inkjet Large Format Printer 		Machines	8749.95		5	2799.984
+CA-2016-143714	Canon imageCLASS 2200 Advanced Copier			Copiers		8399.976	4	1119.9968
+CA-2014-139892	Lexmark MX611dhe Monochrome Laser Printer		Machines	8159.952	8	-1359.992
+US-2017-168116	Cubify CubeX 3D Printer Triple Head Print		Machines	7999.98		4	-3839.9904
+
+
+------- 3.3
+
+Order Id        Customer Name    Product Name                                           Category         Sales      Quantity  Discount   Profit
+CA-2014-145317	Sean Miller	Cisco TelePresence System EX90 Videoconferencing Unit	Technology	22638.48	6	0.5	-1811.0784
+CA-2016-118689	Tamara Chand	Canon imageCLASS 2200 Advanced Copier			Technology	17499.95	5	0	8399.976
+CA-2017-127180	Tom Ashbrook	Canon imageCLASS 2200 Advanced Copier			Technology	11199.968	4	0.2	3919.9888
+CA-2017-140151	Raymond Buch	Canon imageCLASS 2200 Advanced Copier			Technology	13999.96	4	0	6719.9808
+CA-2017-166709	Hunter Lopez	Canon imageCLASS 2200 Advanced Copier			Technology	10499.97	3	0	5039.9856
+
+
+------ 3.4 
+
+Order ID         Product Name                                  Sub-Category     Sales         Discount   Profit 
+
+CA-2016-108196	Cubify CubeX 3D Printer Double Head Print	Machines	4499.985	0.7	-6599.978
+US-2017-168116	Cubify CubeX 3D Printer Triple Head Print	Machines	7999.98		0.5	-3839.9904
+CA-2014-169019	GBC DocuBind P400 Electric Binding System	Binders		2177.584	0.8	-3701.8928
+CA-2017-134845	Lexmark MX611dhe Monochrome Laser Printer	Machines	2549.985	0.7	-3399.98
+US-2017-122714	Ibico EPK-21 Electric Binding System		Binders		1889.99		0.8	-2929.4845
+CA-2015-147830	Cubify CubeX 3D Printer Double Head Print	Machines	1799.994	0.7	-2639.9912
+CA-2017-131254	Fellowes PB500 Electric Punch Plastic Comb	Binders		1525.188	0.8	-2287.782
+CA-2015-116638	Chromcraft Bull-Nose Wood Oval Conference 	Tables		4297.644	0.4	-1862.3124
+CA-2016-130946	GBC DocuBind P400 Electric Binding System	Binders		1088.792	0.8	-1850.9464
+CA-2014-145317	Cisco TelePresence System EX90 			Machines	22638.48	0.5	-1811.0784
+
+
+------ 3.5 
+Customer Name     Product Name                                           Category              Sales          Discount  Profit
+
+Eric Hoffmann	Avery Hidden Tab Dividers for Binding Systems		Office Supplies		1.192		0.8	-2.0264
+Harold Pawlan	Holmes Replacement Filter for HEPA Air Cleaner		Office Supplies		68.81		0.8	-123.858
+Harold Pawlan	Storex DuraTech Recycled Plastic Frosted Binders	Office Supplies		2.544		0.8	-3.816
+Thomas Thornton	Ibico Covers for Plastic or Wire Binding Elements	Office Supplies		6.9		0.8	-12.075
+Thomas Thornton	Fellowes Twister Kit, Gray/Clear, 3/pkg			Office Supplies		9.648		0.8	-16.884
+
+------ 3.6 
+
+Order Id        Customer Name    Product Name                                  Sales            Profit
+
+CA-2017-140151	Raymond Buch	Canon imageCLASS 2200 Advanced Copier		13999.96	6719.9808
+CA-2017-149881	Nick Crebassa	Cubify CubeX 3D Printer Double Head Print	4799.984	359.9988
+CA-2016-100300	Max Jones	Okidata MB760 Printer				4476.8		503.64
+CA-2016-159016	Karen Ferguson	Apple iPhone 5					4158.912	363.9048
+
+
+------ 3.7
+
+Order Id         Product Name                                           Sales         Discount  Profit 
+
+CA-2014-145317	Cisco TelePresence System EX90 Videoconferencing Unit	22638.48	0.5	-1811.0784
+CA-2014-139892	Lexmark MX611dhe Monochrome Laser Printer		8159.952	0.4	-1359.992
+US-2017-168116	Cubify CubeX 3D Printer Triple Head Print		7999.98		0.5	-3839.9904
+
+
+
+
+-- ------------------------------------------------------------------
+-- STEP 4: Use GROUP BY for aggregations (sales, quantity, averages)
+-- ------------------------------------------------------------------
+
+
+------- 4.1 
+
+Region  Total   units   total_          total_           profit_margin
+        _orders _sold    sales          profit           _pct
+
+West	1578	11845	713471.34	106021.15	14.86
+East	1376	10281	672194.05	90672.01	13.49
+Central	1161	8546	497800.87	40128.9		8.06
+South	816	6077	388983.59	46035.69	11.83
+
+
+
+------- 4.2 
+
+Category       line     total_         total_            avg_sale_      profit_margin
+              _item     sales          profit            per_item       _pct
+
+Technology	1839	835900.07	145387.1	454.54		17.39
+Office Supplies	5781	703502.93	120489.89	121.69		17.13
+Furniture	2074	733046.86	16980.77	353.45		2.32
+
+
+------- 4.3
+
+Sub-category    Category        total_sales    total_profit   profit_margin_pct       profitability_flag
+
+Copiers		Technology	149528.03	55617.82	37.2			STAR
+Phones		Technology	329753.09	44447.88	13.48			HEALTHY
+
+ 
+
+----- 4.4 
+
+Segment       Customer  orders  total_sales    avg_order_value  margin_pct
+
+Consumer	409	2543	1150166.18	228.03		11.53
+Corporate	236	1494	696604.51	238.56		12.97
+
+
+
+
+-- -----------------------------------------------------------
+--  STEP 5 : Sort and limit results (top products, top categories)
+-- -----------------------------------------------------------
+
+
+
+------ 5.1
+
+Customer        Customer        Segment         Region        orders    total_          total_
+Id              Name                                         _placed    sales           profit
+
+SM-20320	Sean Miller	Home Office	South		2	23669.2		-1787.04
+TC-20980	Tamara Chand	Corporate	Central		2	18402.77	8728.22
+RB-19360	Raymond Buch	Consumer	West		2	14345.28	6807.09
+TA-21385	Tom Ashbrook	Home Office	East		2	13723.5		4599.21
+AB-10105	Adrian Barton	Consumer	Central		5	12181.59	5362.61
+BM-11140	Becky Martin	Consumer	Central		1	10539.9		-1878.79
+HL-15040	Hunter Lopez	Consumer	East		2	10522.55	5045.86
+BS-11365	Bill Shonely	Corporate	East		2	10022.29	2558.58
+SC-20095	Sanjit Chand	Consumer	Central		1	9900.19		4668.69
+GT-14710	Greg Tran	Consumer	East		5	9382.93		1749.11
+
+
+------ 5.2
+
+Product ID         Product Name                            Category    Sub-Category    total_sales     units_sold 	total_profit
+
+TEC-CO-10004722	Canon imageCLASS 2200 Advanced Copier	Technology	Copiers		61599.82	20		25199.93
+OFF-BI-10003527	Fellowes PB500 Electric Punch Plastic 	Office Supplies	Binders		27453.38	31		7753.04
+TEC-MA-10002412	Cisco TelePresence System EX90 Unit	Technology	Machines	22638.48	6		-1811.08
+FUR-CH-10002024	HON 5400 Series Task Chairs        	Furniture	Chairs		21870.58	39		0
+OFF-BI-10001359	GBC DocuBind TL300                  Office Supplies	Binders		19823.48	37		2233.51
+
+
+----- 5.3 
+
+Product Name                                   Sub-Category    total_sales     total_profit     margin_pct
+
+Cubify CubeX 3D Printer Double Head Print	Machines	11099.96	-8879.97	-80
+Lexmark MX611dhe Monochrome Laser Printer	Machines	16829.9		-4589.97	-27.27
+Cubify CubeX 3D Printer Triple Head Print	Machines	7999.98		-3839.99	-48
+Chromcraft Bull-Nose Wood Oval Conference	Tables		9917.64		-2876.12	-29
+Bush Advantage Collection Racetrack Table	Tables		9544.72		-1934.4		-20.27
+
+
+------ 5.4
+
+State          Region   total_sales     total_profit
+
+California	West	450567.59	74669.2
+New York	East	309453.63	73507.13
+Texas		Central	169553.63	-25534.99
+Washington	West	136590.17	32976.62
+Pennsylvania	East	114911.24	-15446.38
+
+
+
+-- ---------------------------------------------------------------
+-- 6.Solve use cases (monthly trends, top customers, duplicates)
+-- ----------------------------------------------------------------
+
+
+------ 6.1 
+
+YearMonth      monthly_sales    monthly_profit  total_orders
+
+2014-01		14161.35	2416.69		30
+2014-02		4119.82		781.84		28
+2014-03		55526.2		419.43		71
+2014-04		28139.56	3450.96		66
+
+
+------ 6.2 
+
+buyer_type          customers   avg_lifetime_sales   
+
+Loyal Customer		457	3611.27
+Occasional Buyer	324	1904.73
+One-Time Buyer		12	413.73
+
+
+------ 6.3 
+
+Order ID        Occurance 
+
+CA-2017-157987	12
+CA-2017-100111	12
+US-2016-108504	10
+CA-2015-131338	10
+US-2015-126977	10
+
+
+
+-- ----------------------------------------------------
+-- 7.Validate results (row counts, data quality)
+-- ----------------------------------------------------
+
+
+------ 7.1
+
+total_sales    total_profit   total_units_sold  total_rows    unique_orders    unique_customers   unique_products
+2272449.86	282857.75	36749		9694		4931	 	793			1812
+
+
+
+------ 7.2 
+
+null_sales    null_profit     null_customers
+   0              0               0
+
+
+
+------ 7.3 
+
+check_type                     voilation
+
+Negative Sales			0
+Zero Quantity			0
+Discount Greater Than 100%	0
+
+
+
+
+
