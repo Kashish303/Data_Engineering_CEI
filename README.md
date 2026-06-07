@@ -1,3 +1,211 @@
+# Week 2 – SQL Projects Portfolio
+
+## Overview
+
+This repository contains two SQL-based projects completed as part of my Data Engineering and Analytics learning journey. The focus of these projects was not only to learn SQL syntax but also to understand how databases are used to solve real-world business problems.
+
+The projects cover database design, data integrity, query optimization, transaction management, sales analytics, customer behavior analysis, profitability analysis, and data quality validation.
+
+Through these projects, I applied SQL to both operational and analytical use cases, simulating scenarios commonly encountered in e-commerce platforms and business intelligence environments.
+
+---
+
+# Project 1: ShopEase E-Commerce Database Analysis
+
+## Objective
+
+Design and analyze a relational e-commerce database while applying core database concepts such as constraints, indexing, joins, transactions, and ACID properties.
+
+## Key Areas Covered
+
+### Database Design & Relationships
+
+* Primary Keys
+* Foreign Keys
+* Referential Integrity
+* Relational Schema Design
+
+### SQL Querying
+
+* Data Retrieval
+* Filtering & Sorting
+* Aggregate Functions
+* Conditional Logic using CASE
+
+### Joins & Relationships
+
+* INNER JOIN
+* LEFT JOIN
+* RIGHT JOIN
+* FULL OUTER JOIN (Simulated using UNION)
+
+### Database Optimization
+
+* Indexing
+* Query Performance Analysis
+* EXPLAIN Plans
+
+### Transactions & Reliability
+
+* START TRANSACTION
+* COMMIT
+* ROLLBACK
+* ACID Properties
+
+## Additional Enhancements
+
+To go beyond the assignment requirements, additional business-oriented analysis was performed:
+
+* Customer Segmentation using CASE
+* Revenue & Discount Analytics
+* Delivery Success Rate KPI
+* Constraint Validation through Error Testing
+* Query Optimization Awareness
+* Real-world ACID Examples using E-Commerce Scenarios
+
+## Skills Demonstrated
+
+* Relational Database Design
+* SQL Query Writing
+* Data Integrity Management
+* Query Optimization
+* Transaction Handling
+* Business-Oriented Data Analysis
+
+---
+
+# Project 2: Superstore Sales Analysis using SQL
+
+## Objective
+
+Analyze retail sales data using SQL and transform raw transactional records into actionable business insights.
+
+## Key Areas Covered
+
+### Data Exploration
+
+* Schema Analysis
+* Row Count Validation
+* Date Range Analysis
+* NULL Value Audit
+
+### Filtering Analysis
+
+* Region-wise Analysis
+* Category-wise Analysis
+* High-Value Transactions
+* Discount Analysis
+* Loss-Making Orders
+
+### Aggregation & Reporting
+
+* Regional Performance
+* Category Performance
+* Sub-Category Profitability
+* Customer Segment Analysis
+* Profit Margin Analysis
+
+### Ranking Analysis
+
+* Top Customers by Revenue
+* Top Products by Sales
+* Least Profitable Products
+* Top Performing States
+
+### Business Use Cases
+
+* Monthly Sales Trends
+* Customer Retention Analysis
+* Duplicate Order Investigation
+
+### Data Validation
+
+* Missing Value Detection
+* Impossible Value Checks
+* Duplicate Record Validation
+* Dataset Summary Verification
+
+## Additional Enhancements
+
+Beyond the assignment requirements, the project includes:
+
+* Customer Retention Classification
+* Product Profitability Classification
+* High Sales vs Low Profit Analysis
+* Revenue Contribution Analysis
+* Data Quality Auditing
+* Business Insight Generation
+
+## Skills Demonstrated
+
+* SQL Analytics
+* Business Intelligence Reporting
+* Data Validation
+* Customer Behavior Analysis
+* Profitability Analysis
+* Trend Analysis
+
+---
+
+# SQL Concepts Practiced Across Both Projects
+
+* SELECT
+* WHERE
+* DISTINCT
+* ORDER BY
+* LIMIT
+* GROUP BY
+* HAVING
+* CASE
+* Aggregate Functions
+* Date Functions
+* Joins
+* Constraints
+* Indexing
+* Transactions
+* ACID Properties
+* Data Validation Queries
+
+---
+
+# Key Learnings
+
+These projects helped me understand how SQL is used beyond simple querying and how databases support both operational systems and analytical decision-making.
+
+Major learnings include:
+
+* Designing and managing relational databases
+* Maintaining data integrity using constraints
+* Optimizing query performance with indexes
+* Generating business insights from transactional data
+* Performing customer and sales analytics
+* Validating data quality before analysis
+* Applying SQL to solve practical business problems
+
+---
+
+## Tools & Technologies
+
+* MySQL Workbench
+* SQL
+* SQLite
+* Superstore Sales Dataset
+* Relational Database Concepts
+
+---
+
+## Conclusion
+
+Week 2 focused on building strong SQL foundations through both database management and business analytics projects.
+
+The ShopEase project emphasized database design, integrity, and transaction management, while the Superstore project focused on analytical reporting, customer insights, profitability analysis, and data validation.
+
+Together, these projects demonstrate practical SQL skills that are directly applicable to Data Engineering, Data Analytics, and Business Intelligence workflows.
+
+**Author:** Kashish Soni
+
+
+
 # Week 1 - Product Data Exploration and Cleaning using Pandas
 
 ## Objective
