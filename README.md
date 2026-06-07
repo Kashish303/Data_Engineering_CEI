@@ -2,207 +2,533 @@
 
 ## Overview
 
-This repository contains two SQL-based projects completed as part of my Data Engineering and Analytics learning journey. The focus of these projects was not only to learn SQL syntax but also to understand how databases are used to solve real-world business problems.
+This repository contains two SQL-based projects completed as part of my Data Engineering and Analytics learning journey. The primary objective of these projects was not only to learn SQL syntax but also to understand how databases support real-world business operations and decision-making.
 
-The projects cover database design, data integrity, query optimization, transaction management, sales analytics, customer behavior analysis, profitability analysis, and data quality validation.
+The projects cover database design, data integrity, constraints, indexing, query optimization, transaction management, sales analytics, customer behavior analysis, profitability analysis, and data quality validation.
 
-Through these projects, I applied SQL to both operational and analytical use cases, simulating scenarios commonly encountered in e-commerce platforms and business intelligence environments.
+Through these projects, SQL was applied to both operational and analytical use cases, simulating scenarios commonly encountered in e-commerce platforms, reporting systems, and business intelligence workflows.
 
 ---
 
-# Project 1: ShopEase E-Commerce Database Analysis
+# ⭐ Week 2 Highlights
+
+Unlike traditional SQL assignments that focus only on writing queries, these projects emphasize practical problem-solving, business understanding, and database engineering concepts.
+
+### Key Highlights
+
+#### Business-Oriented SQL Analysis
+
+Most queries were designed around real business questions rather than simple data retrieval.
+
+Examples include:
+
+- Customer Segmentation
+- Revenue Analysis
+- Profitability Analysis
+- Customer Retention Analysis
+- Delivery Performance Tracking
+- Product Performance Evaluation
+
+#### Constraint Validation Through Testing
+
+Database constraints were not only studied but also intentionally tested by attempting invalid operations.
+
+Examples tested:
+
+- Duplicate Email Violations
+- Foreign Key Violations
+- CHECK Constraint Violations
+
+This helped verify how databases enforce data integrity and prevent invalid data entry.
+
+#### Real-World ACID Property Explanations
+
+Instead of using generic banking examples, ACID properties were explained using practical e-commerce scenarios such as:
+
+- Order Placement
+- Inventory Updates
+- Stock Management
+- Concurrent Purchases
+
+making the concepts more relevant and easier to understand.
+
+#### Advanced SQL Usage
+
+The projects include practical implementations of:
+
+- CASE Statements
+- Conditional Aggregation
+- HAVING Clause
+- Multi-Table Joins
+- Indexing
+- Transactions
+- Data Validation Queries
+
+#### Data Quality Awareness
+
+Dedicated validation checks were performed before generating insights.
+
+These checks included:
+
+- Missing Value Analysis
+- Duplicate Detection
+- Invalid Data Detection
+- Dataset Validation
+
+This reflects real-world analytics workflows where data quality must be verified before making business decisions.
+
+#### Beyond Assignment Requirements
+
+Several additional analyses were performed beyond the questions provided:
+
+- Customer Retention Classification
+- Product Profitability Classification
+- Revenue Contribution Analysis
+- Delivery Success Rate KPI
+- High Sales vs Low Profit Investigation
+- Data Quality Auditing
+
+These enhancements were added to demonstrate analytical thinking and practical SQL problem-solving.
+
+---
+
+# 🛒 Project 1: ShopEase E-Commerce Database Analysis
 
 ## Objective
 
-Design and analyze a relational e-commerce database while applying core database concepts such as constraints, indexing, joins, transactions, and ACID properties.
+The objective of this project was to design and analyze a relational e-commerce database while applying core database concepts such as constraints, indexing, joins, transactions, and ACID properties.
 
-## Key Areas Covered
+Rather than focusing only on query writing, the project was aimed at understanding how databases support customer management, inventory tracking, order processing, reporting, and business operations.
 
-### Database Design & Relationships
+---
 
-* Primary Keys
-* Foreign Keys
-* Referential Integrity
-* Relational Schema Design
+## Database Schema
 
-### SQL Querying
+The database consists of four interconnected tables:
 
-* Data Retrieval
-* Filtering & Sorting
-* Aggregate Functions
-* Conditional Logic using CASE
+### Customers
+
+Stores customer information such as:
+
+- Customer ID
+- First Name
+- Last Name
+- Email
+- City
+- State
+- Join Date
+- Premium Membership Status
+
+### Products
+
+Stores product catalog information including:
+
+- Product ID
+- Product Name
+- Category
+- Brand
+- Unit Price
+- Stock Quantity
+
+### Orders
+
+Stores order-level transaction information including:
+
+- Order ID
+- Customer ID
+- Order Date
+- Order Status
+- Total Amount
+
+### Order Items
+
+Stores product-level information for each order including:
+
+- Item ID
+- Order ID
+- Product ID
+- Quantity
+- Unit Price
+- Discount Percentage
+
+The schema was designed using Primary Keys and Foreign Keys to maintain relationships and ensure referential integrity across the database.
+
+---
+
+## SQL Concepts Implemented
+
+### Data Retrieval & Filtering
+
+Various SQL queries were written to retrieve, filter, and analyze data.
+
+Techniques used:
+
+- SELECT
+- DISTINCT
+- WHERE
+- ORDER BY
+- BETWEEN
+- Logical Operators
+
+These queries helped answer business questions related to customers, products, and orders.
+
+---
+
+### Database Constraints
+
+Different constraints were explored and validated, including:
+
+#### Primary Key
+
+Ensures that every record has a unique identifier.
+
+#### Foreign Key
+
+Maintains relationships between tables and prevents orphan records.
+
+#### UNIQUE Constraint
+
+Prevents duplicate values such as customer email addresses.
+
+#### NOT NULL Constraint
+
+Ensures mandatory fields always contain values.
+
+#### CHECK Constraint
+
+Validates business rules such as positive product pricing and stock values.
+
+Constraint violations were intentionally tested to observe how the database protects data integrity.
+
+---
 
 ### Joins & Relationships
 
-* INNER JOIN
-* LEFT JOIN
-* RIGHT JOIN
-* FULL OUTER JOIN (Simulated using UNION)
+Multiple JOIN operations were implemented to combine data stored across different tables.
 
-### Database Optimization
+Examples included:
 
-* Indexing
-* Query Performance Analysis
-* EXPLAIN Plans
+- Displaying customer details along with their orders.
+- Listing all customers including those without orders.
+- Retrieving product-level details for every order.
+- Combining customer, order, and product information into a single report.
 
-### Transactions & Reliability
-
-* START TRANSACTION
-* COMMIT
-* ROLLBACK
-* ACID Properties
-
-## Additional Enhancements
-
-To go beyond the assignment requirements, additional business-oriented analysis was performed:
-
-* Customer Segmentation using CASE
-* Revenue & Discount Analytics
-* Delivery Success Rate KPI
-* Constraint Validation through Error Testing
-* Query Optimization Awareness
-* Real-world ACID Examples using E-Commerce Scenarios
-
-## Skills Demonstrated
-
-* Relational Database Design
-* SQL Query Writing
-* Data Integrity Management
-* Query Optimization
-* Transaction Handling
-* Business-Oriented Data Analysis
+This demonstrated how relational databases connect data across multiple entities.
 
 ---
 
-# Project 2: Superstore Sales Analysis using SQL
+### Query Optimization
 
-## Objective
+Indexes were studied and implemented to improve query performance.
 
-Analyze retail sales data using SQL and transform raw transactional records into actionable business insights.
+The EXPLAIN statement was used to analyze query execution plans and understand how MySQL processes data retrieval operations.
 
-## Key Areas Covered
+This introduced practical concepts such as:
 
-### Data Exploration
+- Full Table Scans
+- Index Lookups
+- Query Cost Reduction
+- SARGable Query Design
 
-* Schema Analysis
-* Row Count Validation
-* Date Range Analysis
-* NULL Value Audit
+---
 
-### Filtering Analysis
+### Conditional Logic
 
-* Region-wise Analysis
-* Category-wise Analysis
-* High-Value Transactions
-* Discount Analysis
-* Loss-Making Orders
+CASE statements were used to generate business-oriented classifications.
+
+Examples included:
+
+- Premium vs Regular Customers
+- Product Price Classification
+- Business Reporting Categories
+
+This helped transform raw data into meaningful business information.
+
+---
 
 ### Aggregation & Reporting
 
-* Regional Performance
-* Category Performance
-* Sub-Category Profitability
-* Customer Segment Analysis
-* Profit Margin Analysis
+Aggregate functions were used to generate business insights.
 
-### Ranking Analysis
+Functions used:
 
-* Top Customers by Revenue
-* Top Products by Sales
-* Least Profitable Products
-* Top Performing States
+- COUNT()
+- SUM()
+- AVG()
+- GROUP BY
+- Conditional Aggregation
 
-### Business Use Cases
-
-* Monthly Sales Trends
-* Customer Retention Analysis
-* Duplicate Order Investigation
-
-### Data Validation
-
-* Missing Value Detection
-* Impossible Value Checks
-* Duplicate Record Validation
-* Dataset Summary Verification
-
-## Additional Enhancements
-
-Beyond the assignment requirements, the project includes:
-
-* Customer Retention Classification
-* Product Profitability Classification
-* High Sales vs Low Profit Analysis
-* Revenue Contribution Analysis
-* Data Quality Auditing
-* Business Insight Generation
-
-## Skills Demonstrated
-
-* SQL Analytics
-* Business Intelligence Reporting
-* Data Validation
-* Customer Behavior Analysis
-* Profitability Analysis
-* Trend Analysis
+These queries helped analyze customer activity, sales performance, and operational KPIs.
 
 ---
 
-# SQL Concepts Practiced Across Both Projects
+### Transactions & ACID Properties
 
-* SELECT
-* WHERE
-* DISTINCT
-* ORDER BY
-* LIMIT
-* GROUP BY
-* HAVING
-* CASE
-* Aggregate Functions
-* Date Functions
-* Joins
-* Constraints
-* Indexing
-* Transactions
-* ACID Properties
-* Data Validation Queries
+Transaction management was implemented using:
 
----
+```sql
+START TRANSACTION;
+COMMIT;
+ROLLBACK;
 
-# Key Learnings
+A complete order-processing workflow was simulated where:
+
+New orders were created.
+Order items were inserted.
+Inventory levels were updated.
+
+ROLLBACK scenarios were also tested to ensure database consistency when errors occur.
+
+ACID properties were explained using real-world e-commerce examples such as inventory updates, concurrent purchases, and order placement.
+
+Additional Enhancements
+
+To go beyond the assignment requirements, additional business-focused analysis was performed:
+
+Customer Segmentation
+
+Customers were classified as:
+
+Premium Customers
+Regular Customers
+
+using CASE statements.
+
+Revenue & Discount Analytics
+
+Additional metrics were calculated:
+
+Gross Revenue
+Net Revenue
+Discount Saved
+Delivery Success Rate KPI
+
+An additional KPI was calculated to measure operational efficiency and order fulfillment performance.
+
+Constraint Validation Through Error Testing
+
+Multiple constraint violations were intentionally tested to observe database behavior and error handling.
+
+Skills Demonstrated
+Relational Database Design
+SQL Query Writing
+Data Integrity Management
+Query Optimization
+Transaction Handling
+Database Reliability Concepts
+Business-Oriented Data Analysis
+📊 Project 2: Superstore Sales Analysis using SQL
+Objective
+
+The objective of this project was to analyze a retail sales dataset using SQL and transform raw transactional data into actionable business insights.
+
+The project was designed to simulate a real-world business analytics workflow covering sales performance, customer behavior, profitability analysis, customer retention, and data quality validation.
+
+Analysis Workflow
+1. Data Exploration
+
+The dataset was first explored to understand its structure, quality, and completeness.
+
+Activities performed:
+
+Schema Analysis
+Sample Record Inspection
+Row Count Validation
+Date Range Analysis
+Region Identification
+NULL Value Audit
+
+This step ensured the dataset was suitable for analysis before generating insights.
+
+2. Filtering Analysis
+
+Business-oriented filtering was performed using WHERE clauses.
+
+Analysis included:
+
+Region-wise Analysis
+Category-wise Analysis
+Date Range Analysis
+High-Value Transactions
+Discount-Based Analysis
+Loss-Making Orders
+Combined Business Filters
+
+These queries helped identify meaningful subsets of data and uncover hidden business patterns.
+
+3. Aggregation & Reporting
+
+GROUP BY and aggregate functions were used to summarize transactional data into meaningful business metrics.
+
+Analysis included:
+
+Regional Performance
+Category Performance
+Sub-Category Profitability
+Customer Segment Analysis
+Revenue Contribution Analysis
+Profit Margin Calculations
+
+This transformed thousands of individual transactions into easy-to-understand business reports.
+
+4. Profitability Classification
+
+CASE statements were used to classify business performance into categories such as:
+
+Loss-Making
+Low Margin
+Healthy
+Star Performer
+
+This helped identify which business units were creating value and which required improvement.
+
+5. Ranking Analysis
+
+ORDER BY and LIMIT were used to identify top and bottom performers.
+
+Analysis included:
+
+Top Customers by Revenue
+Top Products by Sales
+Most Profitable Products
+Least Profitable Products
+Top Performing States
+
+This helped identify key revenue drivers within the business.
+
+6. Business Use Cases
+
+Several practical business scenarios were implemented.
+
+Monthly Sales Trend Analysis
+
+Sales and profit were analyzed over time to identify growth patterns and seasonal trends.
+
+Customer Retention Analysis
+
+Customers were classified as:
+
+One-Time Buyers
+Occasional Buyers
+Loyal Customers
+
+to evaluate customer loyalty and long-term revenue contribution.
+
+Duplicate Order Investigation
+
+Repeated order IDs were analyzed to determine whether they represented true duplicates or legitimate multi-product transactions.
+
+This demonstrated the importance of understanding business context before making assumptions about data quality.
+
+7. Data Validation & Quality Checks
+
+Before generating final insights, dedicated validation checks were performed.
+
+These included:
+
+Missing Value Detection
+Duplicate Record Analysis
+Invalid Data Checks
+Dataset Consistency Verification
+Revenue Validation
+
+This ensured that business conclusions were based on reliable and accurate data.
+
+Additional Enhancements
+
+To make the project more comprehensive and business-focused, several additional analyses were performed beyond the assignment requirements.
+
+Customer Retention Classification
+
+Customers were segmented based on purchase frequency to identify loyal and high-value customers.
+
+Product Profitability Classification
+
+Products and categories were evaluated based on revenue and profit margins.
+
+High Sales vs Low Profit Investigation
+
+Transactions generating strong revenue but weak profitability were identified and analyzed.
+
+Revenue Contribution Analysis
+
+Different business segments were compared based on their contribution to total revenue.
+
+Data Quality Auditing
+
+Additional validation checks were performed to improve confidence in analytical results.
+
+Skills Demonstrated
+SQL Analytics
+Business Intelligence Reporting
+Data Validation
+Customer Behavior Analysis
+Profitability Analysis
+Trend Analysis
+Business Insight Generation
+SQL Concepts Practiced Across Both Projects
+Data Retrieval & Filtering
+SELECT
+WHERE
+DISTINCT
+ORDER BY
+LIMIT
+Aggregation & Reporting
+GROUP BY
+HAVING
+Aggregate Functions
+Conditional Logic
+CASE Statements
+Conditional Aggregation
+Database Relationships
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL OUTER JOIN Simulation
+Database Design & Optimization
+Primary Keys
+Foreign Keys
+Constraints
+Indexing
+Query Optimization
+EXPLAIN
+Transactions & Reliability
+START TRANSACTION
+COMMIT
+ROLLBACK
+ACID Properties
+Data Validation
+Missing Value Checks
+Duplicate Detection
+Data Quality Audits
+Key Learnings
 
 These projects helped me understand how SQL is used beyond simple querying and how databases support both operational systems and analytical decision-making.
 
 Major learnings include:
 
-* Designing and managing relational databases
-* Maintaining data integrity using constraints
-* Optimizing query performance with indexes
-* Generating business insights from transactional data
-* Performing customer and sales analytics
-* Validating data quality before analysis
-* Applying SQL to solve practical business problems
-
----
-
-## Tools & Technologies
-
-* MySQL Workbench
-* SQL
-* SQLite
-* Superstore Sales Dataset
-* Relational Database Concepts
-
----
-
-## Conclusion
+Designing and managing relational databases
+Maintaining data integrity using constraints
+Optimizing query performance using indexes
+Generating business insights from transactional data
+Performing customer and sales analytics
+Validating data quality before analysis
+Applying SQL to solve practical business problems
+Understanding how database systems support business operations
+Tools & Technologies
+MySQL Workbench
+SQL
+SQLite
+Superstore Sales Dataset
+Relational Database Concepts
+Conclusion
 
 Week 2 focused on building strong SQL foundations through both database management and business analytics projects.
 
-The ShopEase project emphasized database design, integrity, and transaction management, while the Superstore project focused on analytical reporting, customer insights, profitability analysis, and data validation.
+The ShopEase project emphasized database design, integrity, constraints, indexing, joins, and transaction management, while the Superstore project focused on analytical reporting, customer insights, profitability analysis, trend analysis, and data validation.
 
-Together, these projects demonstrate practical SQL skills that are directly applicable to Data Engineering, Data Analytics, and Business Intelligence workflows.
+Together, these projects demonstrate practical SQL skills that are directly applicable to Data Engineering, Data Analytics, Database Administration, and Business Intelligence workflows.
 
-**Author:** Kashish Soni
 
 
 
