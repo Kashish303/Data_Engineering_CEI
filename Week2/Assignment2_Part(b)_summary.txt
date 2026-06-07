@@ -1,0 +1,184 @@
+📊 Superstore Sales Analysis using SQL
+Overview
+
+The objective of this project was to analyze a retail sales dataset using SQL and transform raw transactional data into meaningful business insights.
+
+Rather than focusing only on basic SQL queries, the project was designed to simulate a real-world business analytics workflow. The analysis covers sales performance, customer behavior, product profitability, regional trends, customer retention, and data quality validation.
+
+The project follows a structured approach beginning with data exploration, followed by filtering, aggregation, ranking analysis, business use cases, and final validation checks.
+
+Objectives
+
+The primary goals of this project were:
+
+Understand the structure and quality of the dataset.
+Perform business-oriented filtering using SQL.
+Analyze sales, profit, and quantity metrics.
+Identify top-performing and underperforming products.
+Evaluate customer purchasing behavior.
+Analyze regional and category-wise performance.
+Study sales trends over time.
+Validate data quality before drawing conclusions.
+Generate actionable insights that support business decision-making.
+Tools & Technologies
+MySQL Workbench
+SQL
+Superstore Sales Dataset
+Project Workflow
+1. Data Exploration
+
+The dataset was first explored to understand its structure, columns, and overall quality.
+
+Activities performed:
+
+Schema exploration
+Sample record inspection
+Row count validation
+Date range analysis
+Region identification
+NULL value audit
+
+This step ensured that the dataset was suitable for further analysis and helped identify any potential data quality issues at an early stage.
+
+2. Filtering Analysis (WHERE Clause)
+
+Filtering techniques were applied to extract meaningful subsets of data based on business requirements.
+
+Analysis included:
+
+Region-wise filtering
+Category-wise filtering
+Date range analysis
+High-value transactions
+Loss-making transactions
+Discount-based filtering
+Combined business filters
+
+This analysis helped identify specific sales patterns, profitable transactions, and areas where revenue was generated but profitability remained low.
+
+3. Aggregation Analysis (GROUP BY & HAVING)
+
+Aggregation techniques were used to summarize large volumes of transactional data into meaningful business metrics.
+
+The analysis covered:
+
+Regional performance
+Category performance
+Sub-category profitability
+Customer segment analysis
+Revenue contribution analysis
+Profit margin calculations
+
+A CASE statement was also used to classify business performance into categories such as:
+
+Loss-Making
+Low Margin
+Healthy
+Star Performer
+
+This provided a clearer understanding of which business areas were creating value and which required improvement.
+
+4. Ranking Analysis (ORDER BY & LIMIT)
+
+Ranking analysis was performed to identify the most significant contributors to business performance.
+
+The following were analyzed:
+
+Top customers by revenue
+Top products by sales
+Most profitable products
+Least profitable products
+Top-performing states
+
+This section demonstrated that high sales do not always imply high profitability and highlighted the importance of evaluating both revenue and profit together.
+
+5. Business Use Cases
+
+To move beyond standard SQL exercises, several practical business use cases were implemented.
+
+These included:
+
+Monthly Sales Trend Analysis
+
+Sales and profit were analyzed over time to identify growth patterns and seasonal trends.
+
+Customer Retention Analysis
+
+Customers were categorized as:
+
+One-Time Buyers
+Occasional Buyers
+Loyal Customers
+
+This helped evaluate customer loyalty and long-term revenue contribution.
+
+Duplicate Order Investigation
+
+Repeated order IDs were analyzed to determine whether they represented actual duplicate records or legitimate multi-product orders.
+
+This demonstrated the importance of understanding business context before making assumptions about data quality.
+
+6. Data Validation & Quality Checks
+
+Before finalizing the analysis, multiple validation checks were performed.
+
+These included:
+
+Dataset summary verification
+Missing value detection
+Impossible value checks
+Duplicate record validation
+Revenue contribution verification
+
+Data validation is a critical step because business decisions should only be based on accurate and trustworthy data.
+
+Additional Analysis Beyond Requirements
+
+To make the project more comprehensive and business-focused, several additional analyses were performed beyond the assignment requirements:
+
+Customer Retention Analysis
+Profit Margin Analysis
+Product Profitability Classification
+High Sales but Low Profit Investigation
+Loss-Making Product Analysis
+Revenue Contribution Analysis
+Data Quality Auditing
+Duplicate Transaction Investigation
+
+These additions were included to demonstrate analytical thinking and to simulate real-world business intelligence practices.
+
+SQL Concepts Used
+
+Throughout the project, the following SQL concepts were applied:
+
+SELECT
+WHERE
+DISTINCT
+ORDER BY
+LIMIT
+GROUP BY
+HAVING
+CASE
+Aggregate Functions
+Date Functions
+Subqueries
+Data Validation Queries
+Key Learnings
+
+This project strengthened both SQL skills and analytical thinking by focusing on practical business problems rather than simple data retrieval.
+
+Key takeaways include:
+
+Understanding the relationship between sales and profitability.
+Identifying customer segments that contribute most to revenue.
+Evaluating product performance using business metrics.
+Applying SQL for trend analysis and decision support.
+Recognizing the importance of data quality validation.
+Transforming raw transactional data into actionable business insights.
+Conclusion
+
+The analysis revealed significant differences in performance across regions, products, categories, and customer segments.
+
+While some products generated substantial revenue, profitability analysis showed that not all revenue contributes equally to business success. Customer retention analysis highlighted the importance of loyal customers, and validation checks ensured confidence in the results.
+
+Overall, this project demonstrates how SQL can be used not only for querying data but also for performing business analytics and supporting data-driven decision-making.

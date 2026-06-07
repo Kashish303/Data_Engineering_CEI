@@ -1,0 +1,345 @@
+🛒 ShopEase E-Commerce Database Analysis using SQL
+📌 Project Overview
+
+This project focuses on analyzing an E-Commerce database using SQL while applying real-world database concepts such as filtering, constraints, indexing, joins, aggregations, conditional logic, and transaction management.
+
+The objective was not only to write SQL queries but also to understand how relational databases support business operations such as customer management, order processing, inventory tracking, sales reporting, and data integrity.
+
+The project simulates a real-world e-commerce environment where customers place orders, products are managed through inventory, and transactions must remain consistent, accurate, and reliable.
+
+🎯 Project Objectives
+
+The primary goals of this project were:
+
+Understand relational database design and relationships.
+Retrieve and filter data using SQL queries.
+Enforce data integrity using constraints.
+Improve query performance using indexes.
+Combine data from multiple tables using joins.
+Generate business insights through aggregations and conditional logic.
+Understand transaction management and ACID properties.
+Translate business requirements into SQL-based solutions.
+
+🗄️ Database Schema
+
+The database consists of four interconnected tables:
+
+1. Customers
+
+Stores customer information such as:
+
+Customer ID
+First Name
+Last Name
+Email
+City
+State
+Join Date
+Premium Membership Status
+Business Purpose
+
+Used for customer profiling, segmentation, and retention analysis.
+
+2. Products
+
+Stores product catalog details:
+
+Product ID
+Product Name
+Category
+Brand
+Unit Price
+Stock Quantity
+Business Purpose
+
+Supports inventory management and product performance analysis.
+
+3. Orders
+
+Stores order-level transaction information:
+
+Order ID
+Customer ID
+Order Date
+Order Status
+Total Amount
+Business Purpose
+
+Tracks customer purchases and order lifecycle.
+
+4. Order_Items
+
+Stores product-level information for each order:
+
+Item ID
+Order ID
+Product ID
+Quantity
+Unit Price
+Discount Percentage
+Business Purpose
+
+Provides detailed sales and revenue information.
+
+🛠️ SQL Concepts Implemented
+Data Retrieval
+
+Implemented:
+
+SELECT
+DISTINCT
+WHERE
+ORDER BY
+BETWEEN
+Logical Operators (AND, OR, NOT)
+Database Constraints
+
+Studied and validated:
+
+Primary Key
+
+Ensures every record has a unique identity.
+
+Foreign Key
+
+Maintains relationships between tables.
+
+Unique Constraint
+
+Prevents duplicate values such as customer emails.
+
+NOT NULL Constraint
+
+Ensures mandatory fields are always populated.
+
+CHECK Constraint
+
+Validates business rules such as positive product pricing.
+
+Query Optimization
+
+Implemented and analyzed:
+
+Indexes
+Query Filtering
+SARGable Queries
+Execution Plans using EXPLAIN
+Example
+
+Instead of forcing MySQL to scan the entire table, indexed columns were used to quickly locate matching records, improving query performance.
+
+Joins and Relationships
+
+Implemented:
+
+INNER JOIN
+
+Combines matching records from multiple tables.
+
+LEFT JOIN
+
+Returns all customers, including those without orders.
+
+RIGHT JOIN
+
+Returns all orders even if matching customer data is unavailable.
+
+FULL OUTER JOIN
+
+Simulated using UNION since MySQL does not support it directly.
+
+Conditional Logic
+
+Implemented CASE statements for:
+
+Customer Segmentation
+Product Classification
+Business Reporting
+
+Example:
+
+Products were classified into:
+
+Budget
+Mid-Range
+Premium
+
+based on price.
+
+Aggregation & Reporting
+
+Implemented:
+
+COUNT()
+SUM()
+AVG()
+GROUP BY
+Conditional Aggregation
+
+Used to generate business insights from transactional data.
+
+Transactions & ACID Properties
+
+Implemented:
+
+START TRANSACTION;
+COMMIT;
+ROLLBACK;
+
+Studied:
+
+Atomicity
+Consistency
+Isolation
+Durability
+
+using real-world e-commerce scenarios.
+
+📊 Business Questions Solved
+
+The project answers several business-focused questions including:
+
+Customer Analysis
+Identify premium and regular customers.
+Retrieve customer details.
+Analyze customer purchase history.
+Product Analysis
+Classify products by price range.
+Analyze inventory constraints.
+Validate pricing rules.
+Order Analysis
+Track order status.
+Compare delivered vs non-delivered orders.
+Monitor customer order activity.
+Sales Analysis
+Analyze product-level revenue.
+Evaluate discount impact.
+Generate operational insights.
+🚀 Beyond the Assignment Requirements
+
+To make the project more practical and business-oriented, several enhancements were added beyond the questions asked.
+
+1. Customer Segmentation
+
+While solving the LEFT JOIN problem, customers were additionally classified as:
+
+Premium Customers
+Regular Customers
+
+using:
+
+CASE
+    WHEN is_premium = 1 THEN 'Premium'
+    ELSE 'Regular'
+END
+Why?
+
+This helps businesses identify high-value customers and personalize marketing strategies.
+
+2. Revenue & Discount Analytics
+
+For the multi-table JOIN task, additional metrics were calculated:
+
+Gross Revenue
+Net Revenue
+Discount Saved
+Why?
+
+These metrics are commonly used in real-world sales dashboards to evaluate:
+
+Revenue generation
+Discount effectiveness
+Customer savings
+Product profitability
+3. Delivery Performance KPI
+
+Beyond counting delivered and non-delivered orders, an additional KPI was calculated:
+
+Delivery Success Rate
+
+This provides a quick measure of operational efficiency and order fulfillment performance.
+
+4. Business-Oriented ACID Examples
+
+Instead of using generic banking examples, ACID properties were explained using:
+
+Order Placement
+Inventory Updates
+Product Stock Management
+Concurrent Purchases
+
+This made the concepts more relevant to the project domain.
+
+5. Query Performance Awareness
+
+The project goes beyond query writing by discussing:
+
+Index Usage
+Full Table Scans
+SARGable Query Design
+Query Optimization
+
+This reflects practical database engineering considerations.
+
+6. Constraint Validation Through Error Testing
+
+Instead of only describing constraints, multiple violations were intentionally tested:
+
+Duplicate Email
+
+Generated:
+
+Error Code: 1062
+Duplicate entry
+Invalid Foreign Key Reference
+
+Generated:
+
+Error Code: 1452
+Foreign key constraint fails
+CHECK Constraint Violation
+
+Generated:
+
+Error Code: 3819
+Check constraint violated
+
+This helped verify how databases maintain data integrity.
+
+📈 Key Business Insights Generated
+Customer Insights
+Premium customers can be identified separately from regular customers.
+Customer purchase behavior can be analyzed through order history.
+Sales Insights
+Revenue can be measured at the product level.
+Discounts have a measurable impact on net sales.
+Operational Insights
+Delivery success rate can be used as a performance KPI.
+Transaction management prevents inventory inconsistencies.
+Data Quality Insights
+Constraints protect the system from invalid and duplicate data.
+Foreign keys ensure referential integrity between tables.
+💡 Key Learnings
+
+Through this project I gained practical experience in:
+
+Relational Database Design
+SQL Query Writing
+Query Optimization
+Indexing Strategies
+Data Integrity Management
+Transaction Handling
+Business-Oriented Data Analysis
+Converting Business Problems into SQL Solutions
+
+Most importantly, this project helped bridge the gap between writing SQL queries and using SQL as a tool for business decision-making.
+
+🧰 Tools & Technologies
+MySQL Server 8.0
+MySQL Workbench
+SQL
+✅ Conclusion
+
+This project demonstrates how SQL can be used not only for data retrieval but also for ensuring data integrity, improving query performance, supporting business decisions, and managing transactional systems.
+
+Rather than focusing solely on query syntax, the project emphasizes practical problem-solving, business reporting, data validation, and database reliability—skills that are essential in Data Engineering, Analytics, and Backend Data Systems.
