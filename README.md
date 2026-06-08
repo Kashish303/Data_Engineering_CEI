@@ -1,3 +1,8 @@
+<img width="1600" height="900" alt="data_upload5" src="https://github.com/user-attachments/assets/03977cc5-2172-4b6f-b768-10204946342a" />
+<img width="1600" height="900" alt="data_upload4" src="https://github.com/user-attachments/assets/57985145-23c5-49f8-a3ea-07aed38e86b7" />
+<img width="980" height="788" alt="data_upload3" src="https://github.com/user-attachments/assets/878bb725-5929-4d7c-903f-e2fe27407b33" />
+<img width="1600" height="900" alt="data_upload2" src="https://github.com/user-attachments/assets/899f167b-50f8-48b7-88d9-afeb7b4d1b88" />
+<img width="1600" height="900" alt="data_upload1" src="https://github.com/user-attachments/assets/f69d41c5-b047-45f0-a84a-2a600ce7c002" />
 # Week 2 – SQL Projects 
 
 ## Overview
