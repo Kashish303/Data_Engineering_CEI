@@ -270,7 +270,7 @@ Transaction management was implemented using:
 START TRANSACTION;
 COMMIT;
 ROLLBACK;
-
+```
 A complete order-processing workflow was simulated where:
 
 New orders were created.
@@ -317,7 +317,8 @@ Query Optimization
 Transaction Handling
 Database Reliability Concepts
 Business-Oriented Data Analysis
-📊 Project 2: Superstore Sales Analysis using SQL
+
+# 📊 Project 2: Superstore Sales Analysis using SQL
 Objective
 
 The objective of this project was to analyze a retail sales dataset using SQL and transform raw transactional data into actionable business insights.
