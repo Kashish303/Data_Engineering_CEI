@@ -94,415 +94,493 @@ These enhancements were added to demonstrate analytical thinking and practical S
 
 # 🛒 Project 1: ShopEase E-Commerce Database Analysis
 
-## Objective
+cat > /mnt/user-data/outputs/Week2_README_Final.md << 'READMEEOF'
+# 🛒 Week 2 — E-Commerce Sales Database Analysis using SQL
 
-The objective of this project was to design and analyze a relational e-commerce database while applying core database concepts such as constraints, indexing, joins, transactions, and ACID properties.
-
-Rather than focusing only on query writing, the project was aimed at understanding how databases support customer management, inventory tracking, order processing, reporting, and business operations.
-
----
-
-## Database Schema
-
-The database consists of four interconnected tables:
-
-### Customers
-
-Stores customer information such as:
-
-- Customer ID
-- First Name
-- Last Name
-- Email
-- City
-- State
-- Join Date
-- Premium Membership Status
-
-### Products
-
-Stores product catalog information including:
-
-- Product ID
-- Product Name
-- Category
-- Brand
-- Unit Price
-- Stock Quantity
-
-### Orders
-
-Stores order-level transaction information including:
-
-- Order ID
-- Customer ID
-- Order Date
-- Order Status
-- Total Amount
-
-### Order Items
-
-Stores product-level information for each order including:
-
-- Item ID
-- Order ID
-- Product ID
-- Quantity
-- Unit Price
-- Discount Percentage
-
-The schema was designed using Primary Keys and Foreign Keys to maintain relationships and ensure referential integrity across the database.
+> **Celebal Excellence Internship (CEI '26) — Data Engineering Track**  
+> **Intern:** Kashish Soni | SKIT Jaipur | B.Tech CSE 2022–2026  
+> **Week 2 Assignment:** SQL Basics, Filtering, Aggregation, Joins & Transactions
 
 ---
 
-## SQL Concepts Implemented
+## 📌 Objective
 
-### Data Retrieval & Filtering
+Design and query a relational database for **ShopEase** — a mid-sized Indian e-commerce company — to extract meaningful business insights about customers, products, orders, and sales performance using SQL.
 
-Various SQL queries were written to retrieve, filter, and analyze data.
-
-Techniques used:
-
-- SELECT
-- DISTINCT
-- WHERE
-- ORDER BY
-- BETWEEN
-- Logical Operators
-
-These queries helped answer business questions related to customers, products, and orders.
+The goal was not just to write correct queries, but to write queries that reflect **real-world data engineering thinking** — understanding why a constraint exists, when an index helps, and how a transaction protects business data.
 
 ---
 
-### Database Constraints
+## 🗄️ Database Schema
 
-Different constraints were explored and validated, including:
+The database `business` consists of **4 interrelated tables** designed with proper constraints, indexes, and foreign key relationships.
 
-#### Primary Key
+```
+customers  ──(1:N)──▶  orders
+orders     ──(1:N)──▶  order_items
+products   ──(1:N)──▶  order_items
+```
 
-Ensures that every record has a unique identifier.
+| Table | Primary Key | Records Inserted |
+|---|---|---|
+| customers | customer_id | 8 |
+| products | product_id | 8 |
+| orders | order_id | 10 |
+| order_items | item_id | 15 |
 
-#### Foreign Key
+### Foreign Key Relationships
 
-Maintains relationships between tables and prevents orphan records.
-
-#### UNIQUE Constraint
-
-Prevents duplicate values such as customer email addresses.
-
-#### NOT NULL Constraint
-
-Ensures mandatory fields always contain values.
-
-#### CHECK Constraint
-
-Validates business rules such as positive product pricing and stock values.
-
-Constraint violations were intentionally tested to observe how the database protects data integrity.
-
----
-
-### Joins & Relationships
-
-Multiple JOIN operations were implemented to combine data stored across different tables.
-
-Examples included:
-
-- Displaying customer details along with their orders.
-- Listing all customers including those without orders.
-- Retrieving product-level details for every order.
-- Combining customer, order, and product information into a single report.
-
-This demonstrated how relational databases connect data across multiple entities.
+| Child Table | Foreign Key | References | Purpose |
+|---|---|---|---|
+| orders | customer_id | customers(customer_id) | Every order must belong to a real customer |
+| order_items | order_id | orders(order_id) | Every item must belong to a real order |
+| order_items | product_id | products(product_id) | Every item must reference a real product |
 
 ---
 
-### Query Optimization
-
-Indexes were studied and implemented to improve query performance.
-
-The EXPLAIN statement was used to analyze query execution plans and understand how MySQL processes data retrieval operations.
-
-This introduced practical concepts such as:
-
-- Full Table Scans
-- Index Lookups
-- Query Cost Reduction
-- SARGable Query Design
+# What Was Done — Section by Section
 
 ---
 
-### Conditional Logic
+### 📘 Section A — SQL Basics
 
-CASE statements were used to generate business-oriented classifications.
+This section covered data retrieval, schema understanding, and constraint behavior. Rather than simply writing SELECT queries, each constraint was **practically tested** by running actual INSERT statements that violate the rules — and the real MySQL error codes were captured and documented inside the SQL file.
 
-Examples included:
+For Q6, an important observation was noted: the schema uses `CHECK (unit_price > 0)` — strictly greater than zero, not greater than or equal to zero. This was intentional — a product priced at ₹0 would appear as free to customers and corrupt all revenue calculations. Understanding **why** a constraint is designed a certain way shows deeper schema awareness than just knowing what it does.
 
-- Premium vs Regular Customers
-- Product Price Classification
-- Business Reporting Categories
-
-This helped transform raw data into meaningful business information.
+**Questions Covered:** SELECT *, column selection, DISTINCT, Primary Key explanation, UNIQUE + NOT NULL constraint testing, CHECK constraint violation.
 
 ---
 
-### Aggregation & Reporting
+### 📗 Section B — Filtering & Optimization
 
-Aggregate functions were used to generate business insights.
+This section went beyond basic WHERE clauses into **query performance** and **index behavior** — topics that matter enormously in production data engineering.
 
-Functions used:
-
-- COUNT()
-- SUM()
-- AVG()
-- GROUP BY
-- Conditional Aggregation
-
-These queries helped analyze customer activity, sales performance, and operational KPIs.
-
----
-
-### Transactions & ACID Properties
-
-Transaction management was implemented using:
+The most significant concept explored here was **SARGable query writing**. When MySQL encounters `YEAR(join_date) = 2024`, it cannot use the index on `join_date` because the function wraps the column — forcing a Full Table Scan across every row. The fix is to rewrite the condition as a date range:
 
 ```sql
-START TRANSACTION;
-COMMIT;
-ROLLBACK;
+WHERE join_date >= '2024-01-01'
+AND join_date < '2025-01-01'
 ```
-A complete order-processing workflow was simulated where:
 
-New orders were created.
-Order items were inserted.
-Inventory levels were updated.
+This keeps the column untouched on one side of the comparison, allowing the B-Tree index to jump directly to matching records — reducing complexity from **O(n)** to **O(log n)**. The difference was verified using MySQL's `EXPLAIN` command, which clearly showed `type: ALL` (full scan) for the bad query and `type: range` (index used) for the rewritten version.
 
-ROLLBACK scenarios were also tested to ensure database consistency when errors occur.
+This same SARGable principle was proactively applied in Q9 as well — before the question even asked for it — demonstrating that the concept was genuinely understood, not just answered in isolation.
 
-ACID properties were explained using real-world e-commerce examples such as inventory updates, concurrent purchases, and order placement.
+**Questions Covered:** Basic filtering, multi-condition WHERE, date range filtering, BETWEEN, index explanation with EXPLAIN proof, SARGable rewrite.
 
-Additional Enhancements
+---
 
-To go beyond the assignment requirements, additional business-focused analysis was performed:
+### 📙 Section C — Aggregation
 
-Customer Segmentation
+This section covered GROUP BY, aggregate functions, and the critical difference between WHERE and HAVING. Every aggregation query was written with meaningful aliases and ORDER BY clauses to make results readable as actual business reports.
 
-Customers were classified as:
+Two bonus observations were added that were not required by the questions:
 
-Premium Customers
-Regular Customers
+In Q16, it was noted that Shipped orders have a **higher average order value (₹6,798)** than Delivered orders (₹2,865). This means the highest-value orders are still in transit — a meaningful business monitoring signal that would normally come from a data analyst's report, not a SQL exercise.
 
-using CASE statements.
+In Q17, a `price_range` column was added (`MAX - MIN`) to show how wide the pricing spread is within each category. Clothing has the highest variation at ₹3,800 — meaning it serves both budget and premium customers, making it the most diverse category in the catalog.
 
-Revenue & Discount Analytics
+In Q13, two methods were shown for counting orders — `COUNT(*)` and `COUNT(order_id)` — with an explanation of when each is appropriate and why the Primary Key approach guarantees uniqueness.
 
-Additional metrics were calculated:
+**Questions Covered:** COUNT, SUM, AVG, GROUP BY, ORDER BY, MAX/MIN, HAVING vs WHERE.
 
-Gross Revenue
-Net Revenue
-Discount Saved
-Delivery Success Rate KPI
+---
 
-An additional KPI was calculated to measure operational efficiency and order fulfillment performance.
+### 📕 Section D — Joins & Relationships
 
-Constraint Validation Through Error Testing
+Joins are the most critical SQL skill for data engineering, and this section was treated accordingly. Every join query was written with table aliases, and the reasoning behind each join type was documented clearly.
 
-Multiple constraint violations were intentionally tested to observe database behavior and error handling.
+For Q20, a CASE statement was embedded inside the LEFT JOIN query to label each customer as `Premium` or `Regular` based on the `is_premium` column. This was not required — but it transformed a basic join result into a **customer segmentation report**.
 
-Skills Demonstrated
-Relational Database Design
-SQL Query Writing
-Data Integrity Management
-Query Optimization
-Transaction Handling
-Database Reliability Concepts
-Business-Oriented Data Analysis
+For Q21, the question asked for a 3-table join. A second version was written that joins all **4 tables** and calculates three additional business metrics:
+
+- `gross_amount` — total before discount
+- `net_amount` — actual amount paid after discount  
+- `discount_saved` — how much each customer saved
+
+This mirrors the structure of a real e-commerce revenue report used in data pipelines — the kind of query that feeds a Power BI dashboard or a Databricks notebook.
+
+For Q22, an important MySQL limitation was addressed and solved: **MySQL does not support FULL OUTER JOIN natively**. It was simulated using `LEFT JOIN UNION RIGHT JOIN` — a standard workaround used in production environments.
+
+For Q23, the Foreign Key violation was not just explained — it was actually triggered by running an INSERT with `customer_id = 999`, and the real MySQL Error Code 1452 was captured and included. This proves the constraint was tested, not just described.
+
+**Questions Covered:** INNER JOIN, LEFT JOIN with CASE, 3-table + 4-table JOIN, LEFT vs RIGHT vs FULL OUTER JOIN simulation with UNION, Foreign Key violation demonstration.
+
+---
+
+### 📓 Section E — Advanced Concepts
+
+This section covered conditional logic, ACID properties, and transaction management — the most conceptually demanding part of the assignment.
+
+For Q25, beyond the required delivered vs not-delivered count, a `delivery_success_rate` column was calculated and formatted as a percentage. This is a real **business KPI** — the kind of metric tracked in operations dashboards — calculated directly inside SQL without any post-processing.
+
+For Q26, instead of using the generic bank transfer example that the question suggested, the ACID properties were explained using **ShopEase's own tables and constraints**. Each property was tied to a scenario involving orders, stock, and payments within this exact schema — showing that the concepts were understood in context, not memorized in isolation. MySQL's default isolation level (**REPEATABLE READ**) was also mentioned, which prevents dirty reads and phantom reads in concurrent transactions.
+
+For Q27, two complete transaction blocks were written:
+
+The first demonstrates a **successful transaction** — inserting a new order, two order items, and updating stock quantities for both products, ending with COMMIT. Before committing, a SELECT was included to verify stock changes were correct.
+
+The second demonstrates a **deliberate failure** — an order item is inserted with `product_id = 999` which does not exist, triggering a Foreign Key violation and causing the entire transaction to ROLLBACK. A SELECT after the ROLLBACK confirms that no partial data remains — proving that atomicity worked correctly.
+
+A note was also included explaining why ROLLBACK cannot be used inside Functions — only inside Procedures. Functions are deterministic calculators designed to return a value without side effects. Procedures are action performers designed to modify the database. This distinction is commonly misunderstood and was proactively documented.
+
+**Questions Covered:** CASE for price tiers, CASE inside SUM for conditional aggregation, ACID with ShopEase-specific examples, complete COMMIT + ROLLBACK transaction blocks.
+
+---
+
+## 💡 Key Technical Highlights
+
+**SARGable query writing** was applied proactively across two questions — not just where asked — by consistently using date ranges instead of functions on indexed columns. This demonstrates awareness of how query patterns affect execution plans in large datasets.
+
+**FULL OUTER JOIN simulation** using `LEFT JOIN UNION RIGHT JOIN` addresses a real MySQL limitation that most beginners are unaware of. This pattern is used in production data reconciliation pipelines.
+
+**Conditional aggregation** using `CASE` inside `SUM` is a standard technique in data engineering for building pivot-style reports within a single SQL query — far more efficient than running multiple subqueries.
+
+**Both COMMIT and ROLLBACK were demonstrated practically** — not just written theoretically. The ROLLBACK example was deliberately triggered using a Foreign Key violation, and the result was verified with a SELECT to confirm no partial data was stored.
+
+**Real MySQL error codes were captured throughout** — Error 1062 for duplicate email, Error 3819 for CHECK constraint violation, Error 1452 for Foreign Key violation. Every rule was tested, not just described.
+
+---
 
 # 📊 Project 2: Superstore Sales Analysis using SQL
-Objective
+📌 Objective
 
-The objective of this project was to analyze a retail sales dataset using SQL and transform raw transactional data into actionable business insights.
+Analyze retail sales data using SQL and transform raw transactional records into meaningful business insights.
 
-The project was designed to simulate a real-world business analytics workflow covering sales performance, customer behavior, profitability analysis, customer retention, and data quality validation.
+The goal of this project was not only to write SQL queries, but also to understand how businesses use data to evaluate performance, identify growth opportunities, monitor profitability, and support decision-making.
 
-Analysis Workflow
-1. Data Exploration
+The project follows a complete analytics workflow beginning with data exploration, followed by filtering, aggregation, ranking analysis, business use cases, and final data validation.
 
-The dataset was first explored to understand its structure, quality, and completeness.
+🔍 Step 1 — Data Loading
 
-Activities performed:
+The Superstore dataset was imported into a SQL database and stored inside the superstore_sales table.
 
-Schema Analysis
+Before beginning any analysis, the dataset was verified to ensure that all records and columns were imported successfully.
+
+This step is critical because any issue during data ingestion can affect all downstream analysis.
+
+📗 Step 2 — Data Exploration
+
+This section focused on understanding the structure, quality, and contents of the dataset before performing any business analysis.
+
+The following activities were performed:
+
 Sample Record Inspection
 Row Count Validation
+Column Identification
+Region Exploration
+Category Exploration
 Date Range Analysis
-Region Identification
 NULL Value Audit
+⭐ Notable Implementation — NULL Audit
 
-This step ensured the dataset was suitable for analysis before generating insights.
+Before generating any insights, a dedicated NULL value audit was performed on critical business columns such as:
 
-2. Filtering Analysis
+Order ID
+Order Date
+Customer ID
+Product ID
+Sales
+Profit
 
-Business-oriented filtering was performed using WHERE clauses.
+This step helps ensure that aggregations and business reports are based on complete and reliable data.
 
-Analysis included:
+In real-world analytics projects, data quality verification is often performed before any reporting or dashboard development begins.
 
+⭐ Notable Implementation — Date Range Analysis
+
+The earliest and latest order dates were identified to understand the time span covered by the dataset.
+
+This provides context for trend analysis and ensures that future comparisons are performed within the correct time period.
+
+📘 Step 3 — Filtering Analysis
+
+This section focused on extracting meaningful subsets of data using the WHERE clause.
+
+Instead of analyzing the entire dataset at once, business-focused filters were applied to isolate specific transactions, customer groups, and product categories.
+
+Questions Covered
 Region-wise Analysis
 Category-wise Analysis
-Date Range Analysis
 High-Value Transactions
-Discount-Based Analysis
 Loss-Making Orders
+Discount-Based Analysis
 Combined Business Filters
+⭐ Notable Implementation — High Sales but Negative Profit Investigation
 
-These queries helped identify meaningful subsets of data and uncover hidden business patterns.
+A dedicated query was written to identify transactions generating strong revenue but negative profit.
 
-3. Aggregation & Reporting
+This analysis highlights an important business reality:
 
-GROUP BY and aggregate functions were used to summarize transactional data into meaningful business metrics.
+High sales do not always translate into high profitability.
 
-Analysis included:
+Such transactions often indicate:
 
-Regional Performance
-Category Performance
+Excessive discounting
+High shipping costs
+Pricing inefficiencies
+Operational losses
+
+This type of analysis is commonly performed by business analysts to identify revenue leakage and profitability issues.
+
+⭐ Notable Implementation — Heavy Discount Analysis
+
+Transactions with discounts greater than 30% were isolated and analyzed separately.
+
+This helps evaluate whether aggressive discounting strategies are driving sustainable business growth or simply reducing profit margins.
+
+⭐ Business Insight
+
+Filtering enables organizations to focus on specific areas of interest rather than analyzing the entire dataset.
+
+Examples include:
+
+Investigating underperforming regions
+Monitoring high-value customers
+Evaluating discount effectiveness
+Identifying loss-making transactions
+📙 Step 4 — Aggregation & Reporting
+
+This section focused on transforming thousands of transactional records into meaningful business metrics using GROUP BY and aggregate functions.
+
+The following functions were extensively used:
+
+SUM()
+AVG()
+COUNT()
+ROUND()
+GROUP BY
+HAVING
+Questions Covered
+Regional Performance Analysis
+Category Performance Analysis
 Sub-Category Profitability
 Customer Segment Analysis
-Revenue Contribution Analysis
-Profit Margin Calculations
+HAVING Clause
+⭐ Notable Implementation — Profitability Classification using CASE
 
-This transformed thousands of individual transactions into easy-to-understand business reports.
+Instead of displaying only numerical profit values, a CASE statement was used to classify business performance into categories:
 
-4. Profitability Classification
+LOSS-MAKING
+LOW MARGIN
+HEALTHY
+STAR
 
-CASE statements were used to classify business performance into categories such as:
+This converts raw numerical data into business-friendly performance indicators that are easier for stakeholders to understand.
 
-Loss-Making
-Low Margin
-Healthy
-Star Performer
+⭐ Notable Implementation — Revenue vs Profit Analysis
 
-This helped identify which business units were creating value and which required improvement.
+The analysis demonstrated that categories generating high revenue do not necessarily generate high profits.
 
-5. Ranking Analysis
+This highlights the importance of evaluating:
 
-ORDER BY and LIMIT were used to identify top and bottom performers.
+Revenue
+Profit
+Profit Margin
 
-Analysis included:
+together rather than relying on a single metric.
 
+⭐ Notable Implementation — Customer Segment Analysis
+
+Customer segments were compared using:
+
+Total Customers
+Total Orders
+Total Revenue
+Average Order Value
+Profit Margin
+
+This helps organizations identify which customer groups generate the highest value and deserve greater marketing focus.
+
+⭐ HAVING Clause Demonstration
+
+The HAVING clause was used to filter aggregated results after grouping.
+
+This demonstrated the difference between:
+
+WHERE
+
+which filters rows before aggregation,
+
+and
+
+HAVING
+
+which filters groups after aggregation.
+
+📕 Step 5 — Ranking Analysis
+
+This section focused on identifying the most important contributors to business performance using ORDER BY and LIMIT.
+
+Questions Covered
 Top Customers by Revenue
 Top Products by Sales
-Most Profitable Products
-Least Profitable Products
-Top Performing States
+Bottom Products by Profit
+Top States by Revenue
+⭐ Notable Implementation — Customer Revenue Ranking
 
-This helped identify key revenue drivers within the business.
+Customers were ranked based on:
 
-6. Business Use Cases
+Revenue Generated
+Order Frequency
+Profit Contribution
 
-Several practical business scenarios were implemented.
+This helps identify high-value customers who contribute significantly to business growth.
 
+⭐ Notable Implementation — Product Performance Analysis
+
+Products were evaluated using:
+
+Sales
+Quantity Sold
+Profit
+
+This provides a more complete view of product performance than sales alone.
+
+⭐ Business Insight
+
+Revenue alone cannot determine success.
+
+A product may generate strong sales while simultaneously reducing profitability.
+
+Therefore, revenue, profit, and profit margin should always be analyzed together.
+
+📓 Step 6 — Business Use Cases
+
+This section moved beyond standard SQL exercises and focused on solving practical business problems.
+
+Questions Covered
 Monthly Sales Trend Analysis
-
-Sales and profit were analyzed over time to identify growth patterns and seasonal trends.
-
 Customer Retention Analysis
+Duplicate Order Investigation
+⭐ Notable Implementation — Monthly Sales Trend Analysis
 
-Customers were classified as:
+Sales and profit were analyzed month-by-month to identify:
+
+Growth Patterns
+Seasonal Trends
+Revenue Fluctuations
+
+Trend analysis helps organizations forecast future performance and plan inventory, marketing, and operational strategies.
+
+⭐ Notable Implementation — Customer Retention Classification
+
+Customers were segmented into:
 
 One-Time Buyers
 Occasional Buyers
 Loyal Customers
 
-to evaluate customer loyalty and long-term revenue contribution.
+based on purchasing frequency.
 
-Duplicate Order Investigation
+This mirrors customer retention analysis commonly performed in CRM and marketing systems.
 
-Repeated order IDs were analyzed to determine whether they represented true duplicates or legitimate multi-product transactions.
+⭐ Notable Implementation — Duplicate Investigation
 
-This demonstrated the importance of understanding business context before making assumptions about data quality.
+Order IDs appearing multiple times were analyzed to determine whether they represented:
 
-7. Data Validation & Quality Checks
+True Duplicate Records
+Legitimate Multi-Product Orders
 
-Before generating final insights, dedicated validation checks were performed.
+This demonstrates the importance of understanding business context before treating repeated records as data-quality issues.
 
-These included:
+⭐ Business Insight
 
+Customer retention is often more profitable than customer acquisition.
+
+Loyal customers typically generate higher lifetime value and contribute significantly to long-term revenue.
+
+📒 Step 7 — Data Validation & Quality Checks
+
+Before generating final conclusions, dedicated validation checks were performed.
+
+Validation Activities
+Dataset Summary Verification
 Missing Value Detection
-Duplicate Record Analysis
-Invalid Data Checks
-Dataset Consistency Verification
+Invalid Data Detection
 Revenue Validation
+Consistency Checks
+⭐ Notable Implementation — Impossible Value Detection
 
-This ensured that business conclusions were based on reliable and accurate data.
+Special validation rules were written to identify records that violate expected business logic.
 
-Additional Enhancements
+Examples checked:
 
-To make the project more comprehensive and business-focused, several additional analyses were performed beyond the assignment requirements.
+Negative Sales
+Zero Quantity
+Discounts Greater Than 100%
+
+Such records may indicate:
+
+Data Entry Errors
+ETL Issues
+Data Quality Problems
+⭐ Notable Implementation — Dataset Summary Validation
+
+A high-level dataset summary was generated including:
+
+Total Revenue
+Total Profit
+Total Units Sold
+Unique Orders
+Unique Customers
+Unique Products
+
+This acts as a final validation step before reporting.
+
+⭐ Business Insight
+
+Data validation is one of the most important stages of analytics.
+
+Business decisions should only be made after confirming that the underlying data is complete, consistent, and reliable.
+
+🚀 Beyond Assignment Requirements
+
+Several additional analyses were performed beyond the assignment requirements:
 
 Customer Retention Classification
 
-Customers were segmented based on purchase frequency to identify loyal and high-value customers.
+Customers were segmented into loyalty categories based on purchasing frequency.
 
 Product Profitability Classification
 
-Products and categories were evaluated based on revenue and profit margins.
+Products were categorized as:
+
+LOSS-MAKING
+LOW MARGIN
+HEALTHY
+STAR
+
+using CASE statements.
 
 High Sales vs Low Profit Investigation
 
-Transactions generating strong revenue but weak profitability were identified and analyzed.
+A dedicated analysis was performed to identify products generating revenue but failing to generate profit.
 
 Revenue Contribution Analysis
 
-Different business segments were compared based on their contribution to total revenue.
+Different business segments were compared based on their contribution to overall revenue.
 
 Data Quality Auditing
 
 Additional validation checks were performed to improve confidence in analytical results.
 
-Skills Demonstrated
-SQL Analytics
-Business Intelligence Reporting
-Data Validation
-Customer Behavior Analysis
+💡 Key Learnings
+
+Through this project I gained practical experience in:
+
+SQL Query Writing
+Data Exploration
+Business-Oriented Filtering
+Aggregation & Reporting
+Customer Analytics
 Profitability Analysis
 Trend Analysis
-Business Insight Generation
-SQL Concepts Practiced Across Both Projects
-Data Retrieval & Filtering
-SELECT
-WHERE
-DISTINCT
-ORDER BY
-LIMIT
-Aggregation & Reporting
-GROUP BY
-HAVING
-Aggregate Functions
-Conditional Logic
-CASE Statements
-Conditional Aggregation
-Database Relationships
-INNER JOIN
-LEFT JOIN
-RIGHT JOIN
-FULL OUTER JOIN Simulation
-Database Design & Optimization
-Primary Keys
-Foreign Keys
-Constraints
-Indexing
-Query Optimization
-EXPLAIN
-Transactions & Reliability
-START TRANSACTION
-COMMIT
-ROLLBACK
-ACID Properties
 Data Validation
-Missing Value Checks
-Duplicate Detection
-Data Quality Audits
-Key Learnings
+Business Intelligence Reporting
+
+Most importantly, this project helped b
 
 These projects helped me understand how SQL is used beyond simple querying and how databases support both operational systems and analytical decision-making.
 
