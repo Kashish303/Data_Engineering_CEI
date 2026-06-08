@@ -1,4 +1,4 @@
-# Week 2 – SQL Projects Portfolio
+# Week 2 – SQL Projects 
 
 ## Overview
 
