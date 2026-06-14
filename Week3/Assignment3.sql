@@ -236,6 +236,24 @@ HAVING COUNT(*) > 1;
 -- Therefore no natural primary key exists for the orders table.
 
 
+
+-- DATA VALIDATION SUMMARY
+-- ==============================================
+-- Checks performed  : 12
+-- Null values found : 0 (clean dataset)
+-- Negative sales    : 0
+-- Duplicate Row IDs : 0
+-- Orders with loss  : 2749 rows have negative profit
+-- Date range        : 2014-01-03 to 2017-12-30
+-- Product ID issue  : 30 Product IDs map to multiple names
+--                     (documented, PK not enforced)
+-- Conclusion        : Dataset is clean for sales analysis.
+--                     Product dimension has quality issues
+--                     that must be noted in downstream joins.
+-- ==============================================
+
+
+
 -- -------------------------------------------
 -- PART 4 : PERFORM REQUIRED QUERIES
 -- -------------------------------------------
@@ -352,6 +370,17 @@ ORDER BY Sales DESC;
 -- While both achieve similar results, Query 2 is generally more scalable and performs better on larger datasets.
 
 
+-- PERFORMANCE NOTE:
+-- The correlated subquery (commented above) executes once per
+-- customer row — meaning 793 separate inner queries for 793 customers.
+-- At scale with millions of customers, this becomes a bottleneck.
+-- The standalone aggregation subquery used here computes MAX(Sales)
+-- per customer once and filters in a single pass — more efficient.
+-- In a production Databricks pipeline, the preferred approach would be
+-- DENSE_RANK() OVER (PARTITION BY Customer ID ORDER BY Sales DESC)
+-- filtered at rank = 1 — avoiding subqueries entirely.
+
+
 -- 3. Calculate total sales for each customer. (CTE) 
 WITH information AS(
 SELECT 
@@ -420,6 +449,13 @@ FROM information;
 -- Customer-level sales were aggregated using a CTE to separate business logic from ranking logic, improving query readability and scalability.
 -- DENSE_RANK() was chosen over ROW_NUMBER() and RANK() to provide fair and continuous ranking when multiple customers generate the same revenue.
 -- Revenue-based customer ranking is a common Business Intelligence technique used to identify high-value customers and optimize retention, loyalty, and growth strategies.
+
+-- WHY DENSE_RANK OVER RANK AND ROW_NUMBER:
+-- ROW_NUMBER() — always unique, arbitrary tiebreak for equal sales
+-- RANK()       — creates gaps (1,1,3) when ties exist
+-- DENSE_RANK() — no gaps (1,1,2), fair ranking for business reporting
+-- In a real CRM system, two customers with identical revenue
+-- should hold the same rank — DENSE_RANK achieves this correctly.
 
 
 
