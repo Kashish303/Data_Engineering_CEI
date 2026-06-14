@@ -517,7 +517,7 @@ FROM information;
 -- 1. Who are the top 5 customers?  
 WITH information AS (
 SELECT `Customer ID`,
-RPUND(SUM(Sales),2) AS totalSales
+ROUND(SUM(Sales),2) AS totalSales
 FROM orders
 GROUP BY `Customer ID`
 )
@@ -559,10 +559,10 @@ WHERE position <= 5;
 -- 3. Which customers made only one order?
 SELECT c.`Customer ID`,
 c.`Customer Name`,
-COUNT(DISTINCT `Order Id`) as cnt 
+COUNT(DISTINCT `Order ID`) as cnt 
 FROM orders o
 JOIN customers c
-ON o.`Customer Id` = c.`Customer ID`
+ON o.`Customer ID` = c.`Customer ID`
 GROUP BY c.`Customer ID`, c.`Customer Name`
 HAVING cnt = 1;
 
