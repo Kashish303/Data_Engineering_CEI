@@ -1,3 +1,8 @@
+<img width="1600" height="900" alt="Image5" src="https://github.com/user-attachments/assets/b9340691-0fc3-4260-ba3f-35306102dc47" />
+<img width="1600" height="900" alt="Image4" src="https://github.com/user-attachments/assets/e16eb7ae-fe52-4f78-a798-405023a54ed7" />
+<img width="1600" height="900" alt="Image3" src="https://github.com/user-attachments/assets/725b2f1b-e467-410b-9cd7-aa93d63dce2e" />
+<img width="1600" height="900" alt="Image2" src="https://github.com/user-attachments/assets/80922eaa-a569-42b7-bd67-5089e2f8adfc" />
+<img width="1600" height="900" alt="Image1" src="https://github.com/user-attachments/assets/cc291af3-4b42-400e-89f3-71535bea9432" />
 # 📊 Week - 3  Customer Sales Analysis & Data Modelling using SQL
 
 ## 📌 Objective
