@@ -1,0 +1,210 @@
+📊 Week - 3 Customer Sales Analysis & Data Modelling using SQL
+
+📌 Objective
+The objective of this project was to build a structured analytical workflow using SQL by transforming raw transactional sales data into meaningful customer insights.
+
+The project goes beyond basic querying and covers data validation, data quality assessment, relational data modelling, customer analytics, ranking analysis, and business-oriented reporting using advanced SQL concepts such as Subqueries, Common Table Expressions (CTEs), and Window Functions.
+
+The goal was not only to retrieve data but also to understand how SQL can be used to support business decision-making through customer-centric analytics.
+
+🛠️ Technologies Used
+SQL
+MySQL
+MySQL Workbench
+📂 Dataset Overview
+The project was built using the Superstore sales dataset containing customer, product, and transaction-level information.
+
+Key Attributes
+Customer Information
+Order Information
+Product Information
+Sales Metrics
+Profit Metrics
+Discounts
+Shipping Information
+The dataset contains nearly 10,000 transaction records representing customer purchases across multiple product categories and regions.
+
+🔄 Project Workflow
+1️⃣ Database Setup
+The project began by creating and configuring a dedicated database environment.
+
+Activities Performed
+Database Creation
+Data Import Validation
+Schema Verification
+This ensured the dataset was successfully loaded and ready for analysis.
+
+2️⃣ Data Validation & Data Quality Assessment
+Before performing any analysis, multiple validation checks were conducted to ensure data reliability.
+
+Validation Checks Performed
+Dataset Structure Validation
+Row Count Verification
+Distinct Order Analysis
+NULL Value Detection
+Duplicate Record Analysis
+Negative Sales Validation
+Negative Quantity Validation
+Date Range Verification
+Customer Data Validation
+Key Findings
+No NULL values were found in critical business columns.
+Customer IDs were consistently mapped to customer names.
+No duplicate Row IDs were detected.
+Several duplicate Order ID and Product ID combinations were identified and investigated.
+Data Quality Insight
+Duplicate Order ID and Product ID combinations were not treated as data errors because detailed inspection revealed differences in sales, quantity, and profit values.
+
+These records represented valid transaction line items rather than duplicate transactions.
+
+3️⃣ Data Modelling
+To improve analytical flexibility, the raw dataset was transformed into a simplified relational structure.
+
+Tables Created
+Customers
+Stores customer-level information:
+
+Customer ID
+Customer Name
+Segment
+Products
+Stores product-related information:
+
+Product ID
+Product Name
+Category
+Sub-Category
+Orders
+Stores transactional sales information:
+
+Order ID
+Customer ID
+Product ID
+Sales
+Quantity
+Discount
+Profit
+Data Modelling Activities
+Primary Key Analysis
+Business Key Validation
+Duplicate Detection
+Data Type Optimization
+Key Finding
+Customer IDs were unique and suitable for primary key implementation.
+
+However, Product IDs were not completely unique. Investigation revealed that certain Product IDs were associated with multiple product descriptions, indicating source-data inconsistencies.
+
+As a result, Product ID was not enforced as a primary key.
+
+4️⃣ Advanced SQL Analysis
+The project demonstrates practical use of advanced SQL concepts to answer business questions.
+
+Subqueries
+Used to:
+
+Identify orders above average sales
+Compare customer performance against business benchmarks
+Retrieve customer-specific maximum sales values
+Common Table Expressions (CTEs)
+Used to:
+
+Create reusable analytical layers
+Simplify complex aggregations
+Improve query readability and maintainability
+Window Functions
+Implemented:
+
+DENSE_RANK()
+ROW_NUMBER()
+PARTITION BY
+These functions enabled customer ranking, revenue analysis, and purchase sequence tracking.
+
+📈 Customer Analytics Performed
+Total Sales by Customer
+Customer-level sales were aggregated to determine revenue contribution across the customer base.
+
+Insight
+Revenue was heavily concentrated among a relatively small group of customers.
+
+Above-Average Customers
+Customer sales were compared against average customer revenue.
+
+Insight
+Several customers generated significantly higher revenue than the overall customer average, making them strong candidates for retention and loyalty initiatives.
+
+Customer Ranking
+Customers were ranked using DENSE_RANK() based on total revenue generated.
+
+Insight
+Revenue-based ranking provides a structured view of customer contribution and helps identify strategic customers.
+
+Order Sequence Analysis
+ROW_NUMBER() and PARTITION BY were used to generate customer-specific purchase sequences.
+
+Insight
+Order sequencing enables customer journey analysis and repeat-purchase tracking.
+
+Top Customer Analysis
+Top-performing customers were identified using ranking-based approaches.
+
+Insight
+A small percentage of customers contributed a disproportionately large share of total sales, highlighting revenue concentration patterns.
+
+🎯 Mini Project: Customer Sales Insights
+The final phase of the project focused on customer-centric analytics, where transactional sales data was transformed into actionable business insights using advanced SQL techniques.
+
+Rather than simply retrieving records, the objective was to understand customer behavior, measure revenue contribution, identify high-value customers, and uncover patterns that can support data-driven business decisions.
+
+The analysis combined Aggregations, Subqueries, Common Table Expressions (CTEs), and Window Functions to answer practical business questions commonly encountered in Customer Analytics and Business Intelligence environments.
+
+📌 Business Questions Addressed
+1️⃣ Top Revenue-Generating Customers
+Customers were ranked based on their total sales contribution to identify the most valuable customers in the business.
+
+Business Impact
+High-value customers contribute a significant share of overall revenue. Identifying these customers helps organizations prioritize retention efforts, loyalty programs, and personalized marketing initiatives.
+
+2️⃣ Low-Contributing Customers
+Customers generating the lowest revenue were identified through ranking analysis.
+
+Business Impact
+Understanding low-performing customer segments helps businesses uncover engagement gaps and develop targeted reactivation strategies.
+
+3️⃣ One-Time Buyer Analysis
+Customer order frequency was analyzed to identify customers who placed only a single order.
+
+Business Impact
+One-time buyers often represent the highest churn-risk segment. Monitoring these customers enables businesses to improve repeat-purchase rates and customer retention.
+
+4️⃣ Above-Average Revenue Customers
+Customer-level sales were compared against overall average customer revenue.
+
+Business Impact
+This analysis provides a simple yet effective customer segmentation framework by distinguishing high-performing customers from the broader customer base.
+
+5️⃣ Peak Purchase Analysis
+The highest-value order placed by each customer was identified.
+
+Business Impact
+Peak purchase behavior reveals customer spending capacity and helps businesses identify opportunities for premium offerings, upselling, and personalized recommendations.
+
+⚙️ Advanced SQL Techniques Applied
+To make the analysis more scalable and business-oriented, advanced SQL concepts were incorporated throughout the project:
+
+Common Table Expressions (CTEs) for modular and reusable analytical logic
+Subqueries for benchmark-based comparisons
+DENSE_RANK() for customer ranking and performance analysis
+ROW_NUMBER() with PARTITION BY for customer purchase sequencing
+JOIN operations for integrating customer and transaction-level information
+
+📊 Key Analytical Findings
+Revenue is highly concentrated among a relatively small group of customers.
+Several customers generate substantially higher revenue than the overall customer average.
+One-time buyers represent a significant retention opportunity.
+Customer rankings provide a clear view of revenue contribution across the customer base.
+Peak order analysis highlights customers with strong purchasing power.
+
+🚀 Business Value Delivered
+This mini-project demonstrates how SQL can be used beyond traditional data retrieval to perform customer analytics, revenue analysis, and business reporting.
+
+By combining customer-level aggregations, ranking techniques, and benchmark comparisons, the project transforms raw transactional data into meaningful insights that can support customer retention strategies, revenue optimization, and strategic business decision-making.
