@@ -1,8 +1,186 @@
-<img width="1600" height="900" alt="data_upload5" src="https://github.com/user-attachments/assets/03977cc5-2172-4b6f-b768-10204946342a" />
-<img width="1600" height="900" alt="data_upload4" src="https://github.com/user-attachments/assets/57985145-23c5-49f8-a3ea-07aed38e86b7" />
-<img width="980" height="788" alt="data_upload3" src="https://github.com/user-attachments/assets/878bb725-5929-4d7c-903f-e2fe27407b33" />
-<img width="1600" height="900" alt="data_upload2" src="https://github.com/user-attachments/assets/899f167b-50f8-48b7-88d9-afeb7b4d1b88" />
-<img width="1600" height="900" alt="data_upload1" src="https://github.com/user-attachments/assets/f69d41c5-b047-45f0-a84a-2a600ce7c002" />
+Customer Sales Analysis & Data Modelling using SQL
+Objective
+
+The objective of this project was to build a structured analytical workflow using SQL by transforming raw transactional sales data into meaningful customer insights.
+
+The project goes beyond basic querying and covers data validation, data quality assessment, relational data modelling, customer analytics, ranking analysis, and business-oriented reporting using advanced SQL concepts such as Subqueries, Common Table Expressions (CTEs), and Window Functions.
+
+The goal was not only to retrieve data but also to understand how SQL can be used to support business decision-making through customer-centric analytics.
+
+Technologies Used
+SQL
+MySQL
+MySQL Workbench
+Dataset Overview
+
+The project was built using the Superstore sales dataset containing customer, product, and transaction-level information.
+
+Key Attributes
+Customer Information
+Order Information
+Product Information
+Sales Metrics
+Profit Metrics
+Discounts
+Shipping Information
+
+The dataset contains nearly 10,000 transaction records representing customer purchases across multiple product categories and regions.
+
+Project Workflow
+1. Database Setup
+
+The project began by creating and configuring a dedicated database environment.
+
+Activities Performed
+Database Creation
+Data Import Validation
+Schema Verification
+
+This ensured the dataset was successfully loaded and ready for analysis.
+
+2. Data Validation & Data Quality Assessment
+
+Before performing any analysis, multiple validation checks were conducted to ensure data reliability.
+
+Validation Checks Performed
+Dataset Structure Validation
+Row Count Verification
+Distinct Order Analysis
+NULL Value Detection
+Duplicate Record Analysis
+Negative Sales Validation
+Negative Quantity Validation
+Date Range Verification
+Customer Data Validation
+Key Findings
+No NULL values were found in critical business columns.
+Customer IDs were consistently mapped to customer names.
+No duplicate Row IDs were detected.
+Several duplicate Order ID and Product ID combinations were identified and investigated.
+Data Quality Insight
+
+Duplicate Order ID and Product ID combinations were not treated as data errors because detailed inspection revealed differences in sales, quantity, and profit values.
+
+These records represented valid transaction line items rather than duplicate transactions.
+
+3. Data Modelling
+
+To improve analytical flexibility, the raw dataset was transformed into a simplified relational structure.
+
+Tables Created
+Customers
+
+Stores customer-level information:
+
+Customer ID
+Customer Name
+Segment
+Products
+
+Stores product-related information:
+
+Product ID
+Product Name
+Category
+Sub-Category
+Orders
+
+Stores transactional sales information:
+
+Order ID
+Customer ID
+Product ID
+Sales
+Quantity
+Discount
+Profit
+Data Modelling Activities
+Primary Key Analysis
+Business Key Validation
+Duplicate Detection
+Data Type Optimization
+Key Finding
+
+Customer IDs were unique and suitable for primary key implementation.
+
+However, Product IDs were not completely unique. Investigation revealed that certain Product IDs were associated with multiple product descriptions, indicating source-data inconsistencies.
+
+As a result, Product ID was not enforced as a primary key.
+
+4. Advanced SQL Analysis
+
+The project demonstrates practical use of advanced SQL concepts to answer business questions.
+
+Subqueries
+
+Used to:
+
+Identify orders above average sales
+Compare customer performance against business benchmarks
+Retrieve customer-specific maximum sales values
+Common Table Expressions (CTEs)
+
+Used to:
+
+Create reusable analytical layers
+Simplify complex aggregations
+Improve query readability and maintainability
+Window Functions
+
+Implemented:
+
+DENSE_RANK()
+ROW_NUMBER()
+PARTITION BY
+
+These functions enabled customer ranking, revenue analysis, and purchase sequence tracking.
+
+Customer Analytics Performed
+Total Sales by Customer
+
+Customer-level sales were aggregated to determine revenue contribution across the customer base.
+
+Insight
+
+Revenue was heavily concentrated among a relatively small group of customers.
+
+Above-Average Customers
+
+Customer sales were compared against average customer revenue.
+
+Insight
+
+Several customers generated significantly higher revenue than the overall customer average, making them strong candidates for retention and loyalty initiatives.
+
+Customer Ranking
+
+Customers were ranked using DENSE_RANK() based on total revenue generated.
+
+Insight
+
+Revenue-based ranking provides a structured view of customer contribution and helps identify strategic customers.
+
+Order Sequence Analysis
+
+ROW_NUMBER() and PARTITION BY were used to generate customer-specific purchase sequences.
+
+Insight
+
+Order sequencing enables customer journey analysis and repeat-purchase tracking.
+
+Top Customer Analysis
+
+Top-performing customers were identified using ranking-based approaches.
+
+Insight
+
+A small percentage of customers contributed a disproportionately large share of total sales, highlighting revenue concentration patterns.
+
+
+
+
+
+
 # Week 2 – SQL Projects 
 
 ## Overview
