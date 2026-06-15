@@ -188,6 +188,10 @@ WHERE `Product ID`='FUR-FU-10004848';
 -- Therefore Product ID was not enforced as a primary key.
 
 
+-- We can also use surrogate key.
+-- But here all question sloved without it's need
+
+
 -- 3.8 ***** CREATING TABLE ORDERS *****
 
 CREATE TABLE orders AS
