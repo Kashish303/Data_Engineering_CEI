@@ -244,7 +244,6 @@ HAVING COUNT(*) > 1;
 -- Negative sales    : 0
 -- Duplicate Row IDs : 0
 -- Orders with loss  : 2749 rows have negative profit
--- Date range        : 2014-01-03 to 2017-12-30
 -- Product ID issue  : 30 Product IDs map to multiple names
 --                     (documented, PK not enforced)
 -- Conclusion        : Dataset is clean for sales analysis.
