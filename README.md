@@ -4,126 +4,207 @@
 <img width="1600" height="900" alt="Image2" src="https://github.com/user-attachments/assets/80922eaa-a569-42b7-bd67-5089e2f8adfc" />
 <img width="1600" height="900" alt="Image1" src="https://github.com/user-attachments/assets/cc291af3-4b42-400e-89f3-71535bea9432" />
 
-# 🚀 Mini Project: End-to-End Data Pipeline using Azure Data Factory
+# ☁️ Week 4 — Azure Cloud Fundamentals and Data Pipeline Implementation using Azure Data Factory
 
-> Celebal Excellence Internship (CEI '26) – Data Engineering Track  
-> Week 4 Mini Project
-
----
-
-## 📌 Project Overview
-
-This project demonstrates the implementation of an end-to-end cloud-based data pipeline using Azure Blob Storage and Azure Data Factory (ADF).
-
-The pipeline reads a CSV file from Azure Blob Storage, validates the file using metadata checks, and securely copies it to a destination container. The solution also incorporates Azure IAM and Managed Identity concepts to follow secure and production-oriented cloud practices.
-
-Rather than building a simple file-copy workflow, the project was designed using production-inspired Data Engineering practices such as metadata validation, layered storage architecture, RBAC-based security, managed identity, monitoring, and governance.
+> **Celebal Excellence Internship (CEI '26) — Data Engineering Track**
+> **Week 4 Assignment: Azure Cloud Concepts, Storage Account, Azure Data Factory, IAM & End-to-End Data Pipeline**
 
 ---
 
-## 🎯 Problem Statement
+# 📌 Objective
 
-Build a complete pipeline that:
+The objective of this assignment was to understand core Azure cloud concepts and build a complete end-to-end data pipeline using Azure Blob Storage and Azure Data Factory.
 
-- Reads a CSV file from Azure Blob Storage
-- Validates metadata before processing
-- Copies data to a new destination location
-- Uses Azure Data Factory for orchestration
-- Implements secure access using IAM and RBAC
+The focus was not only on completing the tasks but also on understanding:
+
+* Why Azure services are used
+* How cloud resources interact with each other
+* How secure access is implemented
+* How data pipelines are designed in real-world environments
+* How Azure Data Factory orchestrates data movement
+
+This project provided hands-on experience with cloud infrastructure, storage services, data orchestration, metadata validation, monitoring, and security.
 
 ---
 
-## 🏗️ Solution Architecture
+# 🏗️ Solution Architecture
 
 ```text
-Sample-Superstore.csv
-        │
-        ▼
-Azure Blob Storage
-(raw-data container)
-        │
-        ▼
-Get Metadata Activity
-(File Validation)
-        │
-        ▼
-Copy Data Activity
-        │
-        ▼
-Azure Blob Storage
-(processed-data container)
-        │
-        ▼
+CSV File (Local)
+      │
+      ▼
+Azure Blob Storage (raw-data)
+      │
+      ▼
+Azure Data Factory
+      │
+      ├── Linked Service
+      ├── Source Dataset
+      ├── Get Metadata Activity
+      └── Copy Data Activity
+      │
+      ▼
+Azure Blob Storage (processed-data)
+      │
+      ▼
 processed_superstore.csv
 ```
 
 ---
 
-## ☁️ Azure Services Used
+# 📊 Azure Resources Created
 
-| Service | Purpose |
-|----------|----------|
-| Azure Resource Group | Resource organization |
-| Azure Storage Account | Cloud storage |
-| Azure Blob Storage | Source and destination containers |
-| Azure Data Factory | Data orchestration |
-| Azure IAM (RBAC) | Access management |
-| Managed Identity | Secure authentication |
-
----
-
-## 📦 Resources Created
-
-| Resource | Name |
-|-----------|-----------|
-| Resource Group | rg-CEI-Week4 |
-| Storage Account | stceiweek4ks |
-| Azure Data Factory | adf-cei-week4 |
-| Source Container | raw-data |
-| Destination Container | processed-data |
-| Linked Service | BlobStorage_superstore |
-| Source Dataset | ds_superstore_source |
-| Destination Dataset | ds_superstore_destination |
-| Pipeline | pl_superstore_end_to_end |
+| Resource Type         | Resource Name  | Region         |
+| --------------------- | -------------- | -------------- |
+| Resource Group        | rg-CEI-Week4   | Central India  |
+| Storage Account       | stceiweek4ks   | Southeast Asia |
+| Azure Data Factory    | adf-cei-week4  | Southeast Asia |
+| Source Container      | raw-data       | —              |
+| Destination Container | processed-data | —              |
 
 ---
 
-## 📂 Data Storage Design
+# 📘 Task 1 – Azure Portal Exploration & Resource Group Creation
 
-### Source Layer
+## Activities Performed
 
-Container: `raw-data`
+* Explored Azure Portal interface
+* Navigated through Azure services
+* Understood Resource Groups and resource organization
+* Created Resource Group
+
+### Resource Group
+
+```text
+rg-CEI-Week4
+```
+
+### Additional Governance Configuration
+
+Applied resource tags:
+
+| Tag         | Value        |
+| ----------- | ------------ |
+| Environment | Development  |
+| Project     | CEI-Week4    |
+| Owner       | Kashish-Soni |
+| Week        | Week-4       |
+
+### Key Learning
+
+Resource Groups are not merely folders; they act as logical containers for lifecycle management, access control, governance, and cost tracking.
+
+---
+
+# 📗 Task 2 – Storage Account Setup
+
+## Storage Account Creation
+
+Created Azure Storage Account:
+
+```text
+stceiweek4ks
+```
+
+Configuration:
+
+* Standard Performance
+* Locally Redundant Storage (LRS)
+* Secure Transfer Enabled
+* Private Blob Containers
+
+---
+
+## Blob Containers Created
+
+### Source Container
+
+```text
+raw-data
+```
 
 Purpose:
 
-- Stores original source files
-- Preserves raw data for reprocessing
+Stores incoming source files.
 
-### Processed Layer
+### Destination Container
 
-Container: `processed-data`
+```text
+processed-data
+```
 
 Purpose:
 
-- Stores processed output files
-- Used for downstream consumption
-
-### Why Separate Raw and Processed Data?
-
-This design follows common Data Lake architecture principles.
-
-Benefits:
-
-- Original data remains untouched
-- Reprocessing becomes easier
-- Improves data governance
-- Reduces risk of accidental modification
+Stores processed output files.
 
 ---
 
-## 🔗 Linked Service Configuration
+## Dataset Upload
 
-Linked Service:
+Uploaded:
+
+```text
+Sample-Superstore.csv
+```
+
+to:
+
+```text
+raw-data
+```
+
+### Security Consideration
+
+Containers were configured with **Private Access** to prevent anonymous access to business data.
+
+---
+
+# 📙 Task 3 – Azure Data Factory Fundamentals
+
+## Azure Data Factory Creation
+
+Created Azure Data Factory instance:
+
+```text
+adf-cei-week4
+```
+
+---
+
+## ADF Studio Exploration
+
+Explored the three primary areas of ADF Studio:
+
+### Author
+
+Used for:
+
+* Linked Services
+* Datasets
+* Pipelines
+* Activities
+
+### Monitor
+
+Used for:
+
+* Pipeline execution monitoring
+* Success/Failure tracking
+* Runtime diagnostics
+
+### Manage
+
+Used for:
+
+* Linked Services
+* Integration Runtime
+* Security and Configuration
+
+---
+
+## Linked Service Configuration
+
+Created Linked Service:
 
 ```text
 BlobStorage_superstore
@@ -131,11 +212,11 @@ BlobStorage_superstore
 
 Purpose:
 
-- Establish secure connectivity between Azure Data Factory and Azure Blob Storage.
+Provides connectivity between Azure Data Factory and Azure Blob Storage.
 
 ---
 
-## 📊 Dataset Configuration
+## Dataset Creation
 
 ### Source Dataset
 
@@ -163,9 +244,548 @@ processed-data/processed_superstore.csv
 
 ---
 
-## 🔍 Metadata Validation
+# 🔍 Metadata Validation Pipeline
 
-Activity Name:
+## Pipeline
+
+```text
+pl_get_metadata
+```
+
+## Activity
+
+```text
+Validate_Source_File
+```
+
+## Metadata Fields Retrieved
+
+* Item Name
+* File Size
+* Last Modified Timestamp
+* Structure (Schema)
+
+### Metadata Output
+
+| Property      | Value                 |
+| ------------- | --------------------- |
+| File Name     | Sample-Superstore.csv |
+| File Size     | 2,287,806 bytes       |
+| Last Modified | 2026-06-19T13:50:46Z  |
+| Schema        | 21 Columns            |
+
+---
+
+## Why Metadata Validation?
+
+Metadata validation ensures:
+
+* File exists
+* File is not empty
+* Schema is available
+* Source file is valid
+
+This follows a **fail-fast** approach where validation occurs before processing begins.
+
+---
+
+# 📕 Task 4 – Pipeline Development
+
+## Pipeline
+
+```text
+pl_copy_superstore
+```
+
+### Activities Used
+
+1. Get Metadata
+2. Copy Data
+
+Pipeline Flow:
+
+```text
+Validate_Source_File
+        │
+        ▼
+Copy_Superstore_Data
+```
+
+### Source
+
+```text
+raw-data/Sample-Superstore.csv
+```
+
+### Destination
+
+```text
+processed-data/processed_superstore.csv
+```
+
+---
+
+# 📒 Task 5 – Pipeline Execution
+
+Pipeline was executed using:
+
+```text
+Debug Run
+```
+
+Pipeline Status:
+
+```text
+Succeeded
+```
+
+---
+
+## Monitoring
+
+The Azure Data Factory Monitor tab was used to:
+
+* Track execution status
+* Validate successful runs
+* Review activity outputs
+* Troubleshoot failures
+
+### Execution Result
+
+* Metadata Validation: Success
+* Copy Activity: Success
+* Pipeline Status: Succeeded
+
+---
+
+# 📓 Task 6 – Identity and Access Management (IAM)
+
+Implemented Azure Role-Based Access Control (RBAC).
+
+---
+
+## Reader Role
+
+Provides:
+
+* Read-only access
+
+Purpose:
+
+Monitoring and visibility without modification privileges.
+
+---
+
+## Contributor Role
+
+Provides:
+
+* Create resources
+* Modify resources
+* Delete resources
+
+Cannot:
+
+* Assign permissions
+
+---
+
+## Storage Blob Data Contributor
+
+Assigned to Azure Data Factory Managed Identity.
+
+Provides:
+
+* Read Blob Data
+* Write Blob Data
+* Delete Blob Data
+
+Purpose:
+
+Allow ADF to securely access Azure Storage.
+
+---
+
+# 🔐 Managed Identity Implementation
+
+ADF was granted access through a System-Assigned Managed Identity.
+
+Benefits:
+
+* No stored credentials
+* No hardcoded secrets
+* Passwordless authentication
+* Recommended Azure security practice
+
+---
+
+# 🚀 Mini Project – End-to-End Data Pipeline
+
+## Objective
+
+Build a complete Azure Data Factory pipeline that:
+
+1. Reads a CSV file from Azure Blob Storage
+2. Validates metadata
+3. Copies data to a new location
+4. Monitors execution
+5. Secures access using RBAC
+
+---
+
+## Final Pipeline Architecture
+
+```text
+Source CSV
+     │
+     ▼
+Blob Storage (raw-data)
+     │
+     ▼
+Get Metadata
+     │
+     ▼
+Copy Data
+     │
+     ▼
+Blob Storage (processed-data)
+     │
+     ▼
+processed_superstore.csv
+```
+
+---
+
+# 📈 Results
+
+## Metadata Validation
+
+Successfully validated:
+
+* File Name
+* File Size
+* Last Modified Date
+* Schema Structure
+
+---
+
+## Data Copy Validation
+
+Source File:
+
+```text
+Sample-Superstore.csv
+```
+
+Destination File:
+
+```text
+processed_superstore.csv
+```
+
+### Data Integrity Verification
+
+| Metric           | Value    |
+| ---------------- | -------- |
+| Source Size      | 2.18 MiB |
+| Destination Size | 2.18 MiB |
+
+Result:
+
+✅ Zero data loss confirmed
+
+---
+
+## Pipeline Execution
+
+| Activity     | Status    |
+| ------------ | --------- |
+| Get Metadata | Success   |
+| Copy Data    | Success   |
+| Pipeline     | Succeeded |
+
+---
+
+# ⭐ What Makes This Project Different?
+
+Unlike a basic file-copy implementation, this project includes:
+
+### Metadata Validation Before Processing
+
+Validated:
+
+* File existence
+* File size
+* Last modified timestamp
+* Schema structure
+
+before copying data.
+
+---
+
+### Layered Storage Architecture
+
+```text
+raw-data
+    │
+    ▼
+processed-data
+```
+
+This mirrors enterprise Data Lake implementations.
+
+---
+
+### RBAC-Based Security
+
+Implemented secure role assignments instead of unrestricted access.
+
+---
+
+### Managed Identity
+
+Configured secure service-to-service authentication without storing credentials.
+
+---
+
+### Governance Through Tagging
+
+Applied resource tags for:
+
+* Ownership
+* Environment
+* Project Identification
+* Resource Organization
+
+---
+
+### Monitoring and Validation
+
+Used Azure Data Factory Monitor tab to track and verify execution.
+
+---
+
+# 🛠️ Tools & Technologies Used
+
+* Microsoft Azure
+* Azure Resource Groups
+* Azure Blob Storage
+* Azure Data Factory
+* Azure IAM (RBAC)
+* Managed Identity
+* Azure Monitor
+* CSV Dataset
+
+---
+
+# 📚 Key Learnings
+
+Through this project, I gained practical experience with:
+
+* Azure Cloud Fundamentals
+* Azure Resource Management
+* Azure Storage Account Configuration
+* Azure Blob Storage
+* Azure Data Factory
+* Linked Services
+* Datasets
+* Metadata Validation
+* Data Movement Pipelines
+* Pipeline Monitoring
+* IAM & RBAC
+* Managed Identity
+* Data Engineering Best Practices
+
+---
+
+# 🔮 Future Enhancements
+
+The solution can be further improved by implementing:
+
+* Event-Based Triggers
+* Scheduled Pipelines
+* Dynamic Parameters
+* ForEach Activity for Multiple Files
+* Data Quality Checks
+* Incremental Data Loading
+* Email Notifications
+* Azure Data Lake Gen2
+* CI/CD Integration using Git
+
+---
+
+# 🏁 Conclusion
+
+This project successfully demonstrates a production-inspired Azure Data Factory solution capable of validating, processing, and securely moving data within Azure Blob Storage.
+
+Beyond completing the required assignment tasks, additional effort was invested in understanding Azure architecture, IAM design, Managed Identity authentication, metadata validation, monitoring practices, governance through tagging, and production-oriented cloud engineering concepts.
+
+The implementation reflects foundational practices used in modern Azure Data Engineering environments and provides a strong base for building scalable cloud data platforms.
+
+---
+
+
+# 🚀 Mini Project: End-to-End Data Pipeline using Azure Data Factory
+
+> **Celebal Excellence Internship (CEI '26) – Data Engineering Track**
+> **Week 4 Mini Project**
+
+---
+
+# 📌 Project Overview
+
+This project demonstrates the implementation of an end-to-end cloud-based data pipeline using **Azure Blob Storage** and **Azure Data Factory (ADF)**.
+
+The pipeline reads a CSV file from Azure Blob Storage, validates the file using metadata checks, and securely copies it to a destination container. The project also incorporates Azure IAM and Managed Identity concepts to follow secure and production-oriented cloud practices.
+
+---
+
+# 🎯 Problem Statement
+
+Build a complete pipeline that:
+
+* Reads a CSV file from Azure Blob Storage
+* Validates metadata before processing
+* Copies data to a new destination location
+* Uses Azure Data Factory for orchestration
+* Implements secure access using IAM and RBAC
+
+---
+
+# 🏗️ Solution Architecture
+
+```text
+Sample-Superstore.csv
+        │
+        ▼
+Azure Blob Storage
+(raw-data container)
+        │
+        ▼
+Get Metadata Activity
+(File Validation)
+        │
+        ▼
+Copy Data Activity
+        │
+        ▼
+Azure Blob Storage
+(processed-data container)
+        │
+        ▼
+processed_superstore.csv
+```
+
+---
+
+# ☁️ Azure Services Used
+
+| Service               | Purpose                           |
+| --------------------- | --------------------------------- |
+| Azure Resource Group  | Resource organization             |
+| Azure Storage Account | Cloud storage                     |
+| Azure Blob Storage    | Source and destination containers |
+| Azure Data Factory    | Data orchestration                |
+| Azure IAM (RBAC)      | Access management                 |
+| Managed Identity      | Secure authentication             |
+
+---
+
+# 📦 Resources Created
+
+| Resource              | Name                      |
+| --------------------- | ------------------------- |
+| Resource Group        | rg-CEI-Week4              |
+| Storage Account       | stceiweek4ks              |
+| Azure Data Factory    | adf-cei-week4             |
+| Source Container      | raw-data                  |
+| Destination Container | processed-data            |
+| Linked Service        | BlobStorage_superstore    |
+| Source Dataset        | ds_superstore_source      |
+| Destination Dataset   | ds_superstore_destination |
+| Pipeline              | pl_superstore_end_to_end  |
+
+---
+
+# 📂 Data Storage Design
+
+## Source Layer
+
+Container:
+
+```text
+raw-data
+```
+
+Purpose:
+
+* Stores original source files
+* Preserves raw data for reprocessing
+
+---
+
+## Processed Layer
+
+Container:
+
+```text
+processed-data
+```
+
+Purpose:
+
+* Stores processed output files
+* Used for downstream consumption
+
+---
+
+# 🔗 Linked Service Configuration
+
+Created Linked Service:
+
+```text
+BlobStorage_superstore
+```
+
+Purpose:
+
+* Establish secure connectivity between Azure Data Factory and Azure Blob Storage.
+
+---
+
+# 📊 Dataset Configuration
+
+## Source Dataset
+
+```text
+ds_superstore_source
+```
+
+References:
+
+```text
+raw-data/Sample-Superstore.csv
+```
+
+---
+
+## Destination Dataset
+
+```text
+ds_superstore_destination
+```
+
+References:
+
+```text
+processed-data/processed_superstore.csv
+```
+
+---
+
+# 🔍 Metadata Validation
+
+Pipeline Activity:
 
 ```text
 Validate_Source_File
@@ -177,36 +797,36 @@ Activity Type:
 Get Metadata
 ```
 
-### Metadata Retrieved
+Metadata Retrieved:
 
-- Item Name
-- File Size
-- Last Modified Timestamp
-- File Structure (Schema)
+* Item Name
+* File Size
+* Last Modified Timestamp
+* File Structure (Schema)
 
 ### Metadata Output
 
-| Property | Value |
-|-----------|-----------|
-| File Name | Sample-Superstore.csv |
-| File Size | 2,287,806 bytes |
-| Last Modified | 2026-06-19T13:50:46Z |
-| Schema | 21 Columns |
+| Property      | Value                 |
+| ------------- | --------------------- |
+| File Name     | Sample-Superstore.csv |
+| File Size     | 2,287,806 bytes       |
+| Last Modified | 2026-06-19T13:50:46Z  |
+| Schema        | 21 Columns            |
 
 ### Why Metadata Validation?
 
 Metadata validation ensures:
 
-- Source file exists
-- File is not empty
-- Schema is available
-- File is ready for processing
+* Source file exists
+* File is not empty
+* Schema is available
+* File is ready for processing
 
-This follows the **Fail-Fast Principle**, where validation occurs before any data movement takes place.
+This follows the **fail-fast principle**, where validation occurs before any data movement takes place.
 
 ---
 
-## 🔄 Data Movement Pipeline
+# 🔄 Data Movement Pipeline
 
 Pipeline Name:
 
@@ -237,7 +857,7 @@ processed-data/processed_superstore.csv
 
 ---
 
-## 📈 Monitoring and Execution
+# 📈 Monitoring and Execution
 
 Execution Method:
 
@@ -253,122 +873,136 @@ ADF Monitor Tab
 
 The Monitor tab was used to:
 
-- Track pipeline execution
-- Review activity status
-- Validate successful execution
-- Troubleshoot failures
+* Track pipeline execution
+* Review activity status
+* Validate successful execution
+* Troubleshoot failures
 
 ---
 
-## 🔐 Security Implementation
+# 🔐 Security Implementation
 
-### IAM Roles Configured
+## IAM Roles Configured
 
-#### Reader
+### Reader
 
 Provides read-only access.
 
-#### Contributor
+### Contributor
 
 Provides resource management permissions.
 
-#### Storage Blob Data Contributor
+### Storage Blob Data Contributor
 
 Assigned to Azure Data Factory Managed Identity.
 
 Provides:
 
-- Read Blob Data
-- Write Blob Data
-- Delete Blob Data
+* Read Blob Data
+* Write Blob Data
+* Delete Blob Data
 
 ---
 
-## 🆔 Managed Identity
+# 🆔 Managed Identity
 
 Implemented Azure Data Factory Managed Identity for secure access.
 
 Benefits:
 
-- No hardcoded credentials
-- No secret management
-- Passwordless authentication
-- Enterprise security best practice
+* No hardcoded credentials
+* No secret management
+* Passwordless authentication
+* Enterprise security best practice
 
 ---
 
-## 📊 Results Summary
+# 📊 Results Summary
 
-| Validation Check | Status |
-|------------------|---------|
-| Source File Detected | ✅ |
-| Metadata Retrieved | ✅ |
-| File Size Validated | ✅ |
-| Schema Validated | ✅ |
-| Copy Data Activity | ✅ |
-| Destination File Created | ✅ |
-| Pipeline Execution | ✅ |
-| Data Integrity Verified | ✅ |
+| Validation Check         | Status |
+| ------------------------ | ------ |
+| Source File Detected     | ✅      |
+| Metadata Retrieved       | ✅      |
+| File Size Validated      | ✅      |
+| Schema Validated         | ✅      |
+| Copy Data Activity       | ✅      |
+| Destination File Created | ✅      |
+| Pipeline Execution       | ✅      |
+| Data Integrity Verified  | ✅      |
 
 ---
 
-## 📋 Output Validation
+# 📋 Output Validation
 
 ### Source File
 
-`Sample-Superstore.csv`
+```text
+Sample-Superstore.csv
+```
 
-**Size:** 2.18 MiB
+Size:
+
+```text
+2.18 MiB
+```
+
+---
 
 ### Destination File
 
-`processed_superstore.csv`
+```text
+processed_superstore.csv
+```
 
-**Size:** 2.18 MiB
+Size:
+
+```text
+2.18 MiB
+```
 
 ### Data Integrity Check
 
 Source Size = Destination Size
 
-✅ **Zero Data Loss Confirmed**
+✅ Zero Data Loss Confirmed
 
 ---
 
-## ⭐ What Makes This Project Different?
+# ⭐ What Makes This Project Different?
 
 Unlike a basic file-copy implementation, this project includes:
 
-- Metadata validation before processing
-- Separate raw and processed storage layers
-- RBAC-based security configuration
-- Managed Identity implementation
-- Enterprise-style resource tagging
-- Pipeline monitoring and validation
-- Meaningful activity naming conventions
-- Production-oriented architecture decisions
+* Metadata validation before processing
+* Separate raw and processed storage layers
+* RBAC-based security configuration
+* Managed Identity implementation
+* Enterprise-style resource tagging
+* Pipeline monitoring and validation
+* Meaningful activity naming conventions
+* Production-oriented architecture decisions
 
 ---
 
-## 📚 Key Learnings
+# 📚 Key Learnings
 
 Through this project, I gained practical experience with:
 
-- Azure Cloud Fundamentals
-- Azure Blob Storage
-- Azure Data Factory
-- Linked Services
-- Datasets
-- Get Metadata Activity
-- Copy Data Activity
-- Pipeline Monitoring
-- IAM & RBAC
-- Managed Identity
-- Cloud Security Best Practices
-- Data Engineering Fundamentals
+* Azure Cloud Fundamentals
+* Azure Blob Storage
+* Azure Data Factory
+* Linked Services
+* Datasets
+* Get Metadata Activity
+* Copy Data Activity
+* Pipeline Monitoring
+* IAM & RBAC
+* Managed Identity
+* Cloud Security Best Practices
+* Data Engineering Fundamentals
 
 ---
 
-## 💭 Personal Reflection
+# 💭 Personal Reflection
 
 Before this project, Azure Data Factory, Blob Storage, IAM, and Managed Identity were completely new concepts to me.
 
@@ -378,27 +1012,28 @@ The most valuable learning was understanding that data engineering is not only a
 
 ---
 
-## 🚀 Future Enhancements
+# 🚀 Future Enhancements
 
-- Event-Based Triggers
-- Scheduled Pipeline Execution
-- Dynamic Parameters
-- ForEach Activity for Multiple Files
-- Data Quality Checks
-- Incremental Data Loading
-- Email Notifications
-- Azure Data Lake Gen2 Integration
-- CI/CD using GitHub and Azure DevOps
+* Event-Based Triggers
+* Scheduled Pipeline Execution
+* Dynamic Parameters
+* ForEach Activity for Multiple Files
+* Data Quality Checks
+* Incremental Data Loading
+* Email Notifications
+* Azure Data Lake Gen2 Integration
+* CI/CD using Git
 
 ---
 
-## 🏁 Conclusion
+# 🏁 Conclusion
 
 This project successfully demonstrates a production-inspired Azure Data Factory solution capable of validating, processing, and securely moving data within Azure Blob Storage.
 
 By incorporating metadata validation, layered storage architecture, IAM, RBAC, Managed Identity, monitoring, and governance practices, the solution goes beyond a basic file-copy implementation and reflects foundational principles used in modern cloud data engineering environments.
 
 ---
+
 
 
 # 📊 Week - 3  Customer Sales Analysis & Data Modelling using SQL
