@@ -400,18 +400,6 @@ By incorporating metadata validation, layered storage architecture, IAM, RBAC, M
 
 ---
 
-## 👩‍💻 Developed By
-
-**Kashish Soni**  
-B.Tech Computer Science Engineering  
-Swami Keshvanand Institute of Technology (SKIT), Jaipur
-
-**Domain:** Data Engineering | Cloud Computing | Azure Data Factory
-
-
-
-
-
 
 # 📊 Week - 3  Customer Sales Analysis & Data Modelling using SQL
 
