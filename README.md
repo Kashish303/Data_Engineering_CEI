@@ -4,6 +4,412 @@
 <img width="1600" height="900" alt="Image2" src="https://github.com/user-attachments/assets/80922eaa-a569-42b7-bd67-5089e2f8adfc" />
 <img width="1600" height="900" alt="Image1" src="https://github.com/user-attachments/assets/cc291af3-4b42-400e-89f3-71535bea9432" />
 
+# ☁️ Week 5 - Spark Basics 
+
+# 📌 Project Overview
+
+This project is a part of the **Week-5 Apache Spark Assignment** during my **Data Engineering Internship at Celebal Technologies**.
+
+The objective of this assignment is to understand how Apache Spark processes large datasets efficiently using **Spark DataFrames**, perform data cleaning, transformations, aggregations, and build a simple end-to-end ETL pipeline.
+
+Unlike Hadoop MapReduce, Spark performs **in-memory computation**, enabling significantly faster execution for iterative workloads such as Machine Learning and large-scale analytics.
+
+---
+
+# 🎯 Objectives
+
+- Understand Apache Spark Architecture
+- Compare Spark with Hadoop MapReduce
+- Learn Spark DataFrame APIs
+- Perform Data Cleaning
+- Handle Missing Values
+- Remove Duplicate Records
+- Apply Filtering & Transformations
+- Perform Aggregations
+- Understand Shuffle Operations
+- Learn Wide vs Narrow Transformations
+- Build a Simple ETL Pipeline
+
+---
+
+# 📂 Dataset Information
+
+**Dataset Type:** Synthetic Sales Dataset
+
+| Property | Value |
+|----------|-------|
+| Total Records | **1000** |
+| Total Columns | **20** |
+| File Format | CSV |
+| Platform | Databricks |
+
+### Dataset Columns
+
+- transaction_id
+- user_id
+- transaction_date
+- region
+- product_category
+- sale_amount
+- status
+- city
+- state
+- age
+- subscription
+- raw_timestamp
+- email
+- username
+- price
+- quantity
+- store_id
+- product_name
+- discount_pct
+- customer_segment
+
+---
+
+# 🛠️ Technologies Used
+
+- Apache Spark
+- PySpark
+- Databricks
+- Python
+- Spark DataFrames
+
+---
+
+# 📁 Project Structure
+
+```
+
+spark-assignment/
+│
+├── data/
+│ └── week5.csv
+│
+├── notebook/
+│ └── spark_basics.ipynb
+│
+├── output/
+│ └── results.csv
+│
+├── images/
+│ ├── dataset_preview.png
+│ ├── output.png
+│ └── pipeline.png
+│
+└── README.md
+
+```
+
+---
+
+# 📖 Assignment Workflow
+
+```
+
+Load Dataset
+↓
+Data Exploration
+↓
+Data Cleaning
+↓
+Handle Missing Values
+↓
+Remove Duplicates
+↓
+Apply Filters
+↓
+Transform Columns
+↓
+Aggregation
+↓
+GroupBy Operations
+↓
+Final ETL Pipeline
+↓
+Output Generation
+
+```
+
+---
+
+# 📚 Concepts Covered
+
+## Spark Fundamentals
+
+- Apache Spark Architecture
+- Spark Session
+- DataFrames
+- Lazy Evaluation
+- DAG Execution
+- Catalyst Optimizer
+
+---
+
+## Data Cleaning
+
+- Handling Missing Values
+- Removing Duplicate Records
+- Data Validation
+- Timestamp Processing
+
+---
+
+## Data Transformation
+
+- Filtering Records
+- Column Renaming
+- Type Casting
+- Timestamp Conversion
+
+---
+
+## Aggregations
+
+- count()
+- sum()
+- avg()
+- min()
+- max()
+- groupBy()
+- agg()
+
+---
+
+## Spark Concepts
+
+- Shuffle
+- Wide Transformation
+- Narrow Transformation
+- In-Memory Computing
+- MapReduce vs Spark
+- Schema Inference
+
+---
+
+# 📚 Assignment Summary
+
+This assignment was designed to build a strong foundation in **Apache Spark** by implementing real-world Data Engineering tasks using **PySpark DataFrames**. Instead of only answering theoretical questions, every concept was demonstrated on a real dataset through practical implementation, validation, and observations.
+
+---
+
+## Q1 – MapReduce Limitations vs Apache Spark
+
+Compared the traditional Hadoop MapReduce framework with Apache Spark and explained why Spark is preferred for modern big data processing. Covered concepts such as:
+
+- Disk-based processing in MapReduce
+- In-Memory Computing in Spark
+- High Disk I/O overhead
+- Iterative Machine Learning workloads
+- Spark Architecture
+- Catalyst Optimizer
+- Spark UI and execution workflow
+
+---
+
+## Q2 – In-Memory Computing
+
+Explained how Apache Spark improves performance by storing intermediate data in memory instead of repeatedly reading and writing to disk.
+
+Implemented and discussed:
+
+- Spark Cache
+- Persist
+- Storage Levels
+- Lazy Evaluation
+- Fault Tolerance
+- RDD Lineage
+
+This demonstrated why Spark is significantly faster than Hadoop MapReduce for iterative algorithms.
+
+---
+
+## Q3 – Duplicate Record Removal
+
+Implemented duplicate detection and removal using Spark DataFrames.
+
+Performed:
+
+- Duplicate identification
+- Duplicate removal using business keys
+- Before and After record comparison
+- Validation of cleaned dataset
+
+---
+
+## Q4 – Filtering and Aggregation
+
+Filtered the dataset based on region and calculated the average sales amount for each product category using:
+
+- filter()
+- groupBy()
+- avg()
+
+---
+
+## Q5 – Handling Missing Values
+
+Compared the behaviour of:
+
+- `.na.drop()`
+- `.na.fill()`
+
+Analyzed missing values present in the dataset and demonstrated appropriate techniques for handling incomplete records.
+
+---
+
+## Q6 – Grouping Records
+
+Grouped data by city and calculated record counts while filtering only those cities having more than 100 records.
+
+Implemented:
+
+- groupBy()
+- count()
+- filter()
+
+---
+
+## Q7 – DataFrame Immutability
+
+Demonstrated that Spark DataFrames are immutable.
+
+Showed that operations such as:
+
+- drop()
+- withColumnRenamed()
+
+do not modify the original DataFrame but instead return a new DataFrame.
+
+---
+
+## Q8 – Filtering Records
+
+Filtered customers whose:
+
+- Age is between 18 and 30
+- Subscription type is Premium
+
+Performed validation by counting matching records.
+
+---
+
+## Q9 – Null Handling Before Aggregation
+
+Demonstrated why missing values should be handled before performing mathematical aggregations.
+
+Compared aggregation results before and after replacing NULL values.
+
+Covered:
+
+- sum()
+- avg()
+- count()
+
+---
+
+## Q10 – Timestamp Processing
+
+Converted the raw timestamp column into TimestampType.
+
+Handled multiple timestamp formats present in the dataset before conversion and renamed the column to **event_time**.
+
+This demonstrates a common real-world ETL preprocessing task.
+
+---
+
+## Q11 – Shuffle and Wide Transformation
+
+Explained Spark Shuffle during groupBy operations.
+
+Covered:
+
+- Narrow Transformations
+- Wide Transformations
+- Data Movement across partitions
+- Network communication
+- Execution Plan (Explain)
+
+---
+
+## Q12 – Data Quality Validation
+
+Identified and removed records where:
+
+- Email was NULL
+- Username was NULL
+- Username contained empty or whitespace values
+
+Included validation before and after cleaning to ensure data quality.
+
+---
+
+## Q13 – Multiple Aggregations
+
+Used the `.agg()` function to calculate multiple statistics simultaneously.
+
+Calculated:
+
+- Minimum Price
+- Maximum Price
+- Average Price
+
+Demonstrated efficient aggregation using a single Spark operation.
+
+---
+
+## Q14 – Schema Inference
+
+Analyzed the risks of using `inferSchema=True` when datasets contain inconsistent timestamp formats.
+
+Explained:
+
+- Incorrect Schema Inference
+- Sampling-based Detection
+- Parsing Errors
+- Production Best Practices using StructType
+
+---
+
+## Q15 – End-to-End ETL Pipeline
+
+Developed a complete Spark Data Processing Pipeline.
+
+Pipeline Steps:
+
+- Removed Duplicate Records
+- Filled Missing Prices
+- Calculated Revenue
+- Grouped Data by Store
+- Generated Store-wise Revenue Summary
+
+The pipeline represents a simplified production ETL workflow commonly used in Data Engineering projects.
+
+---
+
+# 💡 Key Learning Outcomes
+
+Through this assignment, I gained practical experience in:
+
+- Apache Spark Fundamentals
+- Spark DataFrames
+- Data Cleaning
+- Data Transformation
+- Missing Value Handling
+- Duplicate Removal
+- Aggregations
+- GroupBy Operations
+- Shuffle Processing
+- Wide vs Narrow Transformations
+- Timestamp Processing
+- Schema Inference
+- Building End-to-End ETL Pipelines
+- Writing clean and production-oriented PySpark code
+
+
+
+
 # ☁️ Week 4 — Azure Cloud Fundamentals and Data Pipeline Implementation using Azure Data Factory
 
 > **Celebal Excellence Internship (CEI '26) — Data Engineering Track**
