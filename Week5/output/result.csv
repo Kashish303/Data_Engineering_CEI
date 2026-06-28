@@ -1,0 +1,1001 @@
+transaction_id,user_id,transaction_date,region,product_category,sale_amount,status,city,state,age,subscription,raw_timestamp,email,username,price,quantity,store_id,product_name,discount_pct,customer_segment
+T000522,U00042,2024-06-25,East,Books,343.96,Active,Los Angeles,WA,60.0,Standard,2023-03-02 15:15:00,useru00042@yahoo.com,user_318,369.57,6,S008,Product_161,0.3,Home Office
+T000738,U00498,2023-12-05,Central,Books,3729.19,Active,Los Angeles,NY,65.0,Basic,2024-02-10T18:59:00,useru00498@outlook.com,user_362,649.9,5,S004,Product_295,0.44,Corporate
+T000741,U00028,2023-01-29,West,Beauty,542.11,Active,Chicago,CO,36.0,Standard,06/25/2024 22:38:00,useru00028@outlook.com,user_347,2409.79,7,S013,Product_041,0.46,Consumer
+T000661,U00500,2024-03-31,South,Books,4639.74,Churned,Los Angeles,NY,49.0,Standard,2023-11-08 17:08:00,useru00500@yahoo.com,user_183,1844.93,8,S009,Product_192,,Consumer
+T000412,U00489,2023-05-27,West,Sports,2158.38,Churned,New York,AZ,21.0,Premium,10/22/2023 08:31:00,useru00489@gmail.com,user_133,1884.9,11,S005,Product_073,0.05,Home Office
+T000679,U00169,2024-10-12,West,Furniture,3048.32,Active,Houston,GA,47.0,Premium,2023-08-23 10:54:00,,user_359,1852.06,12,S014,Product_203,0.22,Home Office
+T000627,U00146,2023-12-22,East,Toys,4812.53,Active,Los Angeles,CO,20.0,Premium,07/11/2024 12:28:00,useru00146@outlook.com,user_337,2335.09,7,S013,Product_040,,Home Office
+T000514,U00299,2024-10-03,South,Toys,3158.7,Pending,New York,NV,22.0,Premium,2023-03-25T05:05:00,useru00299@gmail.com,user_352,,6,S011,Product_272,0.1,Home Office
+T000860,U00298,2023-07-01,Central,Clothing,3367.79,Inactive,Phoenix,TX,46.0,Premium,2024-12-20 10:56:00,useru00298@gmail.com,user_235,2305.53,14,S014,Product_158,0.31,Home Office
+T000137,U00300,2023-09-17,West,Furniture,2827.7,,Los Angeles,OR,63.0,Basic,07/24/2024 15:11:00,useru00300@yahoo.com,user_158,1936.62,3,S014,Product_061,0.37,Home Office
+T000812,U00202,2024-04-08,South,Furniture,4238.05,Active,Los Angeles,AZ,59.0,Free,2023-05-14T08:04:00,useru00202@yahoo.com,user_227,2111.55,5,S008,Product_240,0.41,Home Office
+T000077,U00216,2024-01-10,East,Home & Kitchen,3816.0,Churned,Chicago,CA,52.0,Premium,02/10/2023 01:50:00,useru00216@outlook.com,user_393,1756.02,9,S009,Product_079,0.14,Home Office
+T000637,U00166,2023-12-15,East,Sports,3170.76,Pending,New York,NY,33.0,Standard,06/21/2024 19:24:00,useru00166@outlook.com,user_256,1727.45,7,S008,Product_226,0.36,Corporate
+T000862,U00189,2023-09-22,South,Home & Kitchen,4793.36,Inactive,Chicago,GA,62.0,Standard,2023-09-09 01:44:00,useru00189@outlook.com,user_380,1813.07,8,S009,Product_003,0.19,Home Office
+T000939,U00174,2023-08-02,East,Furniture,645.14,Churned,Portland,GA,36.0,Premium,07/27/2023 22:48:00,useru00174@outlook.com,user_53,209.08,14,S011,Product_215,0.48,Home Office
+T000900,U00405,2023-03-21,West,Furniture,181.56,Churned,Houston,AZ,15.0,Basic,11/08/2024 06:09:00,useru00405@yahoo.com,user_66,559.97,15,S007,Product_052,0.07,Home Office
+T000281,U00155,2024-09-17,Central,Clothing,,Active,Chicago,OR,40.0,Standard,2023-08-27T19:50:00,useru00155@yahoo.com,,1552.43,11,S011,Product_014,0.23,Consumer
+T000884,U00348,2023-01-08,East,Books,1823.16,Inactive,Chicago,CA,70.0,Standard,2023-05-21 20:57:00,useru00348@gmail.com,user_382,1545.88,4,S010,Product_140,0.21,Corporate
+T000762,U00091,2024-02-12,East,Sports,2175.93,Churned,Phoenix,CA,19.0,Standard,2023-06-10 06:57:00,useru00091@gmail.com,user_277,1829.07,15,S003,Product_237,0.37,Consumer
+T000320,U00251,2023-11-06,Central,Home & Kitchen,3267.46,Pending,Houston,NY,64.0,Standard,2024-01-27T08:40:00,useru00251@gmail.com,user_43,1605.32,4,S001,Product_294,0.49,Home Office
+T000550,U00031,2023-01-11,West,Books,1428.1,Active,Phoenix,NV,51.0,Free,2023-12-29 07:09:00,useru00031@yahoo.com,user_88,2063.67,10,S001,Product_083,0.05,Corporate
+T000175,U00362,2024-04-05,Central,Clothing,2623.85,Churned,Chicago,GA,54.0,Basic,2024-01-25 01:49:00,useru00362@outlook.com,user_77,365.8,1,S007,Product_158,0.15,Corporate
+T000372,U00146,2023-01-19,Central,Electronics,4559.1,Churned,Houston,OR,17.0,Free,2023-02-10 10:41:00,useru00146@gmail.com,user_213,690.31,7,S002,Product_285,0.39,Consumer
+T000528,U00137,2024-07-23,East,Furniture,807.72,Pending,Denver,AZ,27.0,Premium,,useru00137@outlook.com,user_344,1017.2,1,S007,Product_055,0.37,Consumer
+T000211,U00023,2023-02-11,South,Electronics,2134.23,Churned,Chicago,NY,43.0,Premium,01/13/2023 22:46:00,useru00023@gmail.com,user_123,231.37,5,S003,Product_236,0.43,Consumer
+T000236,U00173,2023-10-07,West,Toys,2141.26,Active,Atlanta,WA,47.0,Basic,07/06/2024 10:12:00,useru00173@outlook.com,user_344,,12,S009,Product_096,0.29,Home Office
+T000102,U00115,2023-09-16,Central,Books,3566.58,Active,Boise,OR,69.0,Premium,2024-04-22T09:43:00,useru00115@yahoo.com,user_4,1657.58,6,S009,Product_145,0.15,Consumer
+T000864,U00323,2023-11-02,West,Electronics,1025.9,Inactive,Los Angeles,GA,55.0,Free,03/09/2023 14:10:00,useru00323@gmail.com,user_213,1629.95,14,S005,Product_270,0.16,Home Office
+T000903,U00040,2023-07-24,Central,Books,2881.92,Active,New York,NV,53.0,Standard,2023-10-05T12:01:00,useru00040@yahoo.com,user_320,1938.74,15,S011,Product_278,,Home Office
+T000948,U00041,2023-11-28,Central,Clothing,4277.51,Churned,Phoenix,NY,28.0,Standard,04/11/2023 18:43:00,useru00041@gmail.com,user_156,,15,S009,Product_285,,Consumer
+T000347,U00274,2024-05-19,East,Sports,1929.29,Inactive,Houston,NV,64.0,Standard,,useru00274@gmail.com,user_243,,6,S006,Product_072,0.15,Home Office
+T000140,U00103,2024-06-14,West,Clothing,4596.7,Pending,Austin,GA,52.0,Free,2023-10-11 07:38:00,useru00103@yahoo.com,user_134,1268.06,9,S005,Product_175,0.47,Corporate
+T000622,U00241,2024-07-01,West,Home & Kitchen,4526.16,Inactive,Austin,GA,25.0,Premium,06/15/2023 20:05:00,useru00241@outlook.com,user_94,487.5,7,S003,Product_294,0.27,Corporate
+T000500,U00194,2023-10-12,South,Sports,4085.46,Pending,Houston,OR,17.0,Basic,2024-11-09 22:14:00,useru00194@gmail.com,,462.48,12,S005,Product_204,0.14,Home Office
+T000371,U00146,2024-09-08,West,Sports,523.57,Pending,Atlanta,NY,51.0,Basic,03/21/2024 10:52:00,useru00146@gmail.com,user_256,689.67,8,S003,Product_168,0.3,Consumer
+T000199,U00357,2023-07-08,West,Toys,3305.78,Inactive,New York,WA,64.0,Free,2023-11-28 08:10:00,useru00357@gmail.com,user_171,649.31,3,S008,Product_036,0.25,Home Office
+T000688,U00190,2024-08-28,East,Beauty,2273.14,Inactive,Atlanta,OR,16.0,Premium,01/23/2023 02:08:00,useru00190@yahoo.com,user_324,1399.87,7,S001,Product_155,0.49,Consumer
+T000585,U00194,2024-11-06,East,Books,2222.62,Pending,Seattle,IL,39.0,Standard,11/09/2024 07:31:00,,user_2,400.72,14,S001,Product_235,0.26,Consumer
+T000902,U00154,2023-06-26,South,Home & Kitchen,1711.63,Pending,Atlanta,CO,19.0,Standard,2024-06-22 04:58:00,useru00154@outlook.com,user_333,827.92,14,S005,Product_035,,Home Office
+T000060,U00199,2023-03-28,Central,Sports,2864.08,Active,Phoenix,TX,32.0,Basic,03/06/2023 05:27:00,useru00199@yahoo.com,user_185,620.24,10,S010,Product_101,0.23,Consumer
+T000329,U00177,2023-09-08,South,Electronics,3040.79,Pending,Los Angeles,GA,29.0,Basic,2023-05-17 16:22:00,useru00177@yahoo.com,user_58,1699.26,14,S013,Product_061,0.15,Corporate
+T000097,U00428,2024-09-01,West,Clothing,444.27,Inactive,Phoenix,WA,48.0,Standard,2024-12-18T19:37:00,useru00428@gmail.com,user_76,1458.78,2,S015,Product_055,0.28,Corporate
+T000313,U00338,2024-12-17,South,Furniture,1476.38,Active,New York,GA,51.0,Standard,2023-02-02 04:31:00,useru00338@outlook.com,user_240,1118.49,11,S009,Product_124,0.12,Home Office
+T000366,U00395,2023-09-24,Central,Books,423.99,Active,Chicago,NV,70.0,Basic,2024-09-02 03:06:00,useru00395@gmail.com,user_254,2282.23,2,S008,Product_012,0.21,Home Office
+T000300,U00288,2024-10-03,West,Sports,4672.29,Inactive,New York,IL,28.0,Premium,,useru00288@gmail.com,user_34,699.75,1,S002,Product_112,0.21,Corporate
+T000278,U00133,2024-08-06,South,Books,967.34,,Seattle,GA,54.0,Basic,2024-04-09T00:27:00,,user_166,2487.79,11,S009,Product_239,0.25,Consumer
+T000925,U00105,2024-12-11,East,Toys,1446.13,Active,Boise,TX,49.0,Standard,2023-09-05 06:49:00,useru00105@yahoo.com,user_325,,12,S011,Product_300,0.19,Consumer
+T000602,U00372,2024-06-25,East,Clothing,1554.83,Active,Chicago,CA,67.0,Free,10/08/2024 12:10:00,useru00372@yahoo.com,user_22,1972.7,6,S006,Product_279,0.34,Home Office
+T000440,U00251,2024-11-16,Central,Electronics,1116.25,Churned,Tucson,AZ,38.0,Standard,09/17/2024 19:48:00,useru00251@outlook.com,user_256,532.02,6,S007,Product_093,0.21,Corporate
+T000838,U00126,2024-01-02,West,Home & Kitchen,4049.84,Churned,Los Angeles,AZ,69.0,Premium,08/20/2023 10:18:00,useru00126@outlook.com,user_116,1454.33,13,S009,Product_146,0.35,Consumer
+T000571,U00213,2023-04-06,East,Beauty,749.36,Active,Phoenix,NV,46.0,Free,2023-07-04 13:02:00,useru00213@outlook.com,user_315,11.83,14,S009,Product_104,0.11,Home Office
+T000880,U00160,2023-11-23,South,Clothing,2702.49,,Tucson,IL,53.0,Standard,,useru00160@gmail.com,user_202,1919.11,1,S004,Product_264,0.19,Home Office
+T000262,U00404,2023-08-22,West,Furniture,2072.91,Inactive,New York,GA,65.0,Free,2024-03-29 04:49:00,useru00404@outlook.com,user_44,1007.12,7,S001,Product_202,0.38,Home Office
+T000579,U00163,2023-09-09,East,Furniture,1474.32,Active,New York,WA,57.0,Premium,09/22/2023 12:09:00,useru00163@yahoo.com,user_272,1248.23,7,S001,Product_014,0.49,Home Office
+T000024,U00057,2024-05-26,East,Electronics,3163.46,Pending,New York,WA,,Basic,2024-08-07T13:11:00,useru00057@outlook.com,user_35,1362.48,9,S009,Product_011,0.2,Home Office
+T000031,U00270,2024-02-25,Central,Clothing,635.38,Active,Portland,CO,58.0,Premium,2024-07-18 20:37:00,useru00270@gmail.com,user_29,1297.66,3,S006,Product_116,0.17,Corporate
+T000618,U00442,2024-10-06,East,Toys,3213.95,Active,Reno,AZ,29.0,Premium,2024-05-22T14:28:00,,user_230,1816.42,7,S011,Product_067,0.3,Home Office
+T000011,U00445,2023-02-22,South,Books,1764.71,Active,Chicago,CO,29.0,Basic,07/23/2024 11:07:00,useru00445@yahoo.com,user_393,1535.87,1,S010,Product_137,0.01,Corporate
+T000222,U00428,2024-08-22,East,Toys,1130.36,Active,Houston,WA,55.0,Basic,10/31/2024 21:57:00,useru00428@yahoo.com,user_331,302.79,2,S010,Product_186,0.29,Corporate
+T000821,U00008,2023-06-23,Central,Books,978.83,Active,Los Angeles,OR,26.0,Standard,02/05/2024 18:02:00,useru00008@yahoo.com,user_234,,13,S008,Product_183,0.03,Consumer
+T000297,U00328,2024-12-12,Central,Toys,1911.97,Churned,Austin,OR,,Premium,2023-05-20T10:42:00,useru00328@yahoo.com,user_281,1785.39,8,S014,Product_143,0.42,Consumer
+T000055,U00283,2024-02-26,West,Books,2683.33,Inactive,Phoenix,OR,66.0,Premium,2023-04-09 16:09:00,useru00283@outlook.com,user_182,995.26,7,S008,Product_290,0.12,Corporate
+T000543,U00201,2023-01-12,East,Electronics,572.64,Inactive,Atlanta,CA,34.0,Premium,2023-09-07 15:51:00,useru00201@yahoo.com,user_110,972.7,9,S014,Product_037,0.07,Home Office
+T000210,U00405,2024-10-15,South,Home & Kitchen,2894.83,Active,Los Angeles,OR,69.0,Standard,08/10/2023 18:30:00,useru00405@outlook.com,user_127,1088.45,15,S010,Product_077,0.46,Corporate
+T000605,U00124,2024-08-30,West,Sports,2467.98,Pending,Chicago,IL,17.0,Standard,2023-03-20T02:58:00,useru00124@yahoo.com,user_168,242.79,14,S007,Product_283,0.36,Consumer
+T000693,U00358,2023-03-02,West,Beauty,4873.88,Churned,Houston,NY,67.0,Premium,2024-03-13 02:47:00,useru00358@gmail.com,,2052.93,1,S001,Product_237,0.04,Corporate
+T000663,U00078,2024-04-19,Central,Furniture,2897.19,,Houston,CO,57.0,Premium,2024-08-25T11:14:00,useru00078@gmail.com,user_217,1070.74,9,S011,Product_128,0.09,Home Office
+T000867,U00477,2024-11-04,West,Home & Kitchen,3291.57,Inactive,Portland,CA,52.0,Free,,useru00477@outlook.com,user_292,2058.18,1,S004,Product_193,0.32,Consumer
+T000071,U00070,2024-02-26,South,Books,4336.57,Churned,New York,IL,24.0,Standard,2024-11-23 12:31:00,useru00070@yahoo.com,user_193,1585.9,2,S007,Product_264,0.37,Corporate
+T000544,U00075,2023-03-11,East,Clothing,2835.13,Churned,Los Angeles,AZ,29.0,Basic,03/18/2024 01:55:00,useru00075@gmail.com,user_372,979.99,14,S004,Product_066,0.24,Home Office
+T000108,U00010,2023-08-22,West,Home & Kitchen,,Inactive,Austin,NY,38.0,Standard,2024-01-20T20:16:00,useru00010@outlook.com,user_339,,2,S007,Product_228,0.19,Corporate
+T000494,U00256,2023-07-06,East,Beauty,493.86,Active,Los Angeles,AZ,51.0,Basic,,useru00256@gmail.com,,2018.98,5,S002,Product_179,0.34,Consumer
+T000591,U00388,2024-12-13,Central,Toys,4087.16,Inactive,Seattle,AZ,21.0,Basic,08/12/2024 08:00:00,useru00388@yahoo.com,user_285,72.11,11,S010,Product_011,0.33,Consumer
+T000742,U00134,2024-12-23,East,Books,953.87,Active,New York,IL,20.0,Free,2024-07-17 11:03:00,useru00134@gmail.com,user_209,1678.52,14,S004,Product_100,0.16,Corporate
+T000293,U00292,2024-04-07,Central,Books,475.28,Inactive,Chicago,CA,67.0,Basic,07/11/2023 06:04:00,useru00292@gmail.com,user_269,148.35,3,S006,Product_211,0.2,Consumer
+T000290,U00061,2023-03-15,East,Sports,1675.45,Active,Phoenix,WA,27.0,Free,07/10/2024 08:00:00,useru00061@yahoo.com,user_207,2055.54,1,S008,Product_263,0.49,Corporate
+T000653,U00429,2023-09-15,East,Electronics,561.7,Churned,Austin,GA,,Premium,2024-02-27 17:14:00,useru00429@yahoo.com,user_47,,1,S009,Product_050,0.41,Corporate
+T000040,U00163,2024-05-06,East,Books,1446.07,Inactive,Houston,OR,67.0,Standard,05/30/2023 09:02:00,useru00163@gmail.com,user_227,1869.61,14,S009,Product_139,0.47,Consumer
+T000590,U00110,2023-08-12,East,Electronics,1289.72,Inactive,Los Angeles,WA,56.0,Basic,2023-08-03 02:21:00,useru00110@gmail.com,,1867.31,4,S001,Product_244,0.34,Home Office
+T000308,U00365,2024-01-29,East,Clothing,2597.5,Inactive,Austin,OR,31.0,Basic,06/29/2024 21:56:00,useru00365@outlook.com,user_373,277.64,13,S006,Product_074,0.13,Home Office
+T000680,U00464,2023-03-10,South,Beauty,4944.6,Active,Seattle,AZ,31.0,Premium,2024-06-28T06:52:00,useru00464@outlook.com,user_309,1128.59,2,S001,Product_165,0.12,Consumer
+T000067,U00181,2024-04-13,Central,Books,4594.23,Pending,New York,AZ,22.0,Premium,2024-01-18T22:09:00,useru00181@outlook.com,user_197,1219.24,15,S011,Product_089,0.28,Consumer
+T000276,U00334,2023-03-21,East,Toys,3364.51,Churned,Seattle,NV,37.0,Standard,12/14/2024 00:07:00,useru00334@gmail.com,user_114,1897.26,12,S006,Product_099,0.04,Corporate
+T000068,U00096,2023-11-19,South,Electronics,4328.96,Inactive,Denver,IL,67.0,Basic,2024-10-30T15:26:00,useru00096@outlook.com,user_251,1415.67,4,S005,Product_017,0.14,Consumer
+T000319,U00412,2023-07-20,Central,Electronics,1817.51,Active,New York,TX,39.0,Basic,06/22/2023 01:06:00,useru00412@gmail.com,user_61,1626.99,3,S011,Product_207,0.12,Corporate
+T000549,U00216,2023-07-23,West,Furniture,3144.28,Active,Atlanta,OR,39.0,Premium,2023-05-06 11:48:00,useru00216@gmail.com,user_281,322.92,12,S011,Product_217,0.1,Home Office
+T000741,U00028,2023-01-29,West,Beauty,542.11,Active,Chicago,CO,36.0,Standard,06/25/2024 22:38:00,useru00028@outlook.com,user_347,2409.79,7,S013,Product_041,0.46,Consumer
+T000715,U00201,2023-07-21,Central,Sports,3589.23,Active,Atlanta,WA,56.0,Premium,2023-07-14 04:54:00,useru00201@yahoo.com,user_61,2421.8,13,S007,Product_071,0.46,Home Office
+T000754,U00073,2024-09-11,West,Beauty,2867.8,Active,Los Angeles,WA,22.0,Free,2024-02-25 06:02:00,useru00073@yahoo.com,user_359,585.32,11,S012,Product_079,0.32,Home Office
+T000328,U00374,2023-09-03,South,Home & Kitchen,2880.83,Active,New York,CO,66.0,Free,2024-03-10T21:32:00,useru00374@yahoo.com,user_347,1746.22,10,S004,Product_004,0.36,Home Office
+T000383,U00475,2024-12-02,West,Home & Kitchen,2620.7,Inactive,New York,TX,34.0,Premium,2023-10-29 00:29:00,useru00475@outlook.com,user_251,1078.66,1,S001,Product_129,0.07,Home Office
+T000452,U00257,2024-10-18,West,Beauty,4361.71,Active,Los Angeles,NY,15.0,Standard,02/21/2024 16:30:00,useru00257@yahoo.com,user_367,1790.91,9,S012,Product_013,0.22,Consumer
+T000523,U00097,2024-09-03,Central,Books,3669.77,Active,Chicago,GA,33.0,Basic,12/18/2024 00:19:00,,user_334,1056.45,13,S015,Product_076,0.22,Consumer
+T000219,U00461,2023-02-11,West,Clothing,1547.33,Churned,Houston,CO,37.0,Premium,2024-10-18T06:37:00,useru00461@yahoo.com,user_43,1116.42,2,S009,Product_202,0.1,Home Office
+T000788,U00018,2023-04-18,Central,Toys,4794.91,Churned,Chicago,AZ,49.0,Basic,11/03/2023 13:53:00,useru00018@yahoo.com,user_20,,8,S004,Product_005,0.13,Consumer
+T000437,U00225,2024-09-23,East,Furniture,3657.46,Active,Los Angeles,AZ,53.0,Standard,2023-11-04 01:59:00,useru00225@outlook.com,user_219,2385.18,1,S003,Product_263,0.08,Home Office
+T000765,U00230,2023-07-29,East,Home & Kitchen,1723.71,Active,Seattle,OR,55.0,Standard,,useru00230@yahoo.com,user_74,1032.95,5,S002,Product_225,0.29,Consumer
+T000089,U00486,2023-07-12,South,Toys,2715.2,Active,Houston,CA,29.0,Premium,2024-05-04T00:21:00,useru00486@gmail.com,user_91,2111.49,1,S003,Product_073,0.39,Corporate
+T000064,U00055,2023-01-11,West,Sports,2558.27,Inactive,Chicago,NV,29.0,Basic,2024-11-26T18:44:00,useru00055@gmail.com,user_152,2404.51,12,S003,Product_179,0.16,Consumer
+T000827,U00386,2023-08-24,East,Electronics,1090.4,Active,Phoenix,IL,,Premium,2024-03-28 09:52:00,useru00386@outlook.com,user_362,,10,S003,Product_171,0.13,Home Office
+T000717,U00287,2023-12-13,South,Home & Kitchen,3603.63,Active,Chicago,CO,26.0,Standard,2024-01-09 17:15:00,useru00287@gmail.com,user_18,,14,S006,Product_271,,Home Office
+T000352,U00025,2023-11-19,West,Books,52.31,Active,Los Angeles,OR,47.0,Standard,2023-12-31T04:44:00,useru00025@yahoo.com,user_258,2019.7,10,S013,Product_196,0.24,Consumer
+T000937,U00127,2024-03-23,Central,Toys,3129.26,Active,Houston,NV,50.0,Basic,2024-09-28 15:53:00,useru00127@gmail.com,user_91,2454.68,14,S006,Product_289,0.42,Corporate
+T000257,U00435,2024-05-22,Central,Books,194.72,Inactive,Chicago,NV,58.0,Standard,,useru00435@outlook.com,user_33,1622.51,2,S008,Product_178,0.22,Consumer
+T000636,U00467,2023-05-02,South,Furniture,,,Austin,CA,,Standard,2024-01-17T20:14:00,useru00467@gmail.com,user_122,2194.04,14,S002,Product_167,,Consumer
+T000645,U00474,2023-03-04,Central,Electronics,1017.96,Active,Houston,OR,56.0,Basic,08/10/2024 10:07:00,useru00474@gmail.com,user_373,2321.7,13,S003,Product_296,0.08,Home Office
+T000555,U00035,2023-08-26,South,Electronics,2867.32,Churned,Denver,TX,33.0,Free,2023-06-21 07:01:00,useru00035@gmail.com,user_52,1958.94,13,S008,Product_284,0.38,Consumer
+T000348,U00498,2024-03-07,West,Sports,288.77,,Phoenix,TX,39.0,Standard,2024-03-10T11:03:00,useru00498@outlook.com,"",399.64,3,S002,Product_126,0.04,Corporate
+T000169,U00142,2023-03-05,Central,Furniture,4453.11,Active,Los Angeles,GA,32.0,Premium,2024-02-07 21:08:00,useru00142@outlook.com,user_314,1717.88,10,S003,Product_219,0.49,Corporate
+T000918,U00212,2024-06-15,Central,Sports,4982.75,Active,Tucson,CO,15.0,Basic,2023-04-14T05:53:00,useru00212@gmail.com,user_169,111.56,6,S008,Product_017,0.18,Home Office
+T000529,U00389,2024-08-06,Central,Books,4166.32,Churned,Los Angeles,WA,38.0,Basic,08/24/2023 18:56:00,useru00389@gmail.com,user_111,2151.59,12,S007,Product_168,0.23,Consumer
+T000824,U00244,2024-01-09,Central,Furniture,3494.45,Churned,Phoenix,IL,57.0,Basic,2023-12-04T07:19:00,useru00244@gmail.com,"",1903.83,7,S005,Product_080,0.25,Home Office
+T000169,U00142,2023-03-05,Central,Furniture,4453.11,Active,Los Angeles,GA,32.0,Premium,2024-02-07 21:08:00,useru00142@outlook.com,user_314,1717.88,10,S003,Product_219,0.49,Corporate
+T000817,U00084,2023-03-05,South,Sports,534.12,Churned,Houston,NV,53.0,Premium,2023-04-02 08:02:00,useru00084@yahoo.com,user_124,1726.2,10,S014,Product_239,0.38,Consumer
+T000087,U00246,2023-03-04,West,Furniture,694.81,Churned,New York,GA,30.0,Standard,2023-01-20T12:50:00,useru00246@outlook.com,user_177,1258.47,3,S001,Product_164,,Corporate
+T000433,U00259,2024-02-24,West,Electronics,1562.71,Active,Los Angeles,CO,51.0,Premium,2024-04-19 02:07:00,useru00259@gmail.com,user_303,55.17,1,S004,Product_192,0.23,Consumer
+T000185,U00412,2023-10-18,East,Home & Kitchen,365.5,Active,Atlanta,CO,18.0,Basic,11/22/2024 01:06:00,useru00412@yahoo.com,user_361,1483.93,12,S008,Product_183,0.16,Home Office
+T000848,U00185,2024-03-16,West,Clothing,2391.3,Active,New York,IL,54.0,Standard,2023-03-28 18:14:00,useru00185@gmail.com,user_91,748.21,2,S010,Product_114,,Consumer
+T000535,U00436,2024-08-10,West,Sports,4125.18,Churned,Houston,NY,47.0,Basic,2024-08-12T00:16:00,useru00436@gmail.com,user_351,840.57,12,S014,Product_192,0.27,Home Office
+T000295,U00270,2023-12-03,South,Toys,2306.42,Pending,Denver,WA,56.0,Basic,12/18/2024 22:50:00,useru00270@gmail.com,user_92,1834.44,15,S011,Product_094,,Home Office
+T000893,U00382,2024-12-11,East,Toys,4008.43,Active,New York,CA,66.0,Basic,06/17/2023 00:38:00,useru00382@gmail.com,,1767.64,4,S013,Product_069,0.11,Corporate
+T000426,U00241,2023-03-10,South,Electronics,1566.08,Pending,Tucson,GA,44.0,Premium,2024-04-24 19:10:00,useru00241@outlook.com,user_177,2320.06,14,S015,Product_219,0.29,Home Office
+T000714,U00188,2024-02-20,East,Beauty,4844.51,,Seattle,OR,44.0,Standard,2023-02-11T12:14:00,useru00188@gmail.com,user_263,,10,S005,Product_131,,Corporate
+T000261,U00363,2024-03-28,Central,Toys,3665.43,Pending,Denver,AZ,67.0,Standard,2024-03-25 13:49:00,useru00363@yahoo.com,user_259,668.71,7,S006,Product_126,0.08,Corporate
+T000238,U00015,2023-09-09,Central,Books,2326.16,Inactive,Los Angeles,CA,27.0,Premium,2023-09-22T08:42:00,useru00015@gmail.com,user_249,143.04,6,S010,Product_153,0.43,Corporate
+T000560,U00021,2024-05-05,West,Beauty,975.46,Active,Boise,NY,24.0,Basic,2023-03-03 00:32:00,,user_207,1534.25,6,S005,Product_189,0.03,Consumer
+T000584,U00128,2023-05-16,Central,Sports,4990.74,Pending,Phoenix,OR,23.0,Premium,2023-04-26T18:00:00,useru00128@gmail.com,user_8,856.69,3,S012,Product_064,0.43,Corporate
+T000446,U00205,2023-07-05,Central,Books,35.2,Churned,Los Angeles,TX,32.0,Basic,2024-10-12 10:06:00,useru00205@outlook.com,user_33,1821.77,8,S010,Product_216,0.32,Corporate
+T000868,U00471,2023-10-28,West,Beauty,673.46,Pending,Omaha,CA,37.0,Standard,2024-03-11 08:32:00,useru00471@yahoo.com,user_399,1700.78,14,S007,Product_140,0.42,Home Office
+T000801,U00262,2023-08-25,East,Clothing,4883.84,Active,New York,WA,54.0,Premium,2024-03-23 09:02:00,useru00262@outlook.com,user_271,1922.49,4,S007,Product_066,0.42,Consumer
+T000600,U00236,2024-09-24,East,Electronics,3864.11,,Chicago,GA,26.0,Premium,02/18/2023 03:55:00,useru00236@outlook.com,user_285,1847.57,12,S005,Product_091,0.27,Consumer
+T000850,U00047,2024-03-31,South,Home & Kitchen,4288.37,Active,Houston,IL,65.0,Premium,2024-09-24T08:18:00,useru00047@yahoo.com,user_103,975.78,14,S005,Product_060,0.46,Consumer
+T000266,U00378,2023-09-11,West,Sports,4115.99,Active,Seattle,OR,68.0,Premium,2024-03-11 04:30:00,useru00378@yahoo.com,user_207,1299.77,5,S010,Product_256,0.32,Home Office
+T000621,U00193,2023-05-05,West,Toys,380.94,Active,New York,WA,,Free,2024-08-15 10:03:00,useru00193@yahoo.com,,692.1,4,S008,Product_105,0.34,Corporate
+T000530,U00472,2024-05-18,East,Books,3977.07,,Chicago,NY,54.0,Premium,2023-02-01 19:03:00,useru00472@gmail.com,user_196,2403.21,6,S004,Product_098,0.49,Corporate
+T000056,U00351,2023-03-24,Central,Electronics,476.57,Inactive,Seattle,CA,,Premium,05/26/2024 13:41:00,useru00351@gmail.com,user_22,2253.68,10,S008,Product_139,,Corporate
+T000121,U00189,2024-08-25,East,Sports,3882.97,Active,New York,TX,58.0,Free,2024-06-10 03:24:00,useru00189@outlook.com,user_83,641.27,12,S015,Product_080,0.02,Home Office
+T000216,U00331,2023-12-10,East,Beauty,3282.24,Inactive,Omaha,GA,68.0,Basic,08/03/2024 04:57:00,useru00331@yahoo.com,user_191,,6,S005,Product_234,0.48,Consumer
+T000026,U00019,2023-10-28,West,Sports,4430.09,Active,New York,OR,67.0,Premium,10/24/2024 06:18:00,useru00019@gmail.com,user_170,1999.36,7,S012,Product_226,0.45,Consumer
+T000073,U00024,2023-04-12,Central,Toys,91.24,Active,Chicago,CO,15.0,Basic,2024-12-06T04:56:00,useru00024@yahoo.com,user_185,932.75,3,S001,Product_203,0.31,Consumer
+T000045,U00354,2023-05-01,Central,Books,1844.04,,Seattle,CO,24.0,Free,2024-01-18T13:44:00,useru00354@outlook.com,"",622.43,14,S013,Product_042,0.26,Corporate
+T000248,U00314,2023-09-28,East,Furniture,4464.43,,New York,TX,50.0,Standard,2024-03-26 01:12:00,,user_134,1170.5,15,S015,Product_254,0.02,Home Office
+T000722,U00144,2023-06-30,East,Toys,1306.21,Pending,Phoenix,CO,18.0,Premium,,useru00144@outlook.com,user_175,2051.79,8,S008,Product_232,0.07,Home Office
+T000282,U00056,2023-04-16,West,Clothing,2968.5,,Tucson,TX,55.0,Basic,05/07/2024 23:39:00,useru00056@gmail.com,user_31,1463.38,11,S013,Product_184,0.16,Consumer
+T000894,U00149,2023-09-23,West,Home & Kitchen,1617.58,Churned,Houston,CO,39.0,Basic,07/11/2023 08:10:00,useru00149@gmail.com,user_364,1803.72,11,S003,Product_024,0.07,Consumer
+T000915,U00030,2024-07-25,East,Beauty,2554.54,Pending,Houston,OR,25.0,Basic,2024-06-01T08:35:00,useru00030@gmail.com,user_80,1714.69,3,S004,Product_205,0.34,Home Office
+T000811,U00046,2023-12-07,West,Beauty,2501.11,Pending,Phoenix,IL,61.0,Standard,2023-09-23T07:22:00,useru00046@gmail.com,user_210,412.14,2,S012,Product_065,0.41,Consumer
+T000245,U00396,2024-04-09,South,Toys,601.38,Active,New York,WA,33.0,Basic,2024-03-17 06:38:00,useru00396@yahoo.com,user_97,1024.27,5,S005,Product_121,0.31,Corporate
+T000823,U00145,2023-08-05,Central,Clothing,3103.81,Inactive,New York,WA,49.0,Basic,08/14/2023 00:00:00,useru00145@outlook.com,,2036.05,4,S001,Product_076,0.05,Corporate
+T000322,U00064,2023-08-01,South,Clothing,911.51,Active,Boise,GA,43.0,Premium,2023-05-12T18:13:00,useru00064@outlook.com,,2449.92,6,S009,Product_088,0.21,Consumer
+T000644,U00405,2023-02-25,East,Home & Kitchen,,Churned,Atlanta,CO,53.0,Standard,2024-04-21T16:32:00,useru00405@yahoo.com,user_108,1806.5,11,S009,Product_183,0.09,Corporate
+T000159,U00411,2024-10-16,West,Furniture,4111.91,Active,Houston,NV,32.0,Standard,2023-11-08T02:13:00,useru00411@outlook.com,user_198,1317.85,11,S003,Product_286,0.37,Consumer
+T000645,U00474,2023-03-04,Central,Electronics,1017.96,Active,Houston,OR,56.0,Basic,08/10/2024 10:07:00,useru00474@gmail.com,user_373,2321.7,13,S003,Product_296,0.08,Home Office
+T000430,U00006,2023-07-20,East,Sports,38.02,Active,Denver,AZ,31.0,Premium,10/07/2023 01:41:00,,user_357,,10,S014,Product_016,0.43,Home Office
+T000942,U00463,2024-12-29,West,Home & Kitchen,1939.12,Active,Seattle,TX,22.0,Basic,07/21/2023 18:49:00,useru00463@yahoo.com,user_166,2096.63,14,S011,Product_085,0.19,Corporate
+T000463,U00427,2024-01-18,West,Furniture,3956.69,Inactive,Chicago,IL,66.0,Basic,2023-10-08 03:04:00,useru00427@outlook.com,user_370,2380.35,13,S011,Product_200,0.34,Corporate
+T000310,U00133,2024-02-23,East,Clothing,4343.13,Active,Houston,OR,22.0,Premium,08/22/2024 07:30:00,,user_137,23.03,1,S002,Product_109,,Home Office
+T000698,U00305,2023-02-04,East,Beauty,4512.54,Active,Denver,WA,,Free,2023-04-15 07:06:00,useru00305@yahoo.com,user_199,,6,S013,Product_152,0.35,Corporate
+T000061,U00486,2024-02-10,East,Furniture,4022.34,Active,Phoenix,NV,23.0,Basic,12/12/2024 06:30:00,useru00486@yahoo.com,user_150,1584.09,13,S004,Product_167,0.19,Corporate
+T000885,U00209,2023-05-16,South,Home & Kitchen,1248.5,Inactive,Los Angeles,CA,38.0,Premium,2024-01-29T02:47:00,useru00209@gmail.com,,1123.82,7,S009,Product_206,0.02,Consumer
+T000596,U00072,2023-08-14,Central,Clothing,2594.6,Active,Los Angeles,GA,20.0,Premium,,useru00072@gmail.com,user_397,65.4,1,S002,Product_166,0.08,Home Office
+T000768,U00462,2023-03-04,West,Home & Kitchen,1360.09,Active,Chicago,NY,64.0,Basic,2024-07-06 18:35:00,useru00462@gmail.com,user_157,1354.44,10,S012,Product_243,0.13,Consumer
+T000650,U00422,2023-01-18,Central,Sports,4844.74,Active,Phoenix,OR,37.0,Basic,2024-02-01 09:48:00,useru00422@gmail.com,user_39,,8,S015,Product_028,0.21,Consumer
+T000651,U00246,2023-08-25,East,Books,310.94,Active,Seattle,NY,42.0,Basic,2024-02-27 07:08:00,useru00246@outlook.com,user_55,656.35,14,S015,Product_004,0.11,Corporate
+T000866,U00062,2024-04-12,West,Home & Kitchen,4971.38,Pending,Phoenix,WA,32.0,Premium,2024-09-01T12:40:00,useru00062@yahoo.com,user_268,2188.24,2,S003,Product_006,0.37,Home Office
+T000669,U00404,2023-08-20,South,Home & Kitchen,4596.39,,Boise,GA,42.0,Basic,09/12/2023 22:37:00,useru00404@outlook.com,user_260,784.31,2,S006,Product_175,0.29,Home Office
+T000299,U00307,2023-01-05,West,Furniture,3837.9,Active,Los Angeles,IL,27.0,Basic,2023-01-15 10:52:00,useru00307@gmail.com,user_50,2076.97,3,S001,Product_213,0.26,Corporate
+T000690,U00304,2024-02-17,South,Furniture,1338.69,Pending,Los Angeles,CO,36.0,Premium,02/24/2023 22:56:00,useru00304@yahoo.com,user_68,1386.11,6,S008,Product_024,0.16,Consumer
+T000315,U00381,2024-01-26,Central,Furniture,4044.15,Active,Chicago,NY,22.0,Standard,2023-07-12T23:07:00,useru00381@yahoo.com,user_296,780.44,4,S014,Product_199,0.49,Corporate
+T000311,U00267,2023-09-30,South,Toys,3786.99,Active,Los Angeles,AZ,35.0,Free,2024-11-12T12:24:00,useru00267@yahoo.com,,1145.01,12,S014,Product_072,0.01,Home Office
+T000362,U00045,2023-04-17,West,Electronics,3085.14,Inactive,Los Angeles,NV,49.0,Basic,08/18/2024 01:42:00,useru00045@gmail.com,user_233,290.68,2,S006,Product_238,0.21,Home Office
+T000480,U00128,2023-12-25,West,Books,710.8,Pending,Phoenix,NV,58.0,Basic,,useru00128@gmail.com,user_269,1573.22,11,S008,Product_153,0.41,Home Office
+T000111,U00411,2024-11-24,East,Clothing,484.04,Active,Phoenix,TX,57.0,Premium,2024-03-24T19:17:00,useru00411@yahoo.com,user_206,1144.06,12,S014,Product_245,0.4,Consumer
+T000935,U00017,2023-11-24,West,Home & Kitchen,929.1,Active,Denver,TX,,Free,2024-09-20 01:54:00,useru00017@gmail.com,user_158,1441.81,11,S003,Product_187,0.09,Consumer
+T000487,U00273,2023-12-29,East,Furniture,527.09,Churned,Boise,WA,54.0,Premium,2023-08-19 14:52:00,useru00273@gmail.com,,565.05,4,S004,Product_116,0.22,Consumer
+T000364,U00124,2024-07-23,South,Sports,3085.18,Active,Houston,NV,42.0,Basic,06/27/2023 12:57:00,useru00124@yahoo.com,user_364,1263.12,13,S007,Product_134,0.42,Corporate
+T000255,U00060,2023-01-14,West,Toys,2306.21,Pending,Los Angeles,NV,61.0,Basic,2024-09-23T11:44:00,useru00060@outlook.com,user_155,342.11,14,S001,Product_097,0.43,Home Office
+T000260,U00402,2023-12-30,Central,Books,4482.63,Churned,Austin,NV,57.0,Premium,2024-03-24 14:53:00,useru00402@outlook.com,user_53,109.71,11,S002,Product_106,0.46,Corporate
+T000803,U00001,2023-08-02,Central,Electronics,,Inactive,Reno,IL,65.0,Standard,2024-02-17T14:15:00,,user_267,1946.47,2,S005,Product_061,,Home Office
+T000678,U00392,2023-07-31,West,Books,3228.87,Active,Chicago,TX,16.0,Standard,2024-07-05 12:43:00,useru00392@yahoo.com,user_7,156.64,10,S013,Product_199,0.48,Corporate
+T000495,U00461,2023-04-13,East,Home & Kitchen,4986.74,,Seattle,GA,68.0,Basic,2023-04-30 21:35:00,useru00461@yahoo.com,,,1,S015,Product_246,0.41,Home Office
+T000671,U00500,2024-12-27,Central,Clothing,2578.19,Active,Atlanta,CA,39.0,Premium,2024-08-31T20:41:00,useru00500@gmail.com,user_298,122.16,7,S011,Product_141,0.39,Home Office
+T000378,U00266,2024-03-19,West,Electronics,3235.26,Active,Houston,CA,17.0,Premium,2024-06-28 03:17:00,useru00266@outlook.com,user_201,553.62,12,S005,Product_254,0.1,Corporate
+T000527,U00344,2024-02-10,West,Books,2466.21,Pending,Phoenix,GA,,Basic,,useru00344@outlook.com,user_189,2073.45,3,S009,Product_004,0.46,Corporate
+T000846,U00448,2023-11-23,Central,Clothing,3930.82,Inactive,Atlanta,TX,26.0,Premium,04/19/2023 17:11:00,useru00448@outlook.com,user_208,2207.89,3,S009,Product_211,0.09,Consumer
+T000138,U00487,2023-06-15,West,Furniture,3932.54,Pending,Chicago,CA,25.0,Basic,2023-04-04T04:30:00,useru00487@gmail.com,user_190,99.2,7,S010,Product_267,0.14,Consumer
+T000356,U00405,2023-09-08,Central,Electronics,781.27,Active,Boise,NV,40.0,Premium,04/18/2024 21:05:00,useru00405@outlook.com,,219.13,15,S015,Product_204,0.38,Corporate
+T000366,U00395,2023-09-24,Central,Books,423.99,Active,Chicago,NV,70.0,Basic,2024-09-02 03:06:00,useru00395@gmail.com,user_254,2282.23,2,S008,Product_012,0.21,Home Office
+T000943,U00385,2024-02-20,West,Sports,2993.26,Pending,Austin,NV,70.0,Basic,11/04/2023 00:13:00,useru00385@yahoo.com,user_341,1671.09,7,S012,Product_197,0.36,Consumer
+T000750,U00284,2024-03-01,South,Electronics,3351.35,Churned,Los Angeles,CO,,Standard,2023-10-26T22:02:00,useru00284@outlook.com,user_54,1550.47,6,S003,Product_163,0.37,Consumer
+T000949,U00062,2023-05-16,South,Toys,4256.91,Active,Tulsa,CO,59.0,Free,2023-08-07T13:30:00,useru00062@yahoo.com,user_220,184.01,2,S001,Product_256,0.15,Home Office
+T000830,U00352,2024-06-21,South,Home & Kitchen,2376.58,Pending,Atlanta,AZ,53.0,Basic,2023-09-21 00:20:00,useru00352@outlook.com,user_231,1186.86,8,S008,Product_174,0.17,Consumer
+T000657,U00384,2024-11-01,West,Sports,2723.95,Active,Denver,NV,63.0,Standard,2024-12-14 08:36:00,useru00384@outlook.com,user_34,434.44,10,S009,Product_020,0.4,Home Office
+T000200,U00202,2023-07-02,Central,Clothing,727.92,Active,Portland,NY,43.0,Premium,2023-03-16T02:36:00,,user_255,1602.64,11,S007,Product_137,0.08,Corporate
+T000214,U00181,2023-10-01,East,Furniture,,Active,Los Angeles,CO,47.0,Premium,2024-12-27T17:43:00,useru00181@yahoo.com,,1734.59,15,S002,Product_097,0.45,Consumer
+T000409,U00134,2023-10-21,East,Clothing,416.71,,Reno,NV,46.0,Standard,2023-07-04 14:00:00,useru00134@yahoo.com,user_365,1858.42,1,S014,Product_221,0.01,Consumer
+T000333,U00065,2023-06-09,East,Electronics,3839.25,Pending,Portland,AZ,42.0,Standard,03/20/2024 15:18:00,useru00065@yahoo.com,user_79,471.22,2,S014,Product_135,0.5,Corporate
+T000209,U00249,2023-02-25,South,Home & Kitchen,1088.66,Active,Chicago,AZ,23.0,Premium,01/03/2024 08:12:00,useru00249@outlook.com,user_144,2129.87,3,S013,Product_176,0.11,Consumer
+T000614,U00392,2024-03-03,South,Electronics,3213.26,Active,Denver,GA,61.0,Basic,2023-11-30T21:42:00,useru00392@outlook.com,user_267,2243.18,14,S014,Product_146,0.41,Corporate
+T000079,U00255,2023-12-22,East,Books,843.15,Churned,Austin,WA,61.0,Standard,01/31/2023 10:51:00,useru00255@gmail.com,user_296,1242.89,1,S008,Product_291,0.08,Consumer
+T000030,U00342,2023-12-22,Central,Books,4457.75,Pending,New York,TX,65.0,Premium,,useru00342@outlook.com,user_240,1381.36,2,S002,Product_159,0.2,Corporate
+T000536,U00420,2024-02-07,West,Beauty,3751.63,,New York,IL,55.0,Premium,2024-12-11 06:45:00,useru00420@outlook.com,user_254,185.16,4,S013,Product_208,0.15,Home Office
+T000696,U00457,2023-10-31,West,Beauty,2194.87,Churned,Austin,IL,36.0,Premium,06/26/2024 01:25:00,,user_220,1472.77,12,S005,Product_154,0.47,Home Office
+T000558,U00440,2024-05-26,West,Electronics,1042.4,Active,Los Angeles,WA,22.0,Basic,2024-01-20 09:23:00,useru00440@gmail.com,user_111,1597.94,14,S010,Product_072,0.32,Consumer
+T000837,U00087,2023-02-15,East,Clothing,2829.57,Active,Portland,CA,25.0,Premium,2024-01-16 09:56:00,useru00087@yahoo.com,user_294,1464.03,3,S006,Product_099,0.12,Consumer
+T000597,U00300,2023-03-25,West,Sports,2409.09,Inactive,Portland,GA,56.0,Standard,2024-09-11 00:46:00,useru00300@yahoo.com,user_59,1262.53,5,S005,Product_082,0.04,Home Office
+T000166,U00103,2024-12-02,East,Clothing,,,Seattle,TX,70.0,Premium,2023-12-18 22:51:00,,user_108,533.63,13,S005,Product_281,0.24,Consumer
+T000919,U00245,2024-09-24,Central,Sports,2587.73,Active,Denver,CA,34.0,Basic,08/03/2023 03:04:00,useru00245@yahoo.com,user_334,260.49,4,S011,Product_166,0.43,Home Office
+T000496,U00387,2024-08-28,West,Clothing,3320.93,Inactive,Portland,NV,59.0,Basic,07/13/2024 20:12:00,useru00387@yahoo.com,user_150,1068.67,2,S008,Product_013,0.25,Corporate
+T000825,U00404,2024-03-10,South,Clothing,1607.09,Active,Los Angeles,NY,23.0,Premium,2024-04-04 15:21:00,useru00404@outlook.com,user_289,250.66,3,S007,Product_024,0.38,Corporate
+T000066,U00222,2024-02-10,West,Sports,2253.38,Active,New York,IL,28.0,Standard,2023-03-06T18:06:00,useru00222@yahoo.com,user_59,2157.28,11,S006,Product_199,0.31,Corporate
+T000142,U00005,2024-12-18,South,Sports,1443.58,Pending,Austin,AZ,19.0,Premium,2023-11-18T11:13:00,useru00005@outlook.com,user_98,503.17,14,S005,Product_106,0.11,Home Office
+T000926,U00286,2023-07-13,East,Toys,2303.8,Active,Austin,OR,41.0,Premium,05/23/2023 10:47:00,useru00286@yahoo.com,user_17,2123.33,11,S012,Product_113,0.13,Consumer
+T000828,U00271,2024-02-17,South,Toys,937.82,Active,New York,CA,43.0,Premium,01/11/2023 14:41:00,useru00271@gmail.com,user_35,1767.49,4,S012,Product_281,0.48,Corporate
+T000656,U00224,2023-06-02,West,Clothing,2627.83,Pending,Phoenix,CO,,Free,2024-02-17 13:27:00,useru00224@yahoo.com,user_13,,10,S008,Product_240,0.06,Consumer
+T000332,U00057,2023-07-14,West,Home & Kitchen,1978.78,,Atlanta,TX,57.0,Basic,11/12/2024 08:07:00,useru00057@yahoo.com,user_366,1878.97,7,S009,Product_200,0.07,Consumer
+T000665,U00006,2023-06-06,East,Clothing,1935.82,,Los Angeles,NV,63.0,Basic,,useru00006@outlook.com,user_399,1338.88,9,S004,Product_022,0.44,Corporate
+T000250,U00455,2023-12-03,West,Clothing,1976.91,,Austin,AZ,,Basic,12/25/2024 21:30:00,useru00455@yahoo.com,user_3,114.4,8,S006,Product_292,0.06,Home Office
+T000908,U00450,2024-05-13,West,Books,1689.81,Active,Austin,IL,38.0,Premium,2023-01-14 09:20:00,useru00450@yahoo.com,user_194,1232.9,1,S010,Product_165,0.25,Consumer
+T000709,U00026,2023-12-14,South,Toys,2679.54,Pending,Atlanta,IL,19.0,Basic,2023-06-08T16:58:00,useru00026@gmail.com,user_142,2205.76,11,S002,Product_264,0.07,Corporate
+T000306,U00080,2023-07-14,West,Beauty,2462.35,,New York,AZ,39.0,Basic,2024-08-25 02:26:00,useru00080@gmail.com,user_290,1908.56,13,S015,Product_179,0.25,Home Office
+T000735,U00289,2024-10-17,East,Books,2404.89,Active,Chicago,OR,50.0,Premium,07/11/2024 21:48:00,useru00289@yahoo.com,user_304,777.23,7,S014,Product_104,0.19,Home Office
+T000568,U00050,2024-05-23,Central,Books,169.85,Pending,Chicago,CO,66.0,Free,2023-11-10T09:41:00,useru00050@yahoo.com,user_121,2118.57,4,S004,Product_237,0.07,Consumer
+T000050,U00267,2023-08-15,East,Books,314.18,Churned,Chicago,TX,55.0,Basic,2023-02-18T11:41:00,useru00267@outlook.com,user_214,753.22,9,S008,Product_124,0.42,Home Office
+T000897,U00240,2023-08-12,West,Clothing,2076.7,Pending,Houston,CA,40.0,Premium,,useru00240@outlook.com,user_122,91.21,3,S010,Product_258,0.4,Corporate
+T000003,U00404,2024-03-27,West,Beauty,3664.48,Active,Portland,OR,26.0,Standard,01/10/2024 16:32:00,useru00404@yahoo.com,user_247,741.38,13,S002,Product_240,0.48,Consumer
+T000545,U00456,2024-02-21,Central,Home & Kitchen,1214.29,Inactive,Chicago,NY,42.0,Basic,2024-07-29 02:45:00,useru00456@gmail.com,user_202,1627.17,6,S005,Product_275,0.3,Corporate
+T000351,U00218,2023-07-19,West,Clothing,398.26,Churned,Austin,CA,30.0,Basic,2023-03-08 06:38:00,useru00218@yahoo.com,user_104,85.76,10,S010,Product_023,0.28,Consumer
+T000905,U00455,2024-05-20,East,Home & Kitchen,1281.28,Active,Boise,CA,39.0,Premium,2024-02-29 16:54:00,useru00455@gmail.com,user_213,642.11,3,S015,Product_132,0.43,Home Office
+T000537,U00050,2023-07-15,West,Electronics,1485.96,Churned,Chicago,NY,19.0,Free,,useru00050@outlook.com,user_199,762.95,15,S008,Product_022,0.34,Corporate
+T000345,U00220,2024-06-27,East,Home & Kitchen,3400.37,Pending,Seattle,WA,54.0,Premium,04/17/2023 08:58:00,useru00220@yahoo.com,user_365,1973.2,3,S013,Product_076,0.16,Home Office
+T000026,U00019,2023-10-28,West,Sports,4430.09,Active,New York,OR,67.0,Premium,10/24/2024 06:18:00,useru00019@gmail.com,user_170,1999.36,7,S012,Product_226,0.45,Consumer
+T000482,U00030,2024-10-15,West,Books,4213.2,,Los Angeles,GA,36.0,Standard,2024-01-01 02:00:00,useru00030@yahoo.com,user_254,1087.25,13,S014,Product_250,0.28,Corporate
+T000576,U00173,2023-05-05,East,Toys,2558.79,Pending,New York,NY,37.0,Basic,02/02/2024 06:34:00,useru00173@outlook.com,,2480.35,6,S003,Product_268,0.41,Corporate
+T000034,U00067,2024-01-15,East,Clothing,1602.39,Active,Houston,IL,24.0,Premium,2024-01-29 19:26:00,useru00067@gmail.com,user_296,478.64,9,S008,Product_256,0.44,Consumer
+T000032,U00434,2023-03-22,West,Books,634.6,Inactive,Chicago,GA,56.0,Free,2023-06-07T05:42:00,useru00434@outlook.com,user_289,2160.13,11,S013,Product_296,0.13,Home Office
+T000232,U00278,2023-12-18,South,Electronics,,Inactive,Denver,NY,39.0,Standard,2024-03-29 14:02:00,useru00278@outlook.com,user_156,414.54,5,S012,Product_200,0.24,Home Office
+T000014,U00004,2024-05-24,Central,Home & Kitchen,654.64,Active,Los Angeles,GA,68.0,Basic,,useru00004@gmail.com,user_295,1014.04,5,S002,Product_208,0.01,Home Office
+T000193,U00239,2024-06-13,West,Clothing,1233.7,Pending,Chicago,NY,58.0,Standard,11/16/2023 19:03:00,useru00239@gmail.com,user_263,1437.04,6,S013,Product_151,,Home Office
+T000334,U00102,2024-04-30,Central,Clothing,3508.71,Active,New York,NV,55.0,Premium,05/16/2023 12:02:00,useru00102@gmail.com,user_316,2161.55,9,S005,Product_119,0.11,Consumer
+T000004,U00441,2024-11-23,Central,Furniture,4836.68,Active,Boise,OR,15.0,Premium,2024-01-13T21:47:00,useru00441@yahoo.com,user_191,,15,S009,Product_168,0.46,Consumer
+T000205,U00280,2023-05-21,East,Sports,3823.5,Active,Seattle,NY,32.0,Basic,2024-12-14 11:35:00,,user_52,1582.33,3,S001,Product_250,,Consumer
+T000515,U00254,2024-09-11,Central,Toys,1447.44,Churned,Seattle,CA,43.0,Premium,2023-06-30 06:16:00,useru00254@outlook.com,user_359,1905.36,14,S006,Product_117,0.08,Home Office
+T000800,U00473,2023-04-04,West,Furniture,2707.06,Churned,Austin,WA,61.0,Basic,2024-02-28T08:30:00,useru00473@outlook.com,user_65,,1,S009,Product_270,0.13,Consumer
+T000307,U00189,2024-12-14,West,Furniture,4633.33,Active,New York,CA,67.0,Standard,2023-01-29T22:42:00,useru00189@outlook.com,user_349,622.3,11,S014,Product_083,0.01,Home Office
+T000110,U00281,2024-05-23,South,Toys,,Pending,Omaha,NY,68.0,Basic,2023-04-03T16:04:00,useru00281@yahoo.com,user_234,743.58,2,S014,Product_090,0.44,Corporate
+T000431,U00324,2024-04-10,East,Toys,3752.18,Inactive,Phoenix,NY,17.0,Basic,2024-12-31T04:45:00,useru00324@gmail.com,"",144.84,1,S006,Product_050,0.43,Consumer
+T000078,U00472,2023-07-28,South,Home & Kitchen,2686.59,Pending,Houston,NY,34.0,Standard,2023-09-02 01:15:00,useru00472@gmail.com,user_312,1666.87,3,S002,Product_007,0.35,Consumer
+T000085,U00134,2023-06-28,West,Furniture,4274.46,Inactive,Chicago,NY,44.0,Standard,2023-05-05 00:03:00,useru00134@yahoo.com,user_323,214.68,15,S014,Product_039,,Home Office
+T000287,U00097,2024-07-02,West,Home & Kitchen,,Churned,Chicago,TX,69.0,Basic,2024-05-15 06:46:00,useru00097@outlook.com,user_86,1879.51,9,S006,Product_256,0.26,Home Office
+T000083,U00459,2024-01-17,East,Clothing,2908.05,Pending,Austin,OR,19.0,Premium,11/09/2024 04:15:00,useru00459@yahoo.com,user_202,1839.71,5,S004,Product_039,0.47,Home Office
+T000298,U00311,2023-04-13,West,Clothing,2677.92,Active,Chicago,CA,58.0,Basic,2023-07-02 06:45:00,useru00311@outlook.com,user_357,1588.8,11,S012,Product_053,0.2,Consumer
+T000790,U00391,2023-10-12,South,Toys,3828.65,Churned,Los Angeles,AZ,22.0,Premium,12/03/2023 17:47:00,useru00391@yahoo.com,user_137,58.08,13,S009,Product_287,0.49,Corporate
+T000895,U00295,2023-04-07,West,Electronics,335.64,Active,Denver,TX,48.0,Premium,2023-11-01 15:42:00,useru00295@outlook.com,,1683.31,6,S014,Product_044,0.16,Corporate
+T000399,U00150,2023-05-13,Central,Toys,3291.34,Active,Denver,GA,28.0,Standard,2024-01-01T07:28:00,useru00150@yahoo.com,user_150,614.29,6,S012,Product_278,,Corporate
+T000324,U00374,2024-09-29,East,Books,1310.77,Active,Houston,CO,20.0,Standard,2024-12-12 04:34:00,useru00374@outlook.com,user_325,485.61,11,S011,Product_262,0.3,Consumer
+T000520,U00214,2024-05-17,West,Books,3161.23,Active,Phoenix,NV,42.0,Basic,2024-06-26T09:21:00,useru00214@outlook.com,user_190,,6,S007,Product_127,0.1,Consumer
+T000917,U00019,2023-05-02,West,Home & Kitchen,1105.04,Inactive,Phoenix,TX,39.0,Standard,2023-08-18T08:57:00,useru00019@yahoo.com,user_312,2303.69,6,S001,Product_216,0.25,Home Office
+T000923,U00131,2024-07-04,West,Furniture,,Inactive,Reno,IL,34.0,Basic,04/27/2024 22:16:00,useru00131@gmail.com,user_324,1364.2,15,S011,Product_250,0.13,Home Office
+T000006,U00209,2023-10-14,West,Beauty,1094.18,Active,Austin,AZ,21.0,Basic,10/22/2024 11:03:00,useru00209@gmail.com,"",1658.61,10,S001,Product_026,0.39,Consumer
+T000732,U00412,2023-01-01,South,Electronics,1275.57,Active,Boise,CA,19.0,Standard,2023-04-09T04:46:00,useru00412@yahoo.com,user_104,1880.98,10,S007,Product_237,0.27,Corporate
+T000466,U00413,2024-05-13,Central,Electronics,4565.78,Active,Austin,OR,17.0,Standard,12/01/2023 17:31:00,useru00413@outlook.com,user_39,2435.7,9,S003,Product_263,,Corporate
+T000098,U00445,2024-07-02,South,Furniture,1328.04,Inactive,Seattle,CO,17.0,Basic,2024-09-25T19:43:00,useru00445@yahoo.com,user_170,127.98,5,S015,Product_191,0.01,Corporate
+T000267,U00477,2024-05-16,Central,Furniture,4120.82,Active,Omaha,CO,23.0,Basic,2024-06-25 03:44:00,useru00477@gmail.com,user_287,2379.8,7,S002,Product_062,0.18,Home Office
+T000358,U00217,2023-10-04,West,Home & Kitchen,,Inactive,Phoenix,WA,70.0,Standard,06/21/2024 06:42:00,useru00217@gmail.com,user_220,1884.17,6,S007,Product_247,0.24,Consumer
+T000869,U00076,2023-05-02,East,Toys,4990.41,Active,Los Angeles,OR,41.0,Premium,2023-05-11 07:27:00,useru00076@yahoo.com,user_320,1022.34,3,S006,Product_298,0.16,Home Office
+T000799,U00049,2023-08-19,South,Toys,2050.79,Pending,Denver,WA,61.0,Free,11/24/2024 04:17:00,useru00049@yahoo.com,user_180,97.45,10,S011,Product_057,0.16,Home Office
+T000381,U00235,2023-01-14,South,Books,3553.68,Churned,Austin,NV,45.0,Standard,10/17/2024 00:09:00,useru00235@outlook.com,user_183,614.7,7,S006,Product_106,0.37,Corporate
+T000632,U00396,2024-11-27,West,Books,1128.79,Pending,Phoenix,NY,58.0,Standard,03/18/2023 03:58:00,,user_268,837.37,13,S001,Product_045,0.42,Corporate
+T000382,U00328,2023-04-21,South,Toys,4936.79,Active,Chicago,AZ,36.0,Basic,2023-10-10 09:12:00,useru00328@outlook.com,user_314,1989.36,13,S013,Product_178,0.14,Corporate
+T000491,U00159,2024-07-05,Central,Books,1659.36,Churned,Houston,OR,24.0,Free,2024-08-23 10:55:00,useru00159@gmail.com,user_184,,2,S009,Product_212,0.37,Consumer
+T000119,U00364,2024-03-03,Central,Books,4388.61,Active,New York,NY,16.0,Premium,2023-02-27 06:17:00,useru00364@outlook.com,user_32,741.38,1,S006,Product_232,0.05,Home Office
+T000901,U00300,2024-12-21,South,Clothing,3306.06,Active,Houston,WA,50.0,Premium,2023-01-17 00:44:00,useru00300@yahoo.com,user_358,2189.82,4,S014,Product_272,0.35,Corporate
+T000251,U00145,2023-11-27,Central,Clothing,2740.31,Active,Austin,WA,26.0,Standard,2024-02-13 02:01:00,useru00145@yahoo.com,user_386,389.57,13,S007,Product_159,0.45,Corporate
+T000524,U00305,2024-03-30,Central,Clothing,4685.15,Active,Los Angeles,NV,44.0,Basic,2023-11-27 00:07:00,useru00305@outlook.com,user_73,1802.65,11,S007,Product_166,0.2,Consumer
+T000010,U00205,2024-03-01,Central,Beauty,2139.55,Active,Los Angeles,TX,58.0,Premium,2023-03-29 02:27:00,useru00205@yahoo.com,user_285,2391.78,11,S002,Product_211,0.18,Corporate
+T000197,U00327,2023-12-29,South,Furniture,3056.32,Active,Seattle,WA,32.0,Premium,2024-08-21T12:29:00,useru00327@outlook.com,user_395,846.83,3,S006,Product_281,,Consumer
+T000604,U00352,2024-10-16,West,Books,1201.7,Active,Atlanta,AZ,27.0,Premium,11/19/2023 22:07:00,useru00352@gmail.com,user_47,1501.64,12,S015,Product_064,0.27,Consumer
+T000082,U00078,2023-01-07,South,Electronics,1172.66,Churned,Atlanta,CA,,Standard,2023-11-11T03:13:00,useru00078@yahoo.com,user_31,360.22,1,S015,Product_119,0.45,Home Office
+T000784,U00164,2023-07-19,West,Furniture,109.68,Active,Houston,IL,65.0,Premium,2024-06-29T04:54:00,useru00164@yahoo.com,user_162,612.16,10,S001,Product_272,0.16,Consumer
+T000588,U00322,2024-05-23,South,Electronics,,Churned,New York,GA,41.0,Premium,2023-07-18T05:06:00,useru00322@yahoo.com,,502.67,14,S010,Product_290,,Corporate
+T000798,U00095,2024-01-05,West,Furniture,86.83,Active,Reno,NV,32.0,Premium,2024-11-11T23:01:00,useru00095@outlook.com,,2208.84,1,S004,Product_094,0.21,Corporate
+T000240,U00121,2024-03-09,West,Clothing,884.02,Inactive,Los Angeles,WA,70.0,Basic,01/19/2024 22:07:00,useru00121@yahoo.com,user_143,2342.75,12,S006,Product_158,0.01,Home Office
+T000291,U00117,2023-08-21,Central,Sports,2377.45,Churned,Denver,CO,61.0,Premium,2023-03-29 10:54:00,useru00117@outlook.com,user_225,1398.32,10,S014,Product_066,0.15,Corporate
+T000212,U00500,2024-04-10,East,Home & Kitchen,4372.25,Churned,Boise,AZ,55.0,Basic,2024-10-04T02:24:00,useru00500@gmail.com,user_386,2365.51,13,S004,Product_042,0.31,Consumer
+T000718,U00137,2024-01-14,South,Furniture,4581.53,Active,Atlanta,AZ,65.0,Basic,2023-10-02T23:49:00,useru00137@gmail.com,user_123,1412.97,5,S007,Product_198,0.47,Home Office
+T000360,U00267,2023-01-04,South,Home & Kitchen,3175.12,Inactive,Houston,CA,28.0,Premium,2024-12-14 17:49:00,useru00267@gmail.com,user_98,,14,S006,Product_009,0.15,Consumer
+T000450,U00391,2024-04-20,Central,Clothing,1922.93,,Austin,OR,27.0,Basic,2023-05-22T19:39:00,useru00391@outlook.com,user_210,815.93,10,S011,Product_242,0.34,Consumer
+T000228,U00472,2024-05-31,South,Toys,1838.65,Inactive,New York,NY,26.0,Free,2024-03-10 06:32:00,useru00472@yahoo.com,user_57,1242.06,5,S009,Product_021,0.04,Corporate
+T000446,U00205,2023-07-05,Central,Books,35.2,Churned,Los Angeles,TX,32.0,Basic,2024-10-12 10:06:00,useru00205@outlook.com,user_33,1821.77,8,S010,Product_216,0.32,Corporate
+T000947,U00150,2023-05-28,West,Sports,1296.51,,Houston,WA,50.0,Premium,2023-03-03 06:20:00,useru00150@gmail.com,user_290,244.94,15,S010,Product_052,0.1,Consumer
+T000797,U00336,2024-02-04,East,Home & Kitchen,608.55,Active,New York,WA,62.0,Premium,2024-05-22 03:36:00,useru00336@gmail.com,user_4,769.45,3,S014,Product_116,0.38,Consumer
+T000502,U00394,2023-02-12,Central,Sports,3845.06,Active,Denver,CA,24.0,Free,2023-06-29 11:29:00,useru00394@gmail.com,user_79,1266.46,11,S004,Product_172,0.33,Corporate
+T000465,U00134,2024-07-24,East,Books,3450.95,Churned,Austin,AZ,69.0,Standard,08/08/2023 05:20:00,useru00134@yahoo.com,user_347,651.27,15,S001,Product_072,0.06,Corporate
+T000363,U00402,2024-02-10,West,Beauty,3913.16,Active,Phoenix,WA,34.0,Standard,2024-02-29 21:15:00,,user_14,939.14,14,S012,Product_163,0.17,Corporate
+T000469,U00337,2023-08-02,West,Home & Kitchen,2127.18,,Phoenix,IL,64.0,Premium,,useru00337@outlook.com,user_107,1119.8,4,S013,Product_195,0.3,Consumer
+T000936,U00408,2023-08-08,West,Books,1684.32,Pending,Los Angeles,AZ,23.0,Premium,02/14/2024 09:49:00,useru00408@yahoo.com,user_89,1282.44,5,S003,Product_028,0.36,Corporate
+T000429,U00432,2023-08-08,South,Books,3559.62,Inactive,New York,CO,59.0,Standard,07/25/2024 13:41:00,useru00432@yahoo.com,user_395,1822.59,9,S015,Product_098,0.19,Home Office
+T000008,U00216,2024-06-22,West,Clothing,2386.47,Inactive,Reno,NY,43.0,Free,2023-02-14T23:50:00,useru00216@yahoo.com,user_16,1200.06,11,S002,Product_252,0.36,Consumer
+T000156,U00388,2023-12-22,South,Toys,,Active,New York,TX,31.0,Basic,2024-03-24T17:18:00,useru00388@gmail.com,user_279,1832.34,14,S010,Product_284,0.08,Corporate
+T000542,U00184,2024-05-01,East,Sports,4534.02,Active,Phoenix,TX,20.0,Standard,04/01/2024 21:34:00,useru00184@yahoo.com,,1457.39,1,S004,Product_104,0.07,Home Office
+T000441,U00346,2024-05-07,West,Furniture,905.79,Inactive,Phoenix,NY,44.0,Premium,04/14/2023 20:55:00,useru00346@gmail.com,user_66,963.06,8,S011,Product_206,,Corporate
+T000483,U00311,2024-06-15,South,Furniture,220.09,Churned,Atlanta,NY,51.0,Free,2023-09-02T11:37:00,useru00311@outlook.com,user_202,104.46,8,S014,Product_236,0.29,Corporate
+T000423,U00430,2024-08-03,Central,Electronics,3839.37,Active,Denver,AZ,68.0,Premium,2024-08-01 19:26:00,useru00430@gmail.com,,1252.04,4,S006,Product_237,0.35,Home Office
+T000779,U00313,2024-08-24,East,Electronics,3450.57,Inactive,New York,GA,36.0,Basic,2024-06-28T07:53:00,useru00313@gmail.com,user_44,1026.95,15,S005,Product_088,0.33,Home Office
+T000950,U00195,2023-05-06,Central,Books,854.9,Active,Atlanta,WA,18.0,Premium,2023-12-10 06:21:00,useru00195@outlook.com,user_339,170.74,14,S006,Product_173,0.08,Home Office
+T000335,U00262,2024-03-13,Central,Books,559.17,,Chicago,OR,30.0,Premium,2023-02-11T00:03:00,useru00262@gmail.com,user_144,256.4,8,S006,Product_172,,Consumer
+T000577,U00474,2024-10-08,East,Beauty,4269.0,Inactive,Chicago,GA,64.0,Premium,07/14/2023 19:40:00,useru00474@outlook.com,user_382,1644.28,8,S009,Product_235,0.19,Consumer
+T000935,U00017,2023-11-24,West,Home & Kitchen,929.1,Active,Denver,TX,,Free,2024-09-20 01:54:00,useru00017@gmail.com,user_158,1441.81,11,S003,Product_187,0.09,Consumer
+T000568,U00050,2024-05-23,Central,Books,169.85,Pending,Chicago,CO,66.0,Free,2023-11-10T09:41:00,useru00050@yahoo.com,user_121,2118.57,4,S004,Product_237,0.07,Consumer
+T000595,U00287,2024-05-05,East,Home & Kitchen,273.63,Churned,Los Angeles,TX,30.0,Basic,2024-09-13 17:56:00,useru00287@outlook.com,user_269,652.85,3,S014,Product_092,0.02,Consumer
+T000531,U00039,2023-10-14,East,Electronics,,Active,Phoenix,TX,31.0,Free,2023-07-29T03:58:00,useru00039@outlook.com,user_244,285.9,8,S014,Product_297,0.35,Consumer
+T000582,U00042,2023-12-09,West,Clothing,,Active,Tucson,TX,25.0,Standard,,useru00042@outlook.com,user_296,1941.77,9,S004,Product_031,0.21,Corporate
+T000708,U00403,2023-05-08,East,Toys,3616.72,Inactive,Phoenix,OR,21.0,Basic,08/05/2023 17:23:00,useru00403@gmail.com,user_161,1162.06,3,S012,Product_049,0.19,Home Office
+T000449,U00206,2024-07-17,East,Sports,2096.72,Active,Phoenix,AZ,55.0,Standard,2024-10-10T20:20:00,useru00206@yahoo.com,user_207,1162.47,8,S003,Product_091,,Corporate
+T000454,U00252,2023-09-08,Central,Beauty,1483.51,Churned,Chicago,WA,51.0,Premium,,useru00252@yahoo.com,user_366,2362.26,11,S005,Product_244,0.36,Consumer
+T000229,U00146,2024-04-12,Central,Books,3438.36,Active,Los Angeles,OR,33.0,Basic,03/13/2023 15:43:00,useru00146@outlook.com,user_54,1309.04,2,S003,Product_203,0.2,Consumer
+T000353,U00149,2023-06-15,West,Toys,402.98,,Phoenix,IL,28.0,Standard,2023-06-14T16:33:00,useru00149@outlook.com,user_175,332.34,10,S014,Product_221,0.02,Home Office
+T000729,U00030,2024-01-22,West,Beauty,1063.21,,Los Angeles,IL,68.0,Standard,2024-05-05T07:04:00,useru00030@gmail.com,user_351,693.07,1,S008,Product_162,0.11,Corporate
+T000213,U00264,2024-11-21,East,Electronics,563.72,Pending,Boise,AZ,38.0,Basic,2023-03-10 17:45:00,useru00264@yahoo.com,user_59,1844.76,14,S012,Product_108,0.38,Corporate
+T000080,U00458,2024-08-10,Central,Clothing,1149.74,Active,Los Angeles,CA,,Basic,2023-06-03 05:59:00,useru00458@outlook.com,user_215,624.42,6,S005,Product_040,0.29,Home Office
+T000149,U00477,2024-02-04,East,Sports,3690.59,Active,Portland,GA,68.0,Premium,01/01/2024 10:55:00,useru00477@outlook.com,user_281,2424.01,3,S010,Product_234,0.32,Home Office
+T000303,U00267,2024-02-29,Central,Books,3755.25,Pending,New York,AZ,30.0,Premium,2024-11-11T07:51:00,useru00267@gmail.com,user_196,462.95,2,S014,Product_252,0.03,Home Office
+T000629,U00340,2024-01-05,Central,Furniture,1910.89,Pending,Chicago,NV,,Premium,2023-10-14T17:11:00,useru00340@yahoo.com,user_94,985.97,4,S003,Product_181,0.41,Consumer
+T000778,U00183,2024-03-11,Central,Sports,1469.76,Inactive,Houston,CO,43.0,Free,2024-08-29 12:37:00,useru00183@gmail.com,user_203,1513.48,7,S011,Product_221,0.13,Consumer
+T000507,U00212,2023-02-22,West,Beauty,2762.95,Active,New York,GA,42.0,Basic,2024-12-11T06:24:00,useru00212@yahoo.com,user_349,393.86,13,S013,Product_102,0.08,Consumer
+T000343,U00406,2023-01-10,South,Clothing,2716.43,Churned,Los Angeles,NY,27.0,Standard,03/30/2024 05:19:00,,user_355,,1,S002,Product_279,0.15,Corporate
+T000486,U00136,2024-12-25,East,Beauty,4031.43,Churned,Chicago,TX,,Premium,2023-11-14T16:44:00,useru00136@outlook.com,user_204,194.46,12,S010,Product_208,0.43,Corporate
+T000712,U00258,2023-04-06,East,Electronics,2041.72,Active,Houston,CA,37.0,Basic,03/26/2024 14:29:00,useru00258@outlook.com,user_276,1920.92,11,S003,Product_046,0.21,Home Office
+T000134,U00339,2023-10-18,South,Sports,2251.52,Churned,Seattle,TX,29.0,Basic,2024-08-19T05:39:00,useru00339@gmail.com,user_176,,7,S007,Product_068,0.05,Home Office
+T000704,U00252,2024-04-14,East,Home & Kitchen,,Active,Chicago,AZ,,Basic,2024-01-24 10:16:00,useru00252@gmail.com,user_236,,3,S011,Product_294,0.35,Consumer
+T000312,U00144,2024-12-17,Central,Sports,1848.47,Pending,Houston,CO,47.0,Premium,2024-10-15T10:01:00,useru00144@gmail.com,user_377,1113.54,7,S012,Product_042,0.17,Corporate
+T000723,U00166,2024-02-21,West,Toys,26.99,Active,Chicago,CA,63.0,Basic,2023-06-06T14:59:00,useru00166@yahoo.com,user_266,,3,S008,Product_092,,Consumer
+T000630,U00327,2023-09-10,Central,Home & Kitchen,3420.79,Churned,Tucson,OR,68.0,Standard,2023-07-19T17:57:00,useru00327@yahoo.com,user_134,1702.92,9,S013,Product_173,0.36,Consumer
+T000001,U00255,2024-08-20,West,Toys,3193.14,Pending,Portland,CO,33.0,Premium,03/28/2024 11:37:00,useru00255@yahoo.com,user_234,502.05,8,S002,Product_122,0.19,Corporate
+T000317,U00141,2024-12-24,East,Sports,2480.18,Active,Phoenix,AZ,24.0,Premium,2023-08-19 22:47:00,useru00141@gmail.com,user_373,2461.05,14,S003,Product_012,0.27,Home Office
+T000707,U00235,2024-01-14,East,Home & Kitchen,397.91,Inactive,Chicago,CA,59.0,Premium,03/31/2024 03:05:00,useru00235@gmail.com,,476.67,3,S002,Product_088,0.03,Home Office
+T000548,U00094,2024-10-25,South,Beauty,1235.71,Active,New York,NV,44.0,Premium,2024-09-12 02:16:00,useru00094@outlook.com,user_2,2030.92,8,S008,Product_282,0.29,Home Office
+T000873,U00037,2023-08-11,East,Electronics,1028.58,Inactive,Houston,TX,55.0,Basic,2023-02-03T18:39:00,useru00037@yahoo.com,user_197,1857.0,12,S003,Product_152,0.45,Home Office
+T000533,U00333,2023-02-15,South,Furniture,2799.13,Churned,Phoenix,CA,33.0,Basic,2024-04-12 15:34:00,useru00333@yahoo.com,user_277,1839.31,3,S010,Product_206,0.19,Corporate
+T000478,U00410,2024-06-29,East,Sports,3471.54,Active,Los Angeles,TX,21.0,Basic,2024-09-25T07:53:00,useru00410@outlook.com,user_104,2397.85,5,S007,Product_268,0.49,Corporate
+T000405,U00284,2023-08-22,West,Books,,Churned,Omaha,AZ,49.0,Basic,2023-12-25T03:04:00,useru00284@outlook.com,user_105,931.54,7,S002,Product_219,0.44,Corporate
+T000173,U00161,2024-02-08,Central,Electronics,2608.04,Churned,Chicago,CA,30.0,Basic,2023-02-10T17:24:00,useru00161@gmail.com,user_226,764.86,8,S003,Product_217,0.15,Home Office
+T000126,U00145,2024-03-24,East,Electronics,2375.2,Active,Phoenix,OR,65.0,Basic,2024-10-11T04:19:00,useru00145@outlook.com,user_6,1389.9,1,S010,Product_202,0.27,Corporate
+T000395,U00473,2023-09-15,East,Beauty,349.08,,Austin,NY,49.0,Standard,09/17/2024 16:19:00,useru00473@outlook.com,user_57,2342.63,11,S001,Product_017,0.17,Corporate
+T000421,U00302,2024-02-05,West,Books,3926.01,Pending,Chicago,WA,32.0,Premium,11/02/2024 18:30:00,useru00302@gmail.com,user_209,1210.96,9,S009,Product_126,0.19,Home Office
+T000553,U00128,2023-10-25,South,Furniture,3006.17,Active,Houston,NV,30.0,Premium,2024-12-31T00:24:00,,user_224,2273.42,5,S006,Product_118,0.13,Corporate
+T000904,U00440,2024-03-31,West,Furniture,,Inactive,Chicago,NV,24.0,Basic,05/16/2023 00:06:00,useru00440@yahoo.com,user_351,2377.95,11,S015,Product_268,0.47,Corporate
+T000091,U00374,2023-01-02,South,Furniture,4255.28,Inactive,Seattle,TX,53.0,Standard,2024-09-18T07:40:00,useru00374@yahoo.com,user_382,870.29,11,S015,Product_046,0.41,Home Office
+T000940,U00477,2023-08-18,East,Sports,4701.53,Inactive,Los Angeles,GA,62.0,Standard,2023-01-27 13:50:00,useru00477@outlook.com,user_290,1599.09,13,S015,Product_280,,Consumer
+T000182,U00311,2024-02-03,West,Clothing,4324.32,Pending,Seattle,AZ,,Basic,05/23/2024 07:23:00,useru00311@yahoo.com,user_155,,4,S015,Product_048,,Corporate
+T000275,U00453,2024-11-29,South,Books,4898.41,Active,Houston,AZ,36.0,Free,2023-12-03T00:58:00,useru00453@gmail.com,user_3,1683.4,15,S012,Product_251,0.38,Home Office
+T000896,U00065,2024-02-03,West,Toys,1624.8,Pending,Boise,NY,27.0,Premium,01/31/2023 00:45:00,useru00065@gmail.com,user_80,1897.13,12,S013,Product_078,0.46,Corporate
+T000070,U00444,2023-05-01,Central,Sports,1057.29,Pending,Los Angeles,NV,55.0,Basic,2023-07-31 06:51:00,useru00444@outlook.com,user_276,2447.61,10,S005,Product_264,0.49,Consumer
+T000292,U00415,2024-11-05,South,Beauty,1135.2,Churned,Atlanta,GA,34.0,Premium,02/02/2023 04:09:00,useru00415@outlook.com,user_294,2450.53,7,S002,Product_274,0.19,Corporate
+T000132,U00194,2024-01-10,East,Clothing,2588.15,,Phoenix,GA,40.0,Standard,,useru00194@gmail.com,user_118,1610.48,3,S003,Product_186,0.3,Home Office
+T000301,U00053,2024-12-30,East,Home & Kitchen,1267.18,Active,Denver,OR,58.0,Standard,2023-05-17T10:11:00,useru00053@outlook.com,user_342,841.09,10,S008,Product_196,0.26,Home Office
+T000425,U00139,2024-06-19,East,Beauty,2823.41,Active,Seattle,IL,66.0,Standard,06/15/2024 19:16:00,useru00139@yahoo.com,user_369,2319.96,12,S014,Product_243,0.0,Consumer
+T000327,U00377,2023-10-01,West,Beauty,3540.44,Pending,Chicago,CO,26.0,Basic,04/24/2024 16:18:00,useru00377@outlook.com,,1590.91,5,S007,Product_161,0.42,Consumer
+T000145,U00215,2024-12-18,Central,Beauty,4273.09,Active,Portland,TX,51.0,Standard,10/04/2023 07:35:00,useru00215@gmail.com,user_379,2015.14,8,S003,Product_265,0.27,Corporate
+T000424,U00376,2023-03-25,South,Furniture,3499.29,Churned,Austin,TX,48.0,Premium,03/24/2024 03:02:00,useru00376@outlook.com,user_250,2186.17,1,S005,Product_061,0.22,Home Office
+T000581,U00153,2024-07-19,Central,Clothing,4477.68,Active,Denver,OR,20.0,Premium,2023-02-23 04:04:00,,user_245,2024.7,2,S005,Product_082,0.3,Consumer
+T000136,U00405,2024-01-26,East,Clothing,2133.19,Churned,Chicago,NY,33.0,Basic,2023-09-21T06:00:00,useru00405@gmail.com,user_61,940.7,13,S006,Product_210,0.18,Home Office
+T000451,U00381,2024-09-07,South,Furniture,2764.77,Churned,Los Angeles,TX,44.0,Standard,2023-06-29T15:59:00,useru00381@yahoo.com,user_34,521.48,4,S011,Product_228,0.49,Corporate
+T000165,U00269,2023-09-10,West,Books,3886.09,,Phoenix,NY,22.0,Basic,12/23/2023 06:20:00,useru00269@gmail.com,user_87,1542.47,8,S010,Product_075,0.22,Consumer
+T000029,U00272,2024-01-11,East,Books,1255.56,Pending,Chicago,CO,48.0,Basic,09/26/2023 08:45:00,useru00272@outlook.com,user_252,,3,S015,Product_228,0.5,Corporate
+T000774,U00329,2024-07-12,Central,Beauty,2782.87,Active,Houston,AZ,25.0,Standard,06/24/2023 21:53:00,useru00329@yahoo.com,user_60,822.59,2,S008,Product_035,0.03,Home Office
+T000194,U00384,2023-11-08,Central,Books,316.47,Active,New York,CA,57.0,Standard,10/01/2024 00:18:00,useru00384@outlook.com,,335.68,14,S005,Product_008,0.37,Home Office
+T000389,U00075,2024-10-13,West,Home & Kitchen,4094.57,Active,Houston,GA,27.0,Premium,11/14/2024 03:37:00,useru00075@yahoo.com,user_358,1162.59,3,S001,Product_146,0.23,Consumer
+T000853,U00184,2023-10-28,Central,Beauty,3729.33,Churned,New York,OR,50.0,Premium,2024-04-23T05:12:00,useru00184@outlook.com,,2393.41,4,S009,Product_173,0.31,Home Office
+T000170,U00230,2024-07-09,West,Home & Kitchen,2909.34,Active,New York,TX,34.0,Standard,2023-05-19 13:58:00,useru00230@outlook.com,user_163,1334.74,3,S006,Product_075,0.36,Corporate
+T000706,U00145,2024-11-25,East,Toys,1677.07,Inactive,Chicago,GA,43.0,Basic,2023-07-10T02:10:00,useru00145@yahoo.com,user_203,2383.36,11,S013,Product_092,0.4,Consumer
+T000141,U00449,2024-07-04,South,Books,3474.02,Inactive,Houston,IL,63.0,Standard,2024-11-28T14:57:00,useru00449@yahoo.com,user_35,1972.7,12,S004,Product_162,0.21,Home Office
+T000174,U00265,2023-05-26,East,Toys,461.3,Active,Houston,NV,59.0,Basic,2023-11-28 14:01:00,useru00265@outlook.com,user_233,813.57,12,S013,Product_084,0.36,Consumer
+T000007,U00403,2024-08-01,West,Sports,2936.05,Active,Phoenix,TX,65.0,Premium,05/29/2023 04:34:00,useru00403@gmail.com,user_14,898.81,10,S006,Product_009,,Home Office
+T000746,U00225,2024-03-13,West,Toys,3052.27,Churned,Atlanta,IL,62.0,Premium,2024-01-15 06:03:00,useru00225@gmail.com,user_377,1925.11,3,S004,Product_015,0.11,Consumer
+T000479,U00165,2023-05-20,Central,Books,11.76,Inactive,Houston,WA,28.0,Basic,03/10/2023 01:48:00,useru00165@yahoo.com,user_392,2441.26,7,S013,Product_082,0.32,Consumer
+T000074,U00220,2024-11-02,West,Clothing,15.42,Active,Denver,IL,48.0,Premium,2024-12-13 10:52:00,useru00220@yahoo.com,user_245,960.76,2,S002,Product_161,0.18,Corporate
+T000911,U00067,2024-09-12,East,Furniture,3484.69,Active,Los Angeles,NV,41.0,Basic,,useru00067@outlook.com,user_281,1558.66,8,S007,Product_247,0.15,Consumer
+T000814,U00173,2024-10-14,East,Books,3026.96,Active,Los Angeles,WA,51.0,Premium,02/14/2024 21:44:00,useru00173@outlook.com,user_393,1678.1,13,S004,Product_280,0.28,Corporate
+T000239,U00460,2024-01-08,Central,Clothing,1990.51,Churned,Tulsa,IL,22.0,Basic,2023-05-04T16:42:00,useru00460@outlook.com,user_47,310.08,6,S014,Product_300,0.37,Home Office
+T000146,U00154,2023-09-14,East,Electronics,1998.03,Active,Austin,WA,45.0,Premium,12/09/2023 08:23:00,useru00154@yahoo.com,user_211,2169.08,4,S010,Product_295,0.32,Corporate
+T000793,U00389,2023-10-14,West,Electronics,3539.31,Inactive,New York,WA,21.0,Premium,2024-01-16T07:53:00,useru00389@gmail.com,user_366,251.48,3,S003,Product_142,0.27,Home Office
+T000235,U00052,2024-12-08,Central,Beauty,2488.69,Pending,New York,TX,54.0,Free,2023-07-26 15:40:00,useru00052@outlook.com,user_136,2490.59,4,S010,Product_048,0.36,Home Office
+T000221,U00307,2023-03-30,West,Books,2378.32,,New York,NY,52.0,Premium,02/24/2024 20:58:00,useru00307@outlook.com,user_291,346.63,7,S005,Product_284,0.25,Corporate
+T000924,U00059,2024-03-10,West,Electronics,1689.98,Churned,Houston,NY,47.0,Basic,07/19/2024 02:41:00,useru00059@gmail.com,user_391,687.28,12,S015,Product_030,0.35,Home Office
+T000501,U00134,2023-04-22,Central,Furniture,4116.16,,Seattle,GA,69.0,Premium,2023-02-06 15:30:00,useru00134@gmail.com,user_95,,7,S010,Product_190,0.22,Home Office
+T000133,U00118,2024-02-29,South,Clothing,2412.77,Active,Phoenix,TX,56.0,Premium,2023-02-14T04:36:00,useru00118@outlook.com,user_294,420.02,9,S007,Product_289,0.32,Home Office
+T000918,U00212,2024-06-15,Central,Sports,4982.75,Active,Tucson,CO,15.0,Basic,2023-04-14T05:53:00,useru00212@gmail.com,user_169,111.56,6,S008,Product_017,0.18,Home Office
+T000775,U00437,2024-10-14,West,Books,3000.44,Inactive,Houston,WA,45.0,Basic,2023-08-08 11:49:00,useru00437@outlook.com,user_375,2084.0,2,S006,Product_298,0.15,Home Office
+T000186,U00389,2024-11-17,South,Clothing,4868.67,Inactive,New York,TX,20.0,Free,04/24/2024 03:29:00,useru00389@outlook.com,user_241,563.37,10,S005,Product_187,0.2,Home Office
+T000042,U00331,2023-03-02,South,Clothing,3264.97,Pending,Boise,CA,26.0,Standard,02/07/2023 12:50:00,useru00331@outlook.com,user_149,28.12,2,S015,Product_172,0.14,Home Office
+T000697,U00156,2023-07-01,East,Sports,1919.3,,Los Angeles,WA,40.0,Basic,12/05/2023 10:03:00,useru00156@yahoo.com,user_202,1551.59,6,S007,Product_082,0.1,Consumer
+T000109,U00360,2023-06-06,West,Electronics,1512.57,Pending,Boise,WA,54.0,Premium,2023-04-18T16:46:00,useru00360@gmail.com,user_255,503.37,9,S004,Product_184,0.35,Consumer
+T000589,U00320,2023-07-20,South,Beauty,238.56,Inactive,Chicago,IL,49.0,Premium,2024-07-29 00:44:00,useru00320@gmail.com,user_23,1033.84,2,S002,Product_281,0.22,Home Office
+T000057,U00461,2024-07-10,East,Electronics,904.98,Active,Seattle,IL,52.0,Standard,2024-02-12 02:19:00,useru00461@outlook.com,user_200,1353.7,12,S003,Product_041,0.25,Consumer
+T000406,U00311,2024-01-04,East,Furniture,4487.99,,Seattle,WA,,Basic,,useru00311@outlook.com,user_161,1953.28,10,S012,Product_177,0.47,Home Office
+T000443,U00063,2024-05-16,East,Electronics,4446.94,Active,Houston,AZ,58.0,Standard,07/09/2024 08:11:00,useru00063@gmail.com,user_153,1491.47,1,S009,Product_203,,Consumer
+T000758,U00306,2024-03-21,Central,Sports,1488.01,Pending,Atlanta,OR,66.0,Premium,2023-07-07T00:19:00,useru00306@yahoo.com,user_130,1990.62,12,S008,Product_262,0.46,Home Office
+T000025,U00199,2024-01-18,West,Electronics,,Active,Portland,NY,64.0,Standard,2023-05-17T01:22:00,useru00199@outlook.com,user_399,2452.14,3,S013,Product_070,0.03,Corporate
+T000025,U00199,2024-01-18,West,Electronics,,Active,Portland,NY,64.0,Standard,2023-05-17T01:22:00,useru00199@outlook.com,user_399,2452.14,3,S013,Product_070,0.03,Corporate
+T000468,U00078,2023-09-23,South,Beauty,2666.5,Active,Phoenix,NV,37.0,Standard,2024-08-13 04:12:00,useru00078@gmail.com,user_274,2112.52,9,S006,Product_036,0.16,Consumer
+T000540,U00252,2023-06-28,South,Books,,Pending,Chicago,OR,22.0,Free,03/20/2023 06:30:00,useru00252@yahoo.com,,445.7,5,S003,Product_115,0.17,Corporate
+T000532,U00360,2024-07-30,East,Home & Kitchen,1085.22,Active,Los Angeles,CA,46.0,Basic,2023-06-29 00:36:00,useru00360@yahoo.com,user_369,,5,S014,Product_097,0.12,Consumer
+T000619,U00409,2023-04-05,Central,Toys,3627.69,,Reno,CA,25.0,Free,03/10/2023 08:01:00,useru00409@outlook.com,user_35,500.11,2,S015,Product_068,0.48,Home Office
+T000695,U00490,2024-04-28,Central,Furniture,4183.3,Pending,Austin,GA,24.0,Premium,2023-11-15 17:05:00,useru00490@outlook.com,user_19,118.28,9,S011,Product_207,0.11,Corporate
+T000927,U00038,2023-08-02,Central,Furniture,2773.1,Inactive,Los Angeles,NV,,Basic,04/08/2024 19:04:00,useru00038@yahoo.com,user_207,737.95,4,S004,Product_180,0.03,Corporate
+T000339,U00258,2024-12-25,Central,Books,1524.02,Pending,Portland,GA,22.0,Premium,2023-09-01T09:02:00,useru00258@yahoo.com,user_139,133.54,14,S004,Product_274,0.06,Home Office
+T000052,U00156,2023-01-16,West,Sports,4810.77,,Phoenix,CO,30.0,Standard,02/11/2024 07:35:00,useru00156@yahoo.com,user_333,657.6,8,S008,Product_051,0.4,Corporate
+T000508,U00445,2023-05-14,Central,Toys,1587.91,Pending,Omaha,CA,58.0,Premium,2023-01-22 00:58:00,useru00445@gmail.com,user_183,380.75,14,S002,Product_186,0.31,Corporate
+T000517,U00164,2024-08-25,Central,Beauty,3493.4,,Reno,NV,31.0,Premium,01/02/2024 23:51:00,useru00164@yahoo.com,user_161,1863.7,3,S001,Product_181,0.2,Corporate
+T000921,U00013,2023-08-26,South,Furniture,3630.89,Active,Phoenix,CA,19.0,Free,2024-09-19 10:30:00,useru00013@outlook.com,user_61,2362.53,12,S015,Product_083,0.3,Consumer
+T000782,U00218,2024-05-23,Central,Home & Kitchen,2620.13,Inactive,Reno,NY,26.0,Basic,08/03/2023 16:32:00,useru00218@outlook.com,user_42,1526.34,14,S009,Product_041,0.14,Home Office
+T000265,U00375,2023-03-03,South,Books,3138.68,Active,Portland,NY,43.0,Standard,2024-04-09T10:15:00,useru00375@outlook.com,user_322,2112.02,5,S005,Product_294,0.34,Home Office
+T000818,U00400,2023-04-18,South,Furniture,4421.69,,Austin,AZ,58.0,Free,02/22/2023 23:32:00,useru00400@outlook.com,user_326,1312.09,15,S001,Product_062,0.04,Corporate
+T000711,U00309,2024-12-28,West,Electronics,3368.9,Pending,Seattle,TX,17.0,Free,2023-10-11 22:44:00,useru00309@gmail.com,user_225,2126.96,15,S002,Product_125,0.19,Consumer
+T000683,U00265,2024-06-11,South,Sports,847.24,Churned,Omaha,CA,26.0,Standard,2023-01-17T02:44:00,useru00265@yahoo.com,user_24,1272.27,11,S014,Product_286,0.46,Home Office
+T000833,U00212,2024-08-05,Central,Electronics,487.32,Active,Los Angeles,OR,32.0,Premium,2024-03-08 17:01:00,useru00212@gmail.com,,1003.15,15,S013,Product_021,0.44,Consumer
+T000519,U00102,2023-01-23,East,Home & Kitchen,1524.58,Inactive,New York,IL,27.0,Standard,2024-03-19 13:54:00,,user_55,811.59,5,S003,Product_121,0.26,Consumer
+T000448,U00346,2024-04-23,West,Home & Kitchen,3125.08,Inactive,Omaha,CA,63.0,Basic,2024-05-17T07:24:00,useru00346@outlook.com,user_64,549.67,10,S005,Product_092,0.43,Home Office
+T000019,U00470,2023-12-25,East,Furniture,653.47,Active,Phoenix,GA,39.0,Premium,2023-05-11T21:44:00,useru00470@outlook.com,user_344,907.76,3,S004,Product_175,0.47,Consumer
+T000716,U00285,2024-12-13,East,Home & Kitchen,516.05,Inactive,New York,CA,49.0,Free,2024-08-31 21:39:00,useru00285@yahoo.com,user_123,2269.06,11,S010,Product_293,0.34,Consumer
+T000484,U00417,2024-10-05,Central,Furniture,,Inactive,Seattle,CA,55.0,Premium,02/27/2024 00:46:00,useru00417@yahoo.com,user_350,2434.08,8,S013,Product_025,0.16,Home Office
+T000569,U00031,2024-08-24,South,Home & Kitchen,547.3,Active,Houston,NY,33.0,Standard,08/16/2024 07:45:00,useru00031@gmail.com,user_343,1382.54,15,S012,Product_108,0.45,Corporate
+T000434,U00158,2024-11-28,Central,Sports,3739.57,Active,Phoenix,OR,60.0,Premium,2024-08-01 10:26:00,useru00158@yahoo.com,user_91,652.09,2,S008,Product_182,0.29,Home Office
+T000368,U00275,2023-01-24,East,Home & Kitchen,1089.37,Churned,New York,CA,35.0,Premium,12/09/2024 04:17:00,useru00275@gmail.com,user_283,1170.27,7,S009,Product_205,0.46,Consumer
+T000084,U00056,2023-06-09,West,Toys,2335.62,Inactive,Los Angeles,IL,43.0,Premium,2023-05-03T02:10:00,useru00056@outlook.com,user_21,2142.15,12,S004,Product_183,,Corporate
+T000062,U00187,2023-04-27,South,Sports,2965.21,Pending,Los Angeles,GA,16.0,Basic,12/26/2024 06:28:00,useru00187@gmail.com,,1684.08,5,S004,Product_130,0.33,Corporate
+T000639,U00005,2023-04-03,East,Furniture,1319.33,Pending,Los Angeles,CO,,Premium,2024-04-27T12:33:00,useru00005@yahoo.com,user_93,1202.8,12,S006,Product_288,0.31,Corporate
+T000273,U00494,2024-08-23,Central,Sports,3817.26,Active,Omaha,NV,41.0,Standard,2024-05-27 06:50:00,useru00494@gmail.com,user_276,2403.57,1,S001,Product_238,0.48,Home Office
+T000286,U00404,2023-04-24,East,Sports,1532.31,Churned,Chicago,TX,48.0,Free,2024-03-20 22:04:00,useru00404@gmail.com,user_99,1737.41,7,S011,Product_126,0.46,Home Office
+T000361,U00359,2024-05-26,Central,Toys,2076.13,Churned,Boise,OR,48.0,Premium,06/30/2023 14:27:00,useru00359@outlook.com,user_224,2113.5,7,S011,Product_146,0.35,Consumer
+T000355,U00132,2024-03-28,Central,Home & Kitchen,4699.75,Inactive,Phoenix,AZ,69.0,Basic,09/26/2024 21:08:00,useru00132@outlook.com,user_192,1035.92,15,S015,Product_022,0.31,Home Office
+T000457,U00341,2023-02-03,East,Clothing,4760.62,Active,Tulsa,GA,69.0,Standard,2023-02-27T14:36:00,useru00341@yahoo.com,user_94,1628.76,12,S012,Product_234,0.09,Corporate
+T000279,U00453,2023-08-18,West,Furniture,2666.73,Active,New York,AZ,20.0,Standard,2023-08-20 22:27:00,useru00453@gmail.com,user_160,,7,S013,Product_013,0.3,Corporate
+T000013,U00042,2023-10-06,East,Furniture,2433.45,Active,Denver,GA,22.0,Premium,11/25/2024 21:37:00,,user_203,141.68,4,S013,Product_071,0.38,Consumer
+T000183,U00464,2024-05-27,West,Beauty,4618.95,Inactive,Los Angeles,AZ,24.0,Premium,2024-06-12 21:08:00,useru00464@yahoo.com,user_268,,14,S010,Product_045,0.17,Consumer
+T000369,U00352,2023-10-15,South,Clothing,2922.4,Active,Seattle,IL,61.0,Standard,03/09/2024 19:47:00,useru00352@outlook.com,user_197,1420.02,11,S014,Product_033,0.22,Home Office
+T000882,U00436,2023-01-22,East,Electronics,3812.81,Inactive,Houston,GA,61.0,Basic,2023-02-13 19:10:00,useru00436@outlook.com,user_359,1354.42,12,S011,Product_145,,Consumer
+T000616,U00247,2024-03-12,West,Home & Kitchen,3834.79,Active,Houston,AZ,63.0,Standard,2023-10-01 12:34:00,useru00247@yahoo.com,user_140,,3,S008,Product_115,0.0,Home Office
+T000224,U00392,2023-04-07,East,Home & Kitchen,2723.12,Churned,New York,WA,32.0,Standard,04/09/2023 17:37:00,useru00392@gmail.com,user_145,1214.82,15,S003,Product_053,0.11,Consumer
+T000573,U00469,2024-09-15,East,Beauty,4175.66,Active,Phoenix,CA,67.0,Free,2023-09-18 12:16:00,useru00469@gmail.com,"",995.47,2,S013,Product_141,0.27,Corporate
+T000509,U00244,2023-12-13,Central,Books,1523.17,Active,New York,TX,25.0,Basic,2024-09-25T13:10:00,useru00244@yahoo.com,user_144,2259.61,11,S003,Product_228,,Corporate
+T000654,U00055,2023-06-01,East,Clothing,4871.26,Inactive,Tucson,IL,,Basic,2023-09-10T01:29:00,useru00055@gmail.com,,906.0,5,S008,Product_154,0.1,Consumer
+T000546,U00262,2024-05-14,East,Home & Kitchen,2351.95,Inactive,Chicago,AZ,49.0,Basic,09/15/2023 20:17:00,useru00262@outlook.com,user_161,813.79,4,S006,Product_157,0.1,Home Office
+T000583,U00099,2024-06-24,West,Home & Kitchen,2028.56,,Reno,WA,32.0,Standard,05/08/2023 22:26:00,,user_59,481.96,3,S010,Product_095,0.41,Home Office
+T000634,U00019,2023-12-29,West,Furniture,3082.44,Active,Seattle,NV,48.0,Premium,05/15/2023 15:00:00,useru00019@gmail.com,user_270,1918.63,15,S003,Product_170,0.28,Corporate
+T000177,U00026,2023-07-09,West,Beauty,193.24,Pending,Houston,NV,34.0,Premium,2023-04-22 13:11:00,useru00026@outlook.com,user_359,1969.33,8,S012,Product_297,,Corporate
+T000666,U00203,2024-05-06,West,Toys,,Active,Houston,NY,20.0,Premium,2023-04-26T18:57:00,useru00203@outlook.com,user_308,412.3,4,S012,Product_209,0.05,Home Office
+T000674,U00220,2024-05-04,Central,Toys,1559.98,Active,Los Angeles,NY,,Premium,2023-10-15 22:06:00,useru00220@outlook.com,user_129,1295.09,1,S001,Product_275,0.01,Home Office
+T000586,U00452,2023-10-22,West,Books,893.53,Inactive,Phoenix,GA,19.0,Premium,2024-10-21 07:28:00,useru00452@yahoo.com,user_200,1203.47,3,S001,Product_121,0.32,Home Office
+T000874,U00333,2023-06-04,West,Home & Kitchen,1175.33,Active,Phoenix,CO,42.0,Free,2023-04-15T19:16:00,useru00333@yahoo.com,user_292,2069.07,14,S001,Product_190,0.2,Consumer
+T000394,U00374,2024-10-19,East,Sports,4163.69,Inactive,New York,AZ,37.0,Basic,05/22/2023 02:28:00,useru00374@gmail.com,user_66,749.08,4,S001,Product_277,0.17,Corporate
+T000164,U00345,2024-02-07,South,Clothing,1118.21,Active,Houston,TX,36.0,Basic,02/20/2023 17:25:00,useru00345@outlook.com,user_358,341.5,8,S007,Product_293,0.1,Home Office
+T000249,U00288,2024-05-11,East,Clothing,4230.73,Active,Chicago,NY,28.0,Premium,06/22/2023 23:32:00,useru00288@outlook.com,user_299,15.29,3,S007,Product_040,0.12,Consumer
+T000635,U00214,2023-03-01,South,Furniture,3963.56,Inactive,New York,WA,70.0,Basic,2023-12-12T16:21:00,useru00214@yahoo.com,user_174,1057.8,14,S006,Product_148,0.09,Home Office
+T000886,U00202,2023-08-31,West,Furniture,1201.14,Active,Atlanta,TX,61.0,Basic,10/24/2024 20:27:00,useru00202@outlook.com,,,2,S003,Product_031,0.4,Consumer
+T000670,U00026,2023-04-24,West,Home & Kitchen,3614.68,Active,Chicago,CO,38.0,Free,2024-12-12 01:22:00,useru00026@gmail.com,user_373,2082.15,13,S009,Product_203,0.1,Corporate
+T000376,U00363,2024-04-09,Central,Clothing,4571.49,Active,Portland,CO,70.0,Premium,02/14/2024 06:04:00,useru00363@outlook.com,user_296,372.49,12,S002,Product_124,0.01,Corporate
+T000413,U00387,2023-06-22,West,Electronics,4799.68,Churned,New York,CA,46.0,Premium,07/28/2023 09:36:00,useru00387@outlook.com,user_233,278.49,14,S002,Product_228,0.44,Consumer
+T000075,U00397,2023-05-17,Central,Home & Kitchen,351.37,Pending,Portland,TX,43.0,Premium,2023-06-05T13:39:00,useru00397@gmail.com,user_52,312.28,6,S007,Product_162,0.4,Home Office
+T000114,U00446,2023-06-19,West,Toys,1609.96,Active,New York,GA,29.0,Basic,08/29/2023 02:29:00,useru00446@yahoo.com,user_256,301.17,11,S001,Product_053,,Home Office
+T000599,U00265,2023-10-09,East,Furniture,1894.83,Inactive,Los Angeles,WA,47.0,Premium,11/08/2024 01:23:00,useru00265@outlook.com,user_22,103.24,7,S004,Product_124,0.21,Home Office
+T000669,U00404,2023-08-20,South,Home & Kitchen,4596.39,,Boise,GA,42.0,Basic,09/12/2023 22:37:00,useru00404@outlook.com,user_260,784.31,2,S006,Product_175,0.29,Home Office
+T000391,U00143,2024-11-05,East,Furniture,350.37,Inactive,Houston,CO,53.0,Basic,06/03/2024 21:33:00,useru00143@yahoo.com,user_298,1545.6,1,S001,Product_082,0.12,Corporate
+T000105,U00216,2023-12-06,East,Books,2324.17,Active,Los Angeles,NV,52.0,Premium,2023-07-19T16:07:00,useru00216@yahoo.com,user_78,504.74,10,S015,Product_235,0.07,Consumer
+T000115,U00001,2023-04-04,Central,Books,4451.65,Pending,Tucson,CO,36.0,Premium,2023-08-17T14:21:00,useru00001@outlook.com,user_337,1134.07,11,S004,Product_002,0.17,Corporate
+T000418,U00218,2024-02-13,West,Electronics,1348.9,Active,Los Angeles,CA,34.0,Premium,2023-06-20T17:13:00,useru00218@outlook.com,user_67,54.7,13,S007,Product_047,0.39,Corporate
+T000526,U00329,2024-02-10,Central,Clothing,4073.68,Active,Chicago,WA,29.0,Basic,2024-07-25T00:03:00,useru00329@gmail.com,user_22,585.5,14,S003,Product_257,0.16,Home Office
+T000458,U00283,2023-10-12,West,Sports,3669.35,,Atlanta,TX,48.0,Premium,2023-09-07T18:48:00,useru00283@gmail.com,,,8,S002,Product_227,0.04,Home Office
+T000410,U00068,2024-06-11,South,Furniture,4522.26,Inactive,Seattle,GA,30.0,Premium,2023-12-11T18:38:00,,user_379,2375.05,11,S008,Product_224,0.14,Consumer
+T000093,U00151,2023-01-21,East,Clothing,380.26,Active,Chicago,NY,50.0,Free,12/13/2023 19:39:00,useru00151@yahoo.com,user_85,,6,S004,Product_098,0.2,Home Office
+T000931,U00110,2023-03-07,West,Electronics,1454.67,Active,Los Angeles,CO,46.0,Basic,2024-06-10T06:03:00,useru00110@yahoo.com,user_31,1743.29,4,S002,Product_160,,Consumer
+T000090,U00492,2023-03-16,East,Furniture,2934.22,Active,Tucson,TX,61.0,Standard,2024-05-13 20:20:00,useru00492@outlook.com,user_315,561.98,3,S007,Product_158,0.37,Consumer
+T000337,U00039,2024-07-13,Central,Books,3629.5,Active,Los Angeles,TX,17.0,Basic,2024-12-29T08:57:00,useru00039@yahoo.com,user_368,1093.13,9,S015,Product_258,0.4,Corporate
+T000238,U00015,2023-09-09,Central,Books,2326.16,Inactive,Los Angeles,CA,27.0,Premium,2023-09-22T08:42:00,useru00015@gmail.com,user_249,143.04,6,S010,Product_153,0.43,Corporate
+T000922,U00340,2024-03-25,West,Furniture,4809.04,Active,Atlanta,CA,23.0,Premium,2024-07-26T11:58:00,useru00340@outlook.com,"",441.75,14,S012,Product_191,0.03,Home Office
+T000934,U00087,2023-10-23,Central,Clothing,1453.49,Inactive,Chicago,CO,17.0,Premium,2023-11-24T23:37:00,useru00087@gmail.com,user_206,628.37,9,S003,Product_066,0.07,Consumer
+T000606,U00006,2023-07-09,West,Electronics,,Active,Houston,OR,22.0,Standard,2024-06-20T00:15:00,useru00006@yahoo.com,user_255,712.7,2,S012,Product_213,0.46,Home Office
+T000594,U00291,2023-08-09,South,Furniture,868.95,Inactive,Austin,AZ,31.0,Free,01/21/2023 06:25:00,useru00291@outlook.com,user_47,292.79,15,S001,Product_118,0.37,Consumer
+T000612,U00299,2023-06-19,East,Furniture,3835.48,Active,Austin,WA,68.0,Basic,2024-09-06T23:46:00,useru00299@yahoo.com,user_268,1340.49,7,S011,Product_292,0.12,Consumer
+T000095,U00459,2024-11-07,West,Furniture,932.56,Active,Seattle,CO,17.0,Basic,2023-08-20 08:36:00,useru00459@outlook.com,user_44,2021.41,13,S010,Product_117,0.28,Home Office
+T000012,U00472,2023-12-14,East,Home & Kitchen,4350.61,Inactive,Phoenix,TX,62.0,Premium,06/27/2024 06:24:00,useru00472@gmail.com,user_370,2353.81,15,S001,Product_080,0.08,Home Office
+T000397,U00260,2023-08-19,Central,Furniture,2393.19,Churned,Phoenix,IL,16.0,Premium,07/20/2023 17:38:00,,user_247,1915.38,7,S012,Product_219,0.27,Consumer
+T000534,U00076,2024-11-19,Central,Toys,3381.8,,Reno,NY,53.0,Premium,01/03/2024 20:29:00,useru00076@outlook.com,user_22,2296.16,3,S010,Product_175,0.27,Consumer
+T000044,U00049,2023-07-09,South,Toys,1624.77,Active,Los Angeles,IL,43.0,Free,,useru00049@outlook.com,user_121,299.97,7,S011,Product_258,0.46,Corporate
+T000043,U00269,2024-05-20,South,Home & Kitchen,4256.79,Active,Phoenix,NY,36.0,Basic,2023-09-21 22:11:00,useru00269@yahoo.com,user_388,1529.33,7,S014,Product_219,,Home Office
+T000330,U00110,2023-01-03,Central,Furniture,1095.14,,New York,GA,67.0,Free,,useru00110@yahoo.com,user_182,877.56,7,S006,Product_005,0.05,Consumer
+T000168,U00119,2024-01-25,East,Clothing,4520.32,Inactive,Los Angeles,NY,26.0,Free,2024-07-28 22:01:00,useru00119@outlook.com,user_251,396.73,6,S006,Product_155,0.12,Home Office
+T000498,U00379,2024-06-04,East,Home & Kitchen,2548.64,Active,Los Angeles,IL,21.0,Premium,2023-08-15 22:20:00,useru00379@yahoo.com,user_328,117.86,15,S012,Product_060,,Consumer
+T000877,U00306,2023-03-14,East,Toys,974.95,Active,Phoenix,TX,66.0,Free,2023-10-09T14:18:00,useru00306@yahoo.com,user_14,2397.13,3,S013,Product_116,,Consumer
+T000598,U00343,2024-08-13,East,Books,2460.78,Active,Phoenix,TX,67.0,Basic,02/13/2023 10:24:00,useru00343@yahoo.com,user_23,11.97,4,S007,Product_177,,Home Office
+T000757,U00030,2024-02-03,East,Books,3752.88,Pending,Phoenix,CA,65.0,Basic,2024-05-29T15:28:00,useru00030@gmail.com,user_267,1843.19,7,S005,Product_205,0.37,Consumer
+T000101,U00283,2023-12-25,East,Books,3747.32,Active,Boise,OR,18.0,Basic,2023-08-08 07:41:00,useru00283@yahoo.com,,1951.86,1,S008,Product_068,0.32,Consumer
+T000427,U00393,2024-02-17,South,Sports,396.61,Pending,Denver,WA,26.0,Premium,06/18/2024 18:41:00,useru00393@outlook.com,,1541.64,4,S003,Product_002,0.39,Consumer
+T000179,U00270,2024-08-11,South,Beauty,4636.26,Inactive,Tulsa,CO,46.0,Standard,,useru00270@gmail.com,,2120.93,7,S007,Product_024,0.17,Home Office
+T000445,U00217,2024-02-15,West,Books,3610.75,Active,Chicago,OR,22.0,Basic,2023-11-07T19:32:00,useru00217@gmail.com,user_26,1184.93,7,S005,Product_096,0.14,Home Office
+T000417,U00340,2024-03-11,West,Toys,4782.01,Active,Chicago,OR,60.0,Standard,2024-05-15T19:26:00,useru00340@yahoo.com,user_111,,13,S006,Product_134,0.34,Corporate
+T000871,U00281,2023-09-11,West,Toys,4327.15,Inactive,Houston,CO,43.0,Basic,2024-03-20 00:19:00,useru00281@outlook.com,user_268,2019.66,14,S004,Product_049,0.16,Home Office
+T000883,U00349,2023-05-29,South,Furniture,510.3,Active,New York,AZ,,Premium,2024-02-13T07:11:00,useru00349@outlook.com,user_17,1139.78,3,S003,Product_010,0.16,Corporate
+T000681,U00275,2024-04-12,South,Books,4371.93,Churned,New York,NV,52.0,Basic,2024-06-10T04:56:00,useru00275@yahoo.com,user_162,1759.18,2,S005,Product_231,0.34,Consumer
+T000178,U00166,2024-01-13,South,Clothing,3794.63,Active,Portland,CO,23.0,Standard,2023-12-04T16:26:00,useru00166@gmail.com,user_56,2448.48,2,S008,Product_148,0.21,Corporate
+T000396,U00455,2023-03-02,West,Beauty,4621.63,Churned,New York,IL,46.0,Free,2024-09-16 22:53:00,useru00455@gmail.com,user_307,2323.76,8,S003,Product_139,0.36,Corporate
+T000912,U00435,2024-03-30,West,Electronics,1925.91,Inactive,Los Angeles,NY,38.0,Standard,2023-04-03T14:34:00,useru00435@gmail.com,"",853.01,10,S009,Product_012,0.47,Consumer
+T000794,U00374,2024-07-25,East,Furniture,4914.99,Inactive,Austin,IL,26.0,Premium,2024-05-22 09:50:00,useru00374@gmail.com,user_356,538.89,2,S009,Product_027,0.02,Home Office
+T000409,U00134,2023-10-21,East,Clothing,416.71,,Reno,NV,46.0,Standard,2023-07-04 14:00:00,useru00134@yahoo.com,user_365,1858.42,1,S014,Product_221,0.01,Consumer
+T000685,U00210,2024-08-25,East,Clothing,184.0,Churned,Portland,CA,44.0,Basic,07/06/2023 00:23:00,useru00210@outlook.com,user_225,831.86,1,S007,Product_222,0.49,Corporate
+T000384,U00341,2024-07-28,West,Clothing,3568.85,Pending,Boise,OR,52.0,Premium,02/02/2023 15:59:00,useru00341@outlook.com,user_217,2260.89,15,S005,Product_160,0.09,Corporate
+T000160,U00393,2024-10-15,East,Toys,3515.73,Active,Atlanta,TX,50.0,Premium,06/11/2023 17:38:00,useru00393@yahoo.com,user_167,1033.8,14,S012,Product_166,0.3,Consumer
+T000752,U00379,2023-01-02,Central,Sports,1019.76,Active,Chicago,CA,34.0,Basic,,,,938.61,13,S009,Product_179,0.04,Corporate
+T000258,U00148,2023-07-16,East,Toys,1168.19,,New York,AZ,53.0,Standard,04/24/2024 04:56:00,useru00148@yahoo.com,"",1632.99,8,S013,Product_083,0.31,Home Office
+T000539,U00310,2024-04-25,West,Books,2767.6,Inactive,Houston,NV,41.0,Standard,2024-08-30 21:49:00,useru00310@yahoo.com,user_93,1744.34,15,S009,Product_025,0.13,Home Office
+T000336,U00350,2024-07-19,Central,Home & Kitchen,1662.75,Active,Austin,NV,48.0,Premium,10/10/2023 06:37:00,useru00350@gmail.com,user_381,107.39,15,S011,Product_098,0.1,Consumer
+T000016,U00089,2024-09-08,West,Clothing,893.96,Inactive,Houston,NV,63.0,Standard,2024-08-01T20:40:00,useru00089@outlook.com,user_226,1108.31,5,S010,Product_029,,Corporate
+T000325,U00162,2024-03-20,East,Sports,396.85,Active,Austin,GA,41.0,Basic,01/07/2024 10:49:00,useru00162@gmail.com,user_51,2422.09,2,S013,Product_064,0.09,Corporate
+T000759,U00444,2023-04-25,West,Toys,775.59,Inactive,Houston,NV,54.0,Standard,2023-04-09T20:10:00,useru00444@gmail.com,user_11,2188.58,1,S012,Product_087,,Corporate
+T000223,U00322,2024-12-03,East,Clothing,1872.28,Active,Phoenix,WA,25.0,Premium,04/17/2024 22:08:00,useru00322@yahoo.com,user_326,893.18,9,S011,Product_040,0.26,Consumer
+T000180,U00109,2023-01-12,Central,Books,,Active,New York,GA,35.0,Premium,2023-12-08T10:25:00,useru00109@gmail.com,user_100,848.15,15,S008,Product_019,0.32,Home Office
+T000154,U00267,2024-11-12,South,Toys,1951.72,,Atlanta,TX,55.0,Standard,07/16/2024 16:07:00,useru00267@yahoo.com,user_27,548.38,11,S007,Product_167,0.01,Home Office
+T000023,U00172,2023-05-30,West,Books,4587.81,Churned,Reno,CO,43.0,Free,2023-01-20 08:13:00,useru00172@outlook.com,user_217,723.81,1,S004,Product_215,0.32,Consumer
+T000357,U00034,2023-11-21,East,Toys,1071.05,Active,Los Angeles,CO,17.0,Free,05/30/2023 20:13:00,useru00034@outlook.com,user_32,906.92,8,S004,Product_028,,Home Office
+T000667,U00209,2023-01-01,East,Sports,228.52,Inactive,Phoenix,NY,40.0,Standard,01/23/2023 05:23:00,useru00209@yahoo.com,user_64,1075.15,14,S004,Product_149,0.14,Corporate
+T000862,U00189,2023-09-22,South,Home & Kitchen,4793.36,Inactive,Chicago,GA,62.0,Standard,2023-09-09 01:44:00,useru00189@outlook.com,user_380,1813.07,8,S009,Product_003,0.19,Home Office
+T000341,U00106,2024-03-28,West,Books,1027.55,Churned,Houston,OR,24.0,Standard,03/20/2024 11:09:00,useru00106@gmail.com,,476.21,12,S003,Product_145,0.01,Consumer
+T000432,U00336,2024-09-20,Central,Beauty,4187.99,Active,Reno,TX,52.0,Basic,01/15/2023 21:25:00,useru00336@outlook.com,user_99,1256.31,2,S003,Product_228,0.02,Home Office
+T000552,U00385,2024-01-25,West,Books,1033.59,Inactive,Phoenix,GA,36.0,Basic,09/22/2024 12:53:00,useru00385@yahoo.com,user_40,1748.83,13,S007,Product_107,0.11,Corporate
+T000834,U00150,2024-08-20,West,Home & Kitchen,2072.21,Active,Phoenix,WA,39.0,Standard,03/27/2024 05:36:00,useru00150@yahoo.com,,559.62,12,S007,Product_167,0.13,Corporate
+T000204,U00024,2023-09-06,Central,Home & Kitchen,81.68,,Los Angeles,NY,44.0,Standard,03/07/2023 03:07:00,useru00024@outlook.com,,846.67,12,S011,Product_206,0.16,Home Office
+T000631,U00468,2023-12-18,East,Home & Kitchen,2024.22,Churned,Seattle,IL,36.0,Standard,2024-01-14T03:14:00,useru00468@outlook.com,,1616.32,7,S014,Product_287,0.16,Corporate
+T000094,U00277,2023-09-29,Central,Books,,Inactive,Denver,CO,24.0,Premium,2023-03-31T09:52:00,useru00277@yahoo.com,user_14,1597.29,8,S014,Product_060,0.15,Corporate
+T000559,U00073,2023-01-17,South,Toys,1272.07,Pending,Chicago,AZ,28.0,Basic,2023-02-22T07:09:00,useru00073@yahoo.com,user_180,969.46,7,S002,Product_151,0.18,Corporate
+T000069,U00400,2024-04-13,East,Toys,2753.13,Active,Houston,GA,67.0,Basic,2023-02-12T23:28:00,useru00400@yahoo.com,"",622.59,1,S008,Product_135,0.17,Corporate
+T000623,U00402,2024-12-04,Central,Sports,3791.81,Active,Los Angeles,GA,30.0,Standard,07/01/2023 17:43:00,useru00402@yahoo.com,user_385,1848.27,12,S010,Product_279,0.36,Home Office
+T000285,U00038,2024-01-02,West,Clothing,720.59,Pending,Phoenix,AZ,17.0,Premium,10/18/2023 05:14:00,useru00038@yahoo.com,user_126,58.62,15,S002,Product_011,0.42,Home Office
+T000845,U00171,2024-10-13,East,Beauty,3678.85,Churned,Houston,GA,25.0,Premium,03/23/2024 22:50:00,,user_261,1208.23,13,S003,Product_186,0.15,Home Office
+T000435,U00268,2024-04-05,South,Home & Kitchen,193.29,Active,Chicago,GA,51.0,Standard,2023-12-22T20:51:00,useru00268@gmail.com,user_258,1859.11,9,S013,Product_108,0.13,Consumer
+T000154,U00267,2024-11-12,South,Toys,1951.72,,Atlanta,TX,55.0,Standard,07/16/2024 16:07:00,useru00267@yahoo.com,user_27,548.38,11,S007,Product_167,0.01,Home Office
+T000076,U00044,2023-09-12,East,Books,3897.06,Churned,Houston,WA,28.0,Basic,2024-02-06 09:41:00,useru00044@gmail.com,user_58,,15,S001,Product_185,0.47,Home Office
+T000731,U00480,2024-10-03,Central,Beauty,441.52,Active,New York,NY,51.0,Standard,2023-12-04 13:17:00,useru00480@outlook.com,user_370,2461.99,8,S009,Product_255,0.18,Corporate
+T000447,U00244,2024-07-25,West,Beauty,1605.02,Active,New York,CO,28.0,Premium,2024-02-04 08:25:00,useru00244@outlook.com,user_324,2462.44,12,S009,Product_190,0.15,Corporate
+T000189,U00395,2024-01-24,East,Electronics,461.76,Churned,Los Angeles,CA,63.0,Premium,2024-06-28T09:24:00,useru00395@gmail.com,user_163,1986.89,15,S015,Product_223,0.36,Consumer
+T000272,U00051,2023-11-24,West,Beauty,1297.09,Churned,Omaha,CA,27.0,Basic,2023-08-31T15:32:00,useru00051@gmail.com,user_163,1020.66,7,S011,Product_120,,Home Office
+T000237,U00481,2024-04-23,West,Furniture,4673.83,Active,Chicago,IL,38.0,Premium,12/02/2024 09:54:00,useru00481@gmail.com,user_212,721.18,11,S010,Product_121,0.2,Consumer
+T000488,U00007,2023-10-31,West,Electronics,4289.08,Inactive,Tucson,GA,50.0,Premium,07/10/2023 16:37:00,useru00007@yahoo.com,user_362,913.1,7,S006,Product_187,0.45,Corporate
+T000118,U00232,2023-05-17,West,Books,4216.94,Active,Los Angeles,GA,55.0,Premium,2023-10-25T21:22:00,useru00232@outlook.com,user_92,1737.31,2,S013,Product_181,0.28,Home Office
+T000944,U00318,2024-02-24,East,Electronics,2064.35,Active,New York,AZ,29.0,Premium,02/03/2024 03:10:00,,user_206,621.01,12,S010,Product_018,,Consumer
+T000513,U00283,2023-07-17,East,Books,425.7,Pending,New York,AZ,70.0,Premium,2023-05-12 03:15:00,useru00283@gmail.com,,,12,S001,Product_175,0.44,Consumer
+T000826,U00083,2023-08-21,Central,Electronics,776.01,Inactive,Houston,AZ,64.0,Standard,04/24/2024 04:02:00,,user_105,1252.6,7,S013,Product_135,0.38,Home Office
+T000592,U00120,2023-02-16,Central,Sports,4138.11,Active,Houston,CA,57.0,Basic,2023-02-02T03:46:00,useru00120@outlook.com,user_390,1718.47,2,S014,Product_082,,Corporate
+T000127,U00108,2023-12-19,West,Home & Kitchen,813.16,Churned,Tulsa,IL,22.0,Standard,2023-02-25T17:29:00,useru00108@yahoo.com,user_129,1815.35,6,S006,Product_066,0.34,Corporate
+T000117,U00302,2024-05-31,West,Toys,31.64,Inactive,Tucson,OR,68.0,Free,2023-07-01 22:37:00,useru00302@gmail.com,user_337,2207.33,7,S007,Product_128,0.14,Corporate
+T000474,U00050,2024-05-04,East,Sports,637.91,Churned,Phoenix,TX,29.0,Standard,2024-02-18T09:56:00,useru00050@gmail.com,user_374,824.92,11,S010,Product_267,0.26,Corporate
+T000694,U00349,2023-01-16,West,Toys,1289.56,,Boise,NY,47.0,Premium,12/29/2024 10:44:00,useru00349@outlook.com,user_291,1035.94,4,S014,Product_212,0.17,Corporate
+T000058,U00051,2024-03-23,West,Clothing,1709.56,,Portland,OR,64.0,Basic,04/06/2024 15:14:00,useru00051@yahoo.com,user_349,953.28,5,S013,Product_127,,Consumer
+T000864,U00323,2023-11-02,West,Electronics,1025.9,Inactive,Los Angeles,GA,55.0,Free,03/09/2023 14:10:00,useru00323@gmail.com,user_213,1629.95,14,S005,Product_270,0.16,Home Office
+T000913,U00069,2024-04-16,Central,Sports,3272.28,Pending,Atlanta,NV,16.0,Standard,2023-08-22T15:43:00,useru00069@outlook.com,user_391,794.31,13,S012,Product_278,0.31,Home Office
+T000370,U00130,2024-08-23,East,Beauty,1997.55,Churned,Phoenix,OR,65.0,Premium,08/09/2023 21:23:00,useru00130@yahoo.com,user_164,1793.42,10,S013,Product_165,0.45,Corporate
+T000269,U00244,2024-09-12,West,Home & Kitchen,2528.77,Inactive,Phoenix,CO,24.0,Premium,10/01/2024 21:39:00,useru00244@yahoo.com,user_24,2225.66,11,S002,Product_085,0.35,Home Office
+T000047,U00382,2023-08-12,East,Electronics,2124.25,Inactive,Chicago,CA,19.0,Basic,2023-10-21 13:11:00,useru00382@outlook.com,user_216,2228.88,15,S015,Product_194,0.19,Home Office
+T000350,U00257,2023-11-10,Central,Furniture,4657.94,Active,Chicago,OR,23.0,Basic,2023-02-27 07:25:00,useru00257@outlook.com,user_40,1173.75,11,S007,Product_195,0.08,Home Office
+T000196,U00028,2024-10-19,West,Clothing,272.09,Inactive,Houston,CO,62.0,Free,2023-08-28T12:43:00,useru00028@yahoo.com,,2318.42,11,S006,Product_272,,Home Office
+T000858,U00169,2023-08-12,East,Beauty,3384.5,Active,Los Angeles,CO,63.0,Basic,2023-11-08 21:52:00,useru00169@outlook.com,user_258,,14,S006,Product_166,0.42,Home Office
+T000835,U00316,2024-09-19,South,Beauty,552.54,Pending,Houston,IL,23.0,Premium,2024-05-20 05:34:00,useru00316@outlook.com,user_199,1632.28,13,S010,Product_220,0.03,Home Office
+T000737,U00190,2024-08-30,East,Electronics,904.44,Active,Los Angeles,TX,44.0,Premium,11/03/2023 07:05:00,useru00190@outlook.com,user_287,1909.81,6,S015,Product_145,0.21,Corporate
+T000264,U00208,2023-07-22,South,Clothing,194.48,Pending,New York,TX,48.0,Premium,04/06/2023 16:35:00,useru00208@outlook.com,user_15,1352.13,14,S013,Product_156,0.36,Consumer
+T000444,U00065,2023-05-29,Central,Furniture,4464.66,Inactive,Los Angeles,NV,30.0,Free,2024-06-20 18:29:00,,user_312,1596.35,7,S009,Product_041,0.17,Corporate
+T000676,U00389,2024-05-05,East,Furniture,1735.14,Active,Tucson,GA,18.0,Basic,10/12/2024 05:23:00,useru00389@gmail.com,user_64,1738.32,6,S015,Product_130,0.18,Corporate
+T000305,U00194,2023-06-21,East,Furniture,2531.41,Churned,Austin,CO,16.0,Basic,2023-03-27T09:38:00,useru00194@outlook.com,user_195,1136.74,10,S008,Product_037,0.17,Consumer
+T000342,U00419,2024-02-08,Central,Sports,356.58,Active,Austin,OR,21.0,Premium,01/13/2023 19:06:00,useru00419@gmail.com,user_391,2337.02,13,S002,Product_138,0.07,Consumer
+T000485,U00135,2023-06-14,West,Beauty,3706.12,Churned,Denver,TX,69.0,Premium,2023-12-27T19:34:00,useru00135@gmail.com,user_157,1806.24,6,S010,Product_255,0.32,Consumer
+T000150,U00223,2024-06-20,Central,Books,4545.53,Active,Phoenix,NY,43.0,Basic,2023-06-09 09:00:00,useru00223@gmail.com,user_241,1720.99,13,S008,Product_154,0.0,Corporate
+T000125,U00407,2023-09-15,East,Sports,4555.82,Inactive,Boise,OR,42.0,Basic,2023-05-02T17:00:00,useru00407@gmail.com,user_300,2121.39,9,S002,Product_149,0.39,Consumer
+T000787,U00490,2024-11-26,Central,Home & Kitchen,4193.21,Inactive,Houston,TX,,Premium,2024-08-31T13:49:00,useru00490@gmail.com,user_128,1305.49,5,S005,Product_036,0.41,Consumer
+T000051,U00074,2024-04-19,South,Furniture,4839.25,Active,Los Angeles,IL,31.0,Basic,2024-04-05T11:05:00,,user_194,1509.29,4,S013,Product_287,0.11,Corporate
+T000354,U00199,2023-09-02,West,Clothing,4790.5,,Phoenix,NY,,Standard,2023-11-13 17:55:00,useru00199@yahoo.com,user_152,703.89,2,S002,Product_092,0.36,Corporate
+T000928,U00465,2024-01-05,East,Books,709.16,Churned,Chicago,NY,50.0,Basic,2023-05-12 12:13:00,useru00465@yahoo.com,user_330,1532.79,10,S013,Product_081,0.32,Corporate
+T000143,U00183,2023-06-09,Central,Clothing,4601.74,Pending,Denver,NV,15.0,Basic,2023-02-13T15:23:00,useru00183@outlook.com,user_252,1911.83,7,S004,Product_296,0.06,Corporate
+T000471,U00223,2024-10-29,East,Clothing,3255.66,Churned,New York,CA,32.0,Standard,2023-02-16 04:54:00,useru00223@gmail.com,user_80,,10,S013,Product_108,0.43,Corporate
+T000400,U00362,2024-09-28,East,Clothing,1025.74,,Houston,IL,34.0,Premium,,useru00362@gmail.com,user_333,,14,S001,Product_139,0.14,Consumer
+T000626,U00148,2024-07-13,South,Home & Kitchen,643.1,Churned,Tucson,CA,53.0,Premium,2024-07-09T13:46:00,useru00148@yahoo.com,user_150,748.85,14,S012,Product_263,,Consumer
+T000321,U00382,2023-04-07,Central,Home & Kitchen,1925.96,Pending,Reno,WA,51.0,Premium,12/31/2024 17:11:00,useru00382@gmail.com,,2031.43,9,S014,Product_300,0.27,Home Office
+T000020,U00071,2023-06-08,West,Clothing,2543.37,Pending,Los Angeles,GA,17.0,Standard,09/24/2024 04:38:00,useru00071@gmail.com,user_395,2257.13,1,S007,Product_187,0.34,Corporate
+T000810,U00336,2023-09-28,South,Beauty,67.53,Inactive,Chicago,AZ,29.0,Standard,2023-09-22T09:24:00,useru00336@yahoo.com,user_74,1050.31,11,S005,Product_197,,Home Office
+T000791,U00430,2023-10-05,Central,Electronics,1023.44,Inactive,Los Angeles,GA,19.0,Premium,2024-04-26T14:41:00,useru00430@outlook.com,user_120,713.49,1,S014,Product_129,0.05,Home Office
+T000809,U00453,2023-02-02,West,Home & Kitchen,1103.13,Inactive,Los Angeles,CA,20.0,Premium,2023-05-27 14:05:00,useru00453@outlook.com,user_103,322.24,15,S011,Product_219,,Consumer
+T000408,U00410,2024-01-06,West,Beauty,3743.46,Active,Chicago,OR,38.0,Basic,03/20/2023 11:41:00,useru00410@yahoo.com,user_118,2067.83,9,S004,Product_209,0.34,Home Office
+T000538,U00164,2023-12-26,West,Toys,4307.26,Inactive,New York,NY,42.0,Basic,2023-12-26 21:31:00,useru00164@yahoo.com,user_45,1361.62,12,S014,Product_049,0.23,Consumer
+T000621,U00193,2023-05-05,West,Toys,380.94,Active,New York,WA,,Free,2024-08-15 10:03:00,useru00193@yahoo.com,,692.1,4,S008,Product_105,0.34,Corporate
+T000039,U00362,2023-05-22,East,Beauty,4990.63,Active,New York,TX,44.0,Premium,2023-12-29T21:49:00,useru00362@outlook.com,user_248,620.07,4,S005,Product_148,0.35,Corporate
+T000176,U00148,2024-10-03,West,Home & Kitchen,,Churned,Portland,CA,44.0,Basic,01/06/2023 19:56:00,useru00148@outlook.com,user_233,203.12,4,S015,Product_281,0.14,Consumer
+T000246,U00299,2024-12-01,Central,Clothing,61.5,Active,Seattle,OR,58.0,Basic,03/09/2024 23:38:00,,user_171,1179.98,10,S011,Product_024,0.0,Corporate
+T000829,U00355,2023-05-22,East,Home & Kitchen,1097.26,Pending,Omaha,CO,53.0,Standard,12/11/2024 00:51:00,useru00355@outlook.com,user_303,445.03,13,S006,Product_121,0.13,Consumer
+T000668,U00206,2023-03-06,East,Toys,4483.91,Active,Tulsa,GA,23.0,Basic,2024-08-09 17:40:00,,user_206,1380.13,2,S008,Product_139,0.21,Consumer
+T000755,U00371,2023-10-31,Central,Home & Kitchen,223.3,Active,Tulsa,WA,54.0,Basic,2024-07-18 10:06:00,useru00371@gmail.com,user_276,105.92,9,S014,Product_115,0.35,Home Office
+T000859,U00155,2024-08-07,West,Clothing,,Pending,Phoenix,GA,42.0,Standard,2024-07-12T12:43:00,useru00155@yahoo.com,user_96,1907.53,3,S010,Product_008,0.24,Home Office
+T000155,U00062,2024-02-10,Central,Electronics,4844.49,Pending,Seattle,NV,24.0,Premium,2023-06-11T15:05:00,useru00062@outlook.com,user_183,1754.81,3,S008,Product_120,0.16,Home Office
+T000288,U00192,2024-06-22,Central,Toys,2374.05,Pending,New York,NV,,Premium,2023-07-27 14:55:00,useru00192@yahoo.com,user_194,2339.07,9,S002,Product_069,0.38,Home Office
+T000603,U00012,2024-11-15,West,Furniture,1545.57,Churned,Houston,GA,51.0,Basic,2023-01-24 07:46:00,useru00012@outlook.com,user_266,2455.84,3,S008,Product_032,0.34,Corporate
+T000570,U00081,2024-02-05,West,Clothing,254.07,Churned,Denver,OR,26.0,Basic,02/12/2024 22:55:00,useru00081@yahoo.com,user_363,790.4,10,S014,Product_095,0.0,Corporate
+T000744,U00454,2024-10-31,West,Toys,2196.39,Inactive,Tucson,IL,17.0,Standard,2023-03-01T04:14:00,useru00454@yahoo.com,user_84,1399.92,7,S007,Product_174,0.09,Home Office
+T000018,U00089,2023-02-10,West,Toys,4955.02,Pending,Houston,AZ,38.0,Basic,2023-12-13 21:38:00,useru00089@outlook.com,user_169,1697.56,12,S014,Product_077,0.17,Consumer
+T000128,U00318,2023-03-13,South,Beauty,2434.45,Pending,Chicago,NV,24.0,Basic,2023-11-20 13:10:00,useru00318@gmail.com,user_329,2101.07,12,S006,Product_246,0.23,Corporate
+T000323,U00128,2023-11-04,West,Books,3299.2,Inactive,New York,AZ,48.0,Free,2024-09-12 17:32:00,useru00128@outlook.com,,358.46,4,S003,Product_283,0.11,Consumer
+T000256,U00075,2024-10-27,West,Sports,439.61,Active,Denver,OR,16.0,Free,,useru00075@yahoo.com,user_104,2074.48,6,S001,Product_053,0.32,Corporate
+T000658,U00421,2024-05-23,South,Furniture,3918.8,Inactive,Atlanta,IL,56.0,Basic,03/25/2024 21:07:00,useru00421@outlook.com,user_53,958.1,4,S008,Product_147,0.48,Home Office
+T000455,U00381,2024-12-12,West,Books,4297.15,Active,Los Angeles,IL,52.0,Basic,2023-09-23T11:46:00,useru00381@outlook.com,user_317,2431.15,10,S014,Product_257,0.16,Corporate
+T000191,U00097,2024-07-22,East,Beauty,4201.41,,Denver,TX,,Basic,05/28/2023 23:56:00,useru00097@gmail.com,user_329,2151.08,12,S010,Product_218,0.31,Corporate
+T000116,U00281,2024-06-18,East,Clothing,238.43,Active,Phoenix,OR,21.0,Premium,05/04/2023 12:13:00,useru00281@gmail.com,user_56,121.02,11,S010,Product_064,0.39,Home Office
+T000617,U00223,2024-09-06,East,Furniture,,Churned,Los Angeles,OR,47.0,Premium,2023-07-17 19:21:00,useru00223@gmail.com,user_29,701.72,10,S002,Product_165,0.03,Consumer
+T000607,U00110,2024-02-06,East,Beauty,,Active,Denver,NY,66.0,Basic,2024-08-11T09:06:00,useru00110@gmail.com,user_245,70.81,7,S004,Product_088,0.41,Consumer
+T000181,U00236,2024-07-03,South,Toys,3922.11,Pending,Boise,GA,34.0,Standard,2024-07-22 17:01:00,useru00236@yahoo.com,,2424.19,1,S006,Product_193,0.31,Home Office
+T000302,U00301,2024-12-22,South,Sports,115.85,Active,Los Angeles,IL,62.0,Premium,03/23/2023 01:08:00,useru00301@gmail.com,user_105,598.97,8,S012,Product_169,0.07,Consumer
+T000760,U00480,2023-07-21,Central,Beauty,975.03,Churned,Atlanta,CA,35.0,Premium,2023-07-03T08:15:00,useru00480@outlook.com,user_182,408.79,13,S010,Product_088,0.33,Home Office
+T000713,U00381,2023-03-17,East,Furniture,,,Los Angeles,NV,62.0,Premium,2023-01-30T08:15:00,useru00381@yahoo.com,user_199,381.34,14,S004,Product_061,,Consumer
+T000724,U00164,2024-04-19,Central,Sports,,Active,Phoenix,NV,59.0,Standard,2023-08-11T12:33:00,useru00164@yahoo.com,user_18,499.3,6,S012,Product_079,0.26,Home Office
+T000686,U00138,2023-04-05,West,Furniture,4581.54,Active,Phoenix,NY,60.0,Free,08/19/2023 09:00:00,useru00138@gmail.com,,1480.75,8,S001,Product_268,0.31,Home Office
+T000378,U00266,2024-03-19,West,Electronics,3235.26,Active,Houston,CA,17.0,Premium,2024-06-28 03:17:00,useru00266@outlook.com,user_201,553.62,12,S005,Product_254,0.1,Corporate
+T000518,U00473,2024-02-17,East,Toys,2266.36,Churned,New York,OR,16.0,Standard,01/26/2024 20:09:00,useru00473@yahoo.com,user_339,381.84,4,S002,Product_009,0.2,Corporate
+T000563,U00316,2024-01-17,South,Books,2889.45,,New York,AZ,55.0,Basic,2024-11-14T21:53:00,useru00316@outlook.com,user_305,617.01,7,S008,Product_140,0.16,Corporate
+T000046,U00040,2024-07-31,West,Sports,2867.78,Active,Chicago,GA,43.0,Premium,2024-08-20T15:05:00,useru00040@gmail.com,user_263,1411.96,11,S013,Product_158,0.36,Consumer
+T000910,U00240,2023-07-15,South,Home & Kitchen,213.94,Pending,New York,CO,45.0,Basic,2024-01-07 19:23:00,useru00240@gmail.com,user_218,2483.61,12,S003,Product_104,0.0,Home Office
+T000158,U00268,2024-11-05,West,Home & Kitchen,,Active,New York,IL,,Basic,2024-02-02T21:31:00,useru00268@outlook.com,user_188,,15,S004,Product_252,0.46,Corporate
+T000852,U00318,2024-09-22,East,Home & Kitchen,1505.9,Churned,Reno,WA,50.0,Premium,10/01/2023 02:49:00,useru00318@yahoo.com,,494.94,10,S005,Product_230,0.29,Consumer
+T000172,U00252,2024-04-30,West,Sports,1139.1,,Austin,WA,41.0,Standard,2023-07-27 06:04:00,useru00252@yahoo.com,user_251,2167.6,7,S007,Product_022,0.3,Home Office
+T000017,U00232,2023-02-08,West,Books,392.89,Churned,New York,NV,53.0,Basic,2024-07-21 23:57:00,useru00232@outlook.com,user_165,1255.91,8,S002,Product_176,,Home Office
+T000512,U00235,2024-11-06,West,Electronics,661.94,Pending,Phoenix,NV,16.0,Premium,2024-04-26 12:24:00,useru00235@yahoo.com,user_172,1283.9,7,S007,Product_176,0.07,Corporate
+T000049,U00393,2023-01-17,West,Clothing,,Inactive,Austin,CA,30.0,Basic,2023-08-28 17:13:00,useru00393@yahoo.com,user_375,1445.8,14,S006,Product_122,0.15,Home Office
+T000880,U00160,2023-11-23,South,Clothing,2702.49,,Tucson,IL,53.0,Standard,,useru00160@gmail.com,user_202,1919.11,1,S004,Product_264,0.19,Home Office
+T000941,U00182,2023-08-18,Central,Clothing,516.52,Inactive,Los Angeles,IL,59.0,Premium,2023-01-24 15:51:00,,user_354,,2,S005,Product_275,0.31,Home Office
+T000516,U00152,2024-09-07,East,Books,1099.11,Active,Boise,IL,,Standard,2024-11-30 08:18:00,useru00152@gmail.com,user_376,1890.35,11,S013,Product_229,0.01,Consumer
+T000926,U00286,2023-07-13,East,Toys,2303.8,Active,Austin,OR,41.0,Premium,05/23/2023 10:47:00,useru00286@yahoo.com,user_17,2123.33,11,S012,Product_113,0.13,Consumer
+T000481,U00233,2023-06-07,West,Beauty,4377.43,Active,Omaha,WA,22.0,Basic,06/22/2023 22:44:00,useru00233@gmail.com,user_46,1510.27,6,S004,Product_254,0.42,Corporate
+T000284,U00290,2023-12-10,Central,Furniture,1649.81,Churned,Los Angeles,CA,46.0,Premium,08/17/2023 22:14:00,useru00290@gmail.com,user_394,832.13,4,S007,Product_095,,Consumer
+T000719,U00196,2023-03-07,East,Books,641.1,Active,Phoenix,CA,49.0,Premium,12/07/2023 19:58:00,useru00196@yahoo.com,user_205,811.13,10,S007,Product_204,0.15,Consumer
+T000878,U00355,2024-04-26,East,Clothing,3889.19,Churned,New York,CA,59.0,Standard,2024-01-01T02:30:00,useru00355@outlook.com,user_276,200.75,4,S005,Product_019,,Corporate
+T000226,U00158,2023-05-09,West,Clothing,2129.78,Active,Chicago,CA,64.0,Basic,2023-07-21T03:02:00,useru00158@gmail.com,user_130,,2,S013,Product_064,0.46,Consumer
+T000027,U00255,2024-12-09,East,Books,4007.73,Active,Austin,NV,67.0,Premium,2023-04-16T02:20:00,useru00255@yahoo.com,user_219,1112.55,12,S014,Product_181,0.31,Home Office
+T000720,U00437,2023-09-03,West,Books,692.18,Pending,Chicago,NY,32.0,Premium,10/20/2023 01:42:00,useru00437@outlook.com,,2352.69,5,S013,Product_163,0.44,Consumer
+T000438,U00495,2024-12-15,South,Sports,4757.95,Active,Tulsa,AZ,65.0,Free,11/13/2023 04:51:00,useru00495@gmail.com,user_338,2207.97,2,S003,Product_121,0.43,Home Office
+T000501,U00134,2023-04-22,Central,Furniture,4116.16,,Seattle,GA,69.0,Premium,2023-02-06 15:30:00,useru00134@gmail.com,user_95,,7,S010,Product_190,0.22,Home Office
+T000365,U00105,2023-04-06,West,Furniture,67.58,Active,Tucson,NV,60.0,Free,2024-08-08T12:01:00,useru00105@yahoo.com,user_399,603.11,5,S004,Product_275,0.42,Corporate
+T000230,U00380,2023-06-22,West,Sports,1699.77,,Phoenix,NY,29.0,Standard,2023-10-13T22:49:00,useru00380@outlook.com,user_183,1509.9,8,S009,Product_143,0.07,Consumer
+T000038,U00401,2024-08-15,East,Electronics,2921.78,Pending,Tucson,NV,64.0,Premium,2024-11-28T07:02:00,useru00401@gmail.com,user_226,382.82,7,S009,Product_242,0.44,Consumer
+T000061,U00486,2024-02-10,East,Furniture,4022.34,Active,Phoenix,NV,23.0,Basic,12/12/2024 06:30:00,useru00486@yahoo.com,user_150,1584.09,13,S004,Product_167,0.19,Corporate
+T000375,U00396,2024-05-09,West,Books,3833.35,Active,Boise,IL,57.0,Standard,12/12/2024 02:04:00,useru00396@gmail.com,user_240,473.85,4,S014,Product_271,0.26,Corporate
+T000470,U00260,2024-08-15,Central,Clothing,822.79,,Denver,NV,37.0,Premium,2023-07-15T06:05:00,useru00260@yahoo.com,,953.17,14,S002,Product_182,0.18,Consumer
+T000777,U00035,2023-12-28,Central,Toys,2721.09,Active,New York,GA,42.0,Standard,11/17/2023 05:07:00,useru00035@yahoo.com,user_339,821.96,13,S013,Product_263,0.03,Consumer
+T000851,U00238,2024-04-26,Central,Furniture,2621.56,Inactive,Phoenix,CA,42.0,Premium,2023-09-15 19:18:00,useru00238@gmail.com,user_220,1186.09,2,S009,Product_282,0.22,Corporate
+T000705,U00158,2023-12-05,South,Clothing,86.01,Inactive,Reno,OR,68.0,Basic,2023-01-06T20:48:00,useru00158@yahoo.com,,2216.56,7,S007,Product_228,0.11,Consumer
+T000842,U00014,2023-01-05,East,Home & Kitchen,3302.63,,Chicago,AZ,70.0,Premium,2023-06-20 22:06:00,useru00014@gmail.com,,239.75,13,S003,Product_052,0.29,Consumer
+T000195,U00379,2023-06-04,Central,Beauty,4041.13,Pending,Phoenix,CO,26.0,Standard,2023-12-18T02:09:00,useru00379@gmail.com,user_386,1927.07,8,S012,Product_086,0.11,Corporate
+T000855,U00142,2023-08-06,East,Furniture,3641.43,Churned,Austin,AZ,41.0,Basic,04/23/2024 04:43:00,useru00142@yahoo.com,,1956.46,5,S015,Product_045,0.26,Home Office
+T000865,U00436,2023-01-20,East,Beauty,4757.53,Pending,Boise,WA,20.0,Basic,2024-03-09 18:43:00,useru00436@yahoo.com,user_88,1018.33,9,S001,Product_272,,Home Office
+T000504,U00439,2023-08-18,Central,Electronics,2822.56,Pending,Austin,CO,51.0,Premium,2024-09-22T12:28:00,useru00439@yahoo.com,user_177,1593.56,15,S003,Product_233,0.27,Consumer
+T000619,U00409,2023-04-05,Central,Toys,3627.69,,Reno,CA,25.0,Free,03/10/2023 08:01:00,useru00409@outlook.com,user_35,500.11,2,S015,Product_068,0.48,Home Office
+T000831,U00301,2024-12-22,South,Sports,4157.56,Active,Portland,TX,45.0,Basic,2023-05-14 14:46:00,useru00301@outlook.com,user_330,262.7,14,S008,Product_190,0.33,Home Office
+T000580,U00048,2023-05-21,South,Clothing,1819.04,Active,Boise,AZ,35.0,Premium,2023-08-06 18:51:00,useru00048@yahoo.com,user_390,1355.56,13,S012,Product_282,0.47,Home Office
+T000895,U00295,2023-04-07,West,Electronics,335.64,Active,Denver,TX,48.0,Premium,2023-11-01 15:42:00,useru00295@outlook.com,,1683.31,6,S014,Product_044,0.16,Corporate
+T000163,U00414,2024-08-13,East,Electronics,4610.14,Churned,Atlanta,OR,41.0,Premium,2023-08-21T23:41:00,useru00414@outlook.com,user_196,1313.34,10,S003,Product_168,0.25,Consumer
+T000909,U00294,2023-09-15,Central,Beauty,2926.55,Inactive,Houston,TX,57.0,Premium,2024-09-23 08:17:00,useru00294@gmail.com,user_47,1328.46,3,S006,Product_267,0.14,Consumer
+T000153,U00238,2024-12-14,Central,Beauty,410.31,Active,Austin,WA,64.0,Basic,07/05/2023 06:57:00,useru00238@gmail.com,user_394,965.07,4,S012,Product_018,0.1,Consumer
+T000802,U00143,2024-07-07,West,Furniture,1359.39,Active,New York,TX,22.0,Free,02/25/2024 10:17:00,useru00143@outlook.com,user_87,420.42,8,S011,Product_076,0.43,Corporate
+T000468,U00078,2023-09-23,South,Beauty,2666.5,Active,Phoenix,NV,37.0,Standard,2024-08-13 04:12:00,useru00078@gmail.com,user_274,2112.52,9,S006,Product_036,0.16,Consumer
+T000756,U00043,2023-07-01,South,Clothing,4749.29,Active,Denver,WA,47.0,Standard,2024-12-29 11:34:00,useru00043@outlook.com,user_256,,13,S010,Product_057,0.27,Home Office
+T000112,U00058,2023-05-16,Central,Electronics,4908.03,Active,Chicago,NV,45.0,Standard,07/05/2023 19:24:00,useru00058@outlook.com,user_373,330.99,2,S015,Product_211,,Home Office
+T000227,U00095,2024-11-17,East,Clothing,736.33,Active,Denver,NV,37.0,Standard,2024-09-19T07:32:00,useru00095@outlook.com,user_271,482.91,15,S013,Product_276,0.0,Consumer
+T000689,U00390,2024-08-08,East,Home & Kitchen,4704.32,Active,Chicago,GA,35.0,Premium,2024-05-13T14:18:00,useru00390@outlook.com,user_152,,9,S011,Product_283,,Home Office
+T000104,U00176,2024-12-31,West,Toys,4533.57,Inactive,New York,TX,68.0,Basic,2023-10-28 03:30:00,useru00176@outlook.com,user_391,2367.57,11,S002,Product_114,0.18,Corporate
+T000422,U00202,2024-01-17,Central,Clothing,2266.83,Active,Los Angeles,IL,43.0,Basic,2024-10-20 09:21:00,useru00202@gmail.com,user_87,2355.52,2,S003,Product_207,0.31,Home Office
+T000420,U00022,2023-06-10,West,Electronics,1157.73,Active,Portland,WA,62.0,Standard,2024-11-02T12:08:00,useru00022@gmail.com,user_259,1907.15,1,S012,Product_278,0.3,Home Office
+T000751,U00253,2023-04-15,West,Home & Kitchen,4527.53,Pending,New York,IL,29.0,Premium,01/22/2023 11:54:00,useru00253@gmail.com,user_193,1714.32,15,S011,Product_196,0.42,Consumer
+T000587,U00261,2024-10-19,South,Clothing,1345.7,Active,Denver,NY,32.0,Basic,2023-11-14 23:25:00,useru00261@gmail.com,user_145,614.51,15,S009,Product_295,0.4,Consumer
+T000781,U00037,2024-03-27,Central,Toys,3658.33,Churned,Atlanta,NY,67.0,Basic,07/12/2023 20:38:00,,user_169,1325.16,5,S015,Product_169,0.41,Consumer
+T000673,U00125,2024-01-14,West,Furniture,4380.67,Churned,Seattle,TX,64.0,Standard,2023-02-25T03:25:00,useru00125@outlook.com,,2330.13,14,S003,Product_061,0.09,Corporate
+T000120,U00288,2023-08-18,Central,Furniture,1195.6,Churned,Phoenix,WA,59.0,Free,2024-02-01T13:50:00,,user_381,1553.3,14,S008,Product_116,0.46,Home Office
+T000054,U00236,2023-06-22,Central,Beauty,854.64,Inactive,Portland,GA,56.0,Basic,2023-03-18 21:03:00,useru00236@outlook.com,user_363,550.71,1,S010,Product_248,,Home Office
+T000152,U00094,2023-05-20,West,Toys,3092.47,Pending,Chicago,IL,,Premium,2024-07-01 00:11:00,useru00094@gmail.com,,,4,S006,Product_216,0.16,Corporate
+T000404,U00327,2024-07-23,West,Electronics,2902.06,Churned,Houston,GA,35.0,Basic,09/22/2023 08:16:00,useru00327@outlook.com,user_317,585.52,3,S011,Product_260,0.43,Consumer
+T000946,U00047,2023-04-17,East,Books,2895.93,Pending,Seattle,NY,,Standard,2024-11-02 05:57:00,useru00047@outlook.com,user_214,2314.94,9,S001,Product_038,0.44,Consumer
+T000208,U00023,2023-04-17,Central,Home & Kitchen,,Inactive,Chicago,NY,30.0,Basic,2023-11-30T13:12:00,useru00023@yahoo.com,user_57,249.67,14,S004,Product_193,,Home Office
+T000659,U00137,2023-09-12,West,Home & Kitchen,3813.35,Active,Portland,GA,57.0,Premium,08/05/2024 03:39:00,useru00137@gmail.com,user_136,1079.81,11,S003,Product_014,,Corporate
+T000844,U00475,2023-01-08,East,Toys,2468.26,Pending,Seattle,NV,27.0,Standard,2023-06-24T18:37:00,useru00475@gmail.com,user_317,418.99,9,S011,Product_149,0.48,Home Office
+T000763,U00271,2024-05-03,East,Electronics,2036.24,Inactive,Reno,NY,,Standard,2024-01-15 18:10:00,useru00271@outlook.com,user_335,,3,S008,Product_228,0.48,Home Office
+T000009,U00165,2024-09-14,West,Home & Kitchen,1382.33,Inactive,Los Angeles,AZ,39.0,Basic,04/09/2024 16:38:00,useru00165@outlook.com,user_336,1923.56,4,S007,Product_232,0.44,Corporate
+T000808,U00082,2023-08-16,East,Toys,96.81,Active,Phoenix,NY,64.0,Premium,2024-12-19T10:06:00,useru00082@yahoo.com,user_322,1580.71,10,S001,Product_147,0.33,Consumer
+T000037,U00168,2024-09-19,East,Furniture,4953.17,Active,Chicago,AZ,47.0,Basic,12/26/2024 18:19:00,useru00168@yahoo.com,user_57,1461.34,12,S014,Product_014,0.3,Home Office
+T000453,U00150,2024-02-12,South,Electronics,1823.23,Inactive,New York,CO,42.0,Premium,2023-09-26 18:48:00,useru00150@yahoo.com,user_174,611.46,5,S002,Product_169,,Home Office
+T000652,U00017,2023-09-13,West,Electronics,3084.52,Inactive,Austin,CO,51.0,Basic,01/13/2024 13:57:00,useru00017@yahoo.com,user_347,873.34,14,S003,Product_127,0.13,Consumer
+T000254,U00009,2023-04-27,Central,Toys,905.97,Active,Houston,NY,41.0,Premium,2024-08-24T23:29:00,useru00009@yahoo.com,,466.79,10,S005,Product_055,,Corporate
+T000304,U00073,2023-07-29,West,Home & Kitchen,2967.23,,Houston,IL,47.0,Standard,2023-11-15 05:46:00,useru00073@gmail.com,user_156,1123.44,5,S014,Product_247,0.04,Corporate
+T000747,U00024,2023-05-11,East,Toys,349.83,Inactive,Portland,CA,20.0,Premium,2023-06-17 21:51:00,,,1036.9,11,S015,Product_280,0.23,Consumer
+T000572,U00440,2024-06-01,West,Furniture,4449.04,Pending,Chicago,NV,27.0,Free,2023-02-10T14:46:00,useru00440@outlook.com,user_234,834.85,11,S013,Product_033,0.24,Corporate
+T000624,U00475,2023-05-02,East,Electronics,2019.27,Active,Phoenix,OR,48.0,Premium,2023-01-16 11:48:00,useru00475@gmail.com,user_88,1574.79,3,S002,Product_202,0.34,Consumer
+T000733,U00019,2024-08-02,South,Toys,1085.94,Inactive,Los Angeles,CO,29.0,Basic,2023-07-09T04:28:00,useru00019@gmail.com,user_174,2409.77,8,S011,Product_279,0.21,Home Office
+T000892,U00389,2024-10-20,South,Furniture,2179.29,Active,Seattle,OR,52.0,Premium,2023-05-07 17:15:00,useru00389@outlook.com,user_136,1401.12,1,S006,Product_240,0.02,Consumer
+T000263,U00078,2024-08-11,West,Books,2102.33,Pending,Atlanta,WA,61.0,Free,2023-01-09T08:57:00,useru00078@gmail.com,user_229,2219.51,10,S011,Product_227,0.35,Home Office
+T000611,U00176,2023-11-02,West,Home & Kitchen,2043.21,Pending,New York,NV,61.0,Premium,,useru00176@gmail.com,user_290,166.78,10,S003,Product_009,0.36,Corporate
+T000298,U00311,2023-04-13,West,Clothing,2677.92,Active,Chicago,CA,58.0,Basic,2023-07-02 06:45:00,useru00311@outlook.com,user_357,1588.8,11,S012,Product_053,0.2,Consumer
+T000415,U00429,2024-10-03,West,Electronics,1237.11,Churned,Reno,IL,58.0,Basic,05/11/2024 05:46:00,useru00429@gmail.com,user_46,2143.61,1,S007,Product_035,0.25,Home Office
+T000151,U00306,2023-08-25,Central,Beauty,950.97,Inactive,Phoenix,IL,25.0,Basic,2024-01-23 07:16:00,useru00306@gmail.com,,2019.9,5,S011,Product_273,0.4,Consumer
+T000789,U00217,2023-05-18,South,Clothing,1323.85,Active,Austin,NY,48.0,Premium,2023-11-21 06:59:00,useru00217@outlook.com,user_215,654.02,15,S011,Product_002,0.28,Home Office
+T000641,U00336,2024-08-19,South,Electronics,1635.85,Inactive,Atlanta,NV,54.0,Basic,06/25/2023 03:46:00,useru00336@outlook.com,user_39,594.5,4,S015,Product_086,0.16,Consumer
+T000890,U00079,2024-03-07,South,Furniture,90.02,Churned,New York,NY,38.0,Premium,2024-01-19 06:43:00,useru00079@gmail.com,user_326,1060.79,6,S007,Product_028,0.17,Consumer
+T000551,U00415,2024-05-12,West,Sports,4228.46,Inactive,Los Angeles,TX,26.0,Premium,01/04/2023 07:42:00,useru00415@outlook.com,user_229,255.41,12,S008,Product_227,0.08,Home Office
+T000887,U00074,2024-01-09,West,Books,1701.44,Churned,Phoenix,CO,63.0,Basic,2024-09-03 11:14:00,useru00074@gmail.com,user_22,1792.94,3,S014,Product_238,0.17,Corporate
+T000489,U00277,2024-01-01,West,Home & Kitchen,1615.1,Pending,Chicago,GA,52.0,Free,2024-06-03T22:30:00,useru00277@outlook.com,user_179,1614.19,4,S008,Product_138,,Home Office
+T000148,U00400,2024-01-07,Central,Toys,2075.81,Active,Boise,IL,57.0,Standard,03/23/2023 06:10:00,useru00400@gmail.com,user_243,70.78,13,S002,Product_054,0.13,Home Office
+T000147,U00182,2023-11-29,Central,Toys,3875.97,Active,Houston,NV,33.0,Free,06/21/2023 20:51:00,useru00182@outlook.com,user_37,862.35,11,S005,Product_137,0.3,Corporate
+T000721,U00232,2024-08-03,East,Toys,1137.77,Pending,Houston,CA,16.0,Standard,05/05/2023 15:33:00,useru00232@gmail.com,user_41,1374.71,15,S009,Product_144,0.16,Home Office
+T000932,U00481,2023-03-08,West,Furniture,2412.09,Pending,Portland,CA,46.0,Premium,2024-04-12T03:02:00,useru00481@outlook.com,user_217,830.02,1,S007,Product_281,,Corporate
+T000740,U00059,2024-05-05,Central,Toys,1640.85,Inactive,Boise,IL,33.0,Standard,2024-01-15T10:30:00,,user_6,698.95,5,S007,Product_033,0.07,Home Office
+T000660,U00420,2024-07-07,South,Clothing,,Active,Los Angeles,CA,55.0,Basic,2023-04-08 17:51:00,useru00420@outlook.com,user_315,1490.71,13,S010,Product_230,0.45,Consumer
+T000349,U00077,2023-07-06,East,Home & Kitchen,3743.05,Active,New York,OR,61.0,Standard,2024-12-12 00:18:00,,user_385,405.07,7,S011,Product_233,0.28,Home Office
+T000464,U00128,2023-10-14,South,Furniture,,Active,Chicago,GA,38.0,Premium,2024-04-28T04:56:00,useru00128@outlook.com,user_78,1476.57,9,S002,Product_225,0.12,Home Office
+T000326,U00302,2024-05-16,West,Beauty,3505.27,Inactive,Reno,NV,21.0,Premium,2024-02-03T05:22:00,useru00302@outlook.com,user_207,,9,S012,Product_080,0.33,Home Office
+T000187,U00170,2023-11-29,East,Electronics,336.17,Inactive,New York,TX,33.0,Basic,05/11/2023 16:06:00,useru00170@gmail.com,user_333,758.78,10,S007,Product_123,0.31,Corporate
+T000124,U00043,2023-04-09,West,Electronics,3138.4,Pending,Chicago,IL,70.0,Standard,2023-07-30T17:53:00,useru00043@outlook.com,user_332,184.94,1,S008,Product_170,,Consumer
+T000854,U00484,2023-10-02,West,Furniture,3633.3,Churned,New York,NV,16.0,Premium,2023-08-14 15:34:00,,user_251,1589.55,5,S004,Product_234,0.25,Corporate
+T000609,U00024,2024-06-15,Central,Clothing,3734.25,Churned,New York,CA,27.0,Premium,07/28/2023 11:24:00,useru00024@gmail.com,,389.21,6,S012,Product_109,0.05,Consumer
+T000144,U00245,2024-07-07,West,Beauty,1974.65,Active,Omaha,NY,59.0,Premium,2023-01-09 00:43:00,useru00245@gmail.com,user_314,471.95,5,S008,Product_176,0.18,Consumer
+T000611,U00176,2023-11-02,West,Home & Kitchen,2043.21,Pending,New York,NV,61.0,Premium,,useru00176@gmail.com,user_290,166.78,10,S003,Product_009,0.36,Corporate
+T000198,U00007,2024-02-26,West,Clothing,3430.64,Pending,Phoenix,WA,,Basic,2023-02-28 19:42:00,useru00007@outlook.com,user_62,1513.69,13,S015,Product_290,0.4,Consumer
+T000610,U00131,2023-12-15,East,Furniture,2550.29,Inactive,Houston,CO,55.0,Basic,2024-07-28 20:57:00,useru00131@outlook.com,user_149,105.65,15,S009,Product_003,0.4,Consumer
+T000280,U00431,2023-09-14,West,Toys,1199.41,Active,New York,AZ,48.0,Free,2024-09-06 19:28:00,useru00431@outlook.com,user_32,946.6,12,S002,Product_066,0.03,Consumer
+T000294,U00275,2024-03-04,East,Clothing,1951.07,Active,New York,IL,34.0,Standard,2024-05-01T05:38:00,useru00275@outlook.com,user_367,,3,S008,Product_033,0.41,Consumer
+T000401,U00031,2023-10-13,South,Furniture,2481.83,Active,New York,CA,29.0,Premium,2024-03-17T17:03:00,useru00031@outlook.com,user_14,1887.42,14,S015,Product_135,0.41,Consumer
+T000123,U00005,2023-04-28,Central,Toys,1209.34,,Denver,IL,17.0,Premium,2023-04-27T12:16:00,useru00005@gmail.com,"",1288.2,8,S001,Product_152,0.45,Home Office
+T000184,U00267,2024-11-05,Central,Electronics,2892.02,Churned,Houston,AZ,27.0,Premium,2023-11-23 14:42:00,useru00267@gmail.com,user_8,1401.27,9,S006,Product_282,0.16,Home Office
+T000203,U00256,2024-06-30,South,Toys,,Active,Boise,AZ,65.0,Basic,2023-08-05T20:42:00,useru00256@outlook.com,user_275,1450.47,1,S012,Product_073,,Home Office
+T000439,U00126,2023-06-07,Central,Beauty,34.67,Active,Phoenix,GA,58.0,Premium,04/28/2024 21:24:00,useru00126@gmail.com,user_163,338.15,15,S005,Product_218,0.3,Corporate
+T000247,U00155,2024-02-09,Central,Home & Kitchen,4840.61,Inactive,Austin,WA,25.0,Free,04/24/2024 04:05:00,useru00155@yahoo.com,user_60,2446.4,14,S005,Product_185,0.46,Corporate
+T000416,U00092,2023-02-09,East,Books,3070.76,Active,Seattle,AZ,45.0,Free,11/04/2023 07:56:00,useru00092@yahoo.com,user_201,1360.82,4,S002,Product_148,0.21,Consumer
+T000933,U00421,2024-08-15,Central,Sports,4623.24,Active,Portland,WA,26.0,Premium,2024-02-18 01:03:00,useru00421@gmail.com,user_222,2442.13,6,S015,Product_010,0.34,Consumer
+T000766,U00288,2023-01-04,East,Toys,1541.9,Active,Chicago,AZ,58.0,Basic,2024-02-20T08:04:00,useru00288@outlook.com,user_155,1157.8,8,S009,Product_176,0.1,Home Office
+T000907,U00263,2024-10-20,East,Home & Kitchen,235.66,Pending,Houston,GA,54.0,Premium,2024-09-15 08:47:00,useru00263@outlook.com,user_299,1596.74,8,S010,Product_249,0.43,Home Office
+T000836,U00215,2024-04-08,East,Beauty,4122.07,Active,Chicago,WA,37.0,Basic,2023-09-29T19:47:00,useru00215@gmail.com,user_1,1367.6,1,S007,Product_254,0.5,Consumer
+T000888,U00479,2023-10-30,Central,Books,4058.49,Inactive,Portland,TX,17.0,Standard,09/11/2024 09:44:00,useru00479@gmail.com,user_64,1578.4,9,S010,Product_200,0.17,Consumer
+T000130,U00335,2023-06-02,East,Sports,4458.27,Churned,Chicago,TX,44.0,Premium,2024-01-08T16:00:00,useru00335@outlook.com,user_388,1118.32,10,S011,Product_075,0.37,Corporate
+T000638,U00077,2023-01-07,West,Home & Kitchen,4597.01,,Los Angeles,NY,48.0,Standard,2024-12-25 17:51:00,useru00077@gmail.com,user_65,362.32,1,S011,Product_157,,Home Office
+T000403,U00487,2023-10-08,West,Sports,3858.98,Inactive,Phoenix,CA,54.0,Premium,,useru00487@yahoo.com,user_165,2119.74,1,S008,Product_005,0.23,Corporate
+T000785,U00439,2024-05-29,Central,Electronics,,Active,Chicago,IL,60.0,Basic,2023-12-18T22:50:00,useru00439@yahoo.com,user_72,201.77,9,S012,Product_206,0.28,Consumer
+T000771,U00068,2024-09-07,East,Electronics,1973.04,Active,Reno,OR,50.0,Basic,2024-01-19 05:19:00,useru00068@gmail.com,user_177,1093.29,6,S015,Product_218,0.38,Consumer
+T000736,U00018,2023-09-21,South,Electronics,125.04,Active,Portland,IL,45.0,Basic,01/31/2024 08:36:00,useru00018@yahoo.com,user_57,1415.75,10,S012,Product_195,0.11,Home Office
+T000914,U00455,2024-07-19,West,Toys,4922.31,Pending,New York,NY,55.0,Basic,2023-11-18T10:12:00,useru00455@outlook.com,,1133.82,9,S002,Product_181,0.29,Home Office
+T000220,U00262,2023-02-27,South,Beauty,1993.81,Inactive,Houston,OR,,Premium,2023-11-12T14:55:00,useru00262@outlook.com,user_380,2010.2,13,S012,Product_218,0.36,Home Office
+T000642,U00405,2024-08-14,South,Sports,1607.82,Active,Atlanta,NY,46.0,Basic,05/19/2024 07:10:00,useru00405@gmail.com,user_134,1446.13,8,S010,Product_060,0.09,Home Office
+T000916,U00403,2024-11-14,Central,Beauty,3693.76,Churned,Omaha,NY,24.0,Basic,07/06/2024 16:41:00,useru00403@gmail.com,user_69,71.25,1,S015,Product_206,0.19,Home Office
+T000753,U00098,2024-11-29,East,Books,3123.33,Active,Los Angeles,IL,25.0,Basic,11/21/2023 13:14:00,useru00098@yahoo.com,,2280.56,1,S007,Product_042,0.44,Consumer
+T000807,U00415,2023-05-23,Central,Clothing,3446.7,Active,Phoenix,IL,47.0,Free,10/23/2023 00:09:00,useru00415@outlook.com,user_36,1723.62,8,S004,Product_184,0.32,Corporate
+T000920,U00228,2023-04-27,East,Furniture,4097.49,Pending,Austin,CA,52.0,Standard,2024-04-06T19:28:00,useru00228@gmail.com,user_155,1570.77,9,S005,Product_135,0.21,Corporate
+T000625,U00398,2023-12-10,East,Toys,4685.92,Inactive,Houston,TX,61.0,Standard,2023-06-28 02:36:00,useru00398@yahoo.com,user_387,103.39,13,S011,Product_138,0.12,Home Office
+T000875,U00044,2024-04-30,Central,Sports,,Pending,Tucson,OR,21.0,Basic,2023-12-08T15:09:00,useru00044@outlook.com,user_149,21.79,5,S008,Product_132,0.06,Consumer
+T000761,U00032,2023-03-03,East,Furniture,828.43,Inactive,New York,IL,69.0,Standard,07/31/2023 16:39:00,useru00032@gmail.com,user_248,1868.72,11,S002,Product_278,0.46,Corporate
+T000387,U00139,2024-10-27,West,Clothing,4111.48,Pending,Phoenix,CA,22.0,Standard,2023-02-24T22:13:00,useru00139@outlook.com,user_70,1690.82,5,S011,Product_160,0.36,Corporate
+T000111,U00411,2024-11-24,East,Clothing,484.04,Active,Phoenix,TX,57.0,Premium,2024-03-24T19:17:00,useru00411@yahoo.com,user_206,1144.06,12,S014,Product_245,0.4,Consumer
+T000510,U00243,2024-01-24,East,Electronics,2935.02,Active,Denver,CO,52.0,Basic,2023-01-21T15:42:00,useru00243@yahoo.com,user_190,341.68,7,S015,Product_077,0.06,Home Office
+T000268,U00079,2023-05-01,East,Beauty,1523.27,Churned,Seattle,TX,65.0,Premium,2023-11-09 09:13:00,,user_281,2176.71,10,S005,Product_290,0.23,Corporate
+T000820,U00347,2024-09-02,South,Furniture,1264.06,Active,Boise,IL,46.0,Premium,2024-04-03 13:35:00,useru00347@gmail.com,user_147,1685.97,6,S013,Product_181,0.23,Consumer
+T000442,U00133,2024-10-11,West,Toys,2515.29,Pending,Chicago,GA,38.0,Premium,03/10/2024 17:48:00,useru00133@gmail.com,user_173,1770.37,9,S014,Product_233,0.22,Consumer
+T000497,U00313,2024-02-03,East,Books,3856.51,Inactive,Houston,CA,27.0,Premium,2024-08-24T23:57:00,useru00313@outlook.com,user_25,122.78,4,S006,Product_276,0.03,Corporate
+T000113,U00161,2023-01-13,Central,Sports,4889.7,Active,Phoenix,GA,59.0,Premium,11/08/2024 23:15:00,useru00161@outlook.com,user_77,1398.07,1,S001,Product_081,0.25,Corporate
+T000692,U00454,2023-10-14,West,Clothing,2432.52,,Houston,GA,26.0,Premium,2024-04-08 07:05:00,useru00454@gmail.com,user_278,1988.13,8,S002,Product_031,0.39,Home Office
+T000233,U00252,2024-11-06,East,Toys,2384.8,Inactive,Houston,OR,31.0,Free,09/23/2024 21:22:00,useru00252@gmail.com,user_66,875.45,1,S013,Product_175,0.19,Corporate
+T000870,U00464,2023-06-28,West,Electronics,4757.07,Inactive,Boise,TX,25.0,Basic,05/12/2023 00:24:00,useru00464@yahoo.com,user_292,446.42,7,S010,Product_080,0.29,Home Office
+T000608,U00311,2024-09-08,East,Clothing,1208.31,Active,Phoenix,NY,20.0,Premium,2023-10-29T04:33:00,,user_188,1946.16,8,S015,Product_203,0.21,Home Office
+T000672,U00315,2024-03-21,East,Furniture,259.51,Active,Austin,CA,67.0,Premium,03/09/2024 11:31:00,useru00315@gmail.com,,1921.17,4,S013,Product_260,,Consumer
+T000374,U00133,2023-02-14,West,Books,384.46,Pending,Chicago,OR,32.0,Free,2024-08-20 14:07:00,useru00133@gmail.com,user_212,1672.25,4,S010,Product_245,0.33,Corporate
+T000869,U00076,2023-05-02,East,Toys,4990.41,Active,Los Angeles,OR,41.0,Premium,2023-05-11 07:27:00,useru00076@yahoo.com,user_320,1022.34,3,S006,Product_298,0.16,Home Office
+T000843,U00342,2023-02-20,East,Toys,2430.72,Pending,Portland,WA,44.0,Premium,2024-12-10 23:16:00,useru00342@gmail.com,user_121,639.66,6,S012,Product_277,0.4,Home Office
+T000234,U00211,2023-12-26,West,Sports,1245.59,Inactive,New York,NY,70.0,Premium,2023-01-21 17:20:00,useru00211@yahoo.com,user_216,1741.42,6,S007,Product_293,0.2,Corporate
+T000786,U00409,2024-09-25,West,Electronics,3136.89,,Phoenix,OR,20.0,Free,2024-04-06 21:15:00,useru00409@yahoo.com,user_123,1422.41,13,S015,Product_060,0.05,Corporate
+T000677,U00025,2023-02-02,Central,Furniture,1279.78,Active,Chicago,CO,36.0,Standard,2023-03-20 03:08:00,useru00025@outlook.com,user_147,1538.87,8,S011,Product_044,0.23,Corporate
+T000318,U00243,2023-12-23,Central,Furniture,368.4,Active,Seattle,IL,59.0,Basic,2023-05-15T10:48:00,useru00243@gmail.com,user_364,1638.31,8,S012,Product_248,0.15,Consumer
+T000649,U00473,2023-12-12,South,Beauty,4910.1,Active,Portland,TX,16.0,Basic,2024-12-18T11:22:00,useru00473@gmail.com,user_377,2014.38,11,S010,Product_177,0.06,Corporate
+T000411,U00376,2023-07-07,Central,Clothing,,Inactive,Tucson,CO,39.0,Premium,2024-08-25 08:49:00,useru00376@yahoo.com,user_289,1315.36,15,S007,Product_147,0.16,Consumer
+T000899,U00340,2024-01-01,Central,Furniture,4416.36,,Boise,NY,33.0,Premium,2024-09-01T15:41:00,useru00340@outlook.com,user_301,1428.98,10,S014,Product_278,0.35,Home Office
+T000710,U00084,2023-01-02,West,Sports,3079.06,Pending,Phoenix,IL,23.0,Premium,09/16/2023 02:17:00,useru00084@yahoo.com,user_375,1874.52,2,S002,Product_216,0.49,Home Office
+T000359,U00495,2024-12-14,East,Furniture,4116.85,Churned,Phoenix,IL,19.0,Basic,2023-05-29T10:42:00,useru00495@outlook.com,user_8,1149.35,14,S006,Product_059,0.4,Corporate
+T000259,U00045,2024-11-14,East,Home & Kitchen,1005.43,Active,Austin,OR,46.0,Premium,02/18/2023 00:22:00,useru00045@gmail.com,,163.85,10,S004,Product_062,0.28,Corporate
+T000745,U00447,2023-06-13,West,Home & Kitchen,2606.37,Churned,Los Angeles,CA,,Premium,2024-08-10 03:13:00,,user_102,,12,S002,Product_220,0.39,Consumer
+T000628,U00340,2024-04-17,East,Toys,1928.53,Pending,Houston,OR,47.0,Standard,2023-05-13T10:33:00,,user_330,,11,S003,Product_122,0.18,Consumer
+T000633,U00046,2023-11-30,West,Clothing,1640.57,Active,Houston,TX,38.0,Premium,2024-03-05T15:46:00,useru00046@yahoo.com,user_163,2399.7,14,S003,Product_056,0.14,Consumer
+T000283,U00076,2024-04-25,East,Beauty,1462.41,Inactive,Tucson,TX,18.0,Standard,07/26/2024 01:27:00,useru00076@gmail.com,user_104,857.17,12,S012,Product_240,0.3,Home Office
+T000377,U00015,2024-05-02,Central,Toys,1766.26,Inactive,Atlanta,AZ,42.0,Basic,2024-03-17 16:21:00,useru00015@yahoo.com,user_333,2320.41,4,S007,Product_091,0.3,Corporate
+T000385,U00412,2024-08-15,West,Sports,1257.6,Active,New York,WA,20.0,Free,04/17/2024 17:11:00,useru00412@yahoo.com,user_270,786.58,12,S006,Product_240,0.18,Corporate
+T000225,U00408,2024-07-26,Central,Clothing,2092.56,Active,Atlanta,TX,16.0,Premium,01/07/2024 04:52:00,useru00408@outlook.com,user_176,765.19,2,S004,Product_066,0.43,Consumer
+T000826,U00083,2023-08-21,Central,Electronics,776.01,Inactive,Houston,AZ,64.0,Standard,04/24/2024 04:02:00,,user_105,1252.6,7,S013,Product_135,0.38,Home Office
+T000815,U00128,2023-01-03,South,Furniture,1175.17,Pending,Los Angeles,WA,47.0,Basic,2023-07-03T23:04:00,useru00128@outlook.com,,1015.85,13,S001,Product_178,0.42,Consumer
+T000473,U00024,2024-07-06,East,Home & Kitchen,,Churned,Denver,NY,41.0,Premium,2024-05-02T14:26:00,useru00024@outlook.com,user_1,1176.37,3,S006,Product_277,0.18,Home Office
+T000348,U00498,2024-03-07,West,Sports,288.77,,Phoenix,TX,39.0,Standard,2024-03-10T11:03:00,useru00498@outlook.com,"",399.64,3,S002,Product_126,0.04,Corporate
+T000506,U00173,2023-11-30,Central,Home & Kitchen,3619.31,Active,Denver,IL,51.0,Standard,11/06/2024 19:23:00,useru00173@yahoo.com,user_158,357.62,11,S008,Product_154,0.45,Home Office
+T000640,U00080,2024-08-07,South,Beauty,720.8,Churned,Chicago,CO,39.0,Basic,2023-04-15T12:03:00,useru00080@outlook.com,user_62,442.99,4,S004,Product_227,0.39,Home Office
+T000740,U00059,2024-05-05,Central,Toys,1640.85,Inactive,Boise,IL,33.0,Standard,2024-01-15T10:30:00,,user_6,698.95,5,S007,Product_033,0.07,Home Office
+T000929,U00193,2023-09-27,South,Books,,,New York,GA,,Premium,2023-12-09T10:04:00,useru00193@gmail.com,,1949.82,5,S015,Product_282,0.2,Home Office
+T000906,U00302,2024-09-18,East,Books,34.64,Churned,Atlanta,IL,48.0,Basic,2024-03-12 00:32:00,useru00302@yahoo.com,user_374,54.6,4,S001,Product_153,0.4,Consumer
+T000620,U00477,2023-06-25,West,Furniture,552.48,Active,Seattle,CA,28.0,Standard,2023-06-18 21:06:00,useru00477@gmail.com,user_113,598.74,11,S006,Product_068,0.23,Corporate
+T000856,U00312,2024-08-07,West,Electronics,754.27,Pending,Atlanta,NV,68.0,Standard,2023-11-12T10:02:00,useru00312@outlook.com,user_149,911.54,7,S001,Product_173,0.45,Consumer
+T000804,U00489,2023-04-05,East,Home & Kitchen,4103.8,Inactive,Houston,CO,62.0,Standard,2024-08-14T23:29:00,useru00489@gmail.com,user_278,845.41,14,S002,Product_281,0.21,Corporate
+T000646,U00384,2023-12-23,Central,Clothing,1520.93,Pending,Los Angeles,GA,27.0,Standard,01/06/2023 18:26:00,useru00384@outlook.com,user_48,292.35,11,S003,Product_078,0.06,Home Office
+T000847,U00331,2023-01-14,West,Home & Kitchen,3966.67,Active,Houston,WA,51.0,Basic,2023-01-14T19:44:00,useru00331@gmail.com,,,15,S014,Product_176,,Home Office
+T000557,U00328,2024-09-12,Central,Clothing,4914.45,Active,Portland,GA,66.0,Standard,07/17/2024 17:46:00,useru00328@yahoo.com,user_267,1515.77,12,S007,Product_129,0.26,Home Office
+T000881,U00205,2024-12-01,South,Electronics,3303.76,Active,Los Angeles,OR,35.0,Standard,2023-04-03T12:18:00,useru00205@outlook.com,user_105,859.65,4,S001,Product_098,0.3,Corporate
+T000578,U00461,2023-02-12,West,Sports,28.57,,Los Angeles,AZ,56.0,Standard,01/08/2023 10:55:00,useru00461@gmail.com,user_288,1484.25,9,S009,Product_175,0.06,Home Office
+T000796,U00244,2024-09-11,East,Electronics,487.94,Active,New York,NV,,Basic,2024-09-22 14:05:00,useru00244@gmail.com,user_88,277.35,7,S010,Product_022,0.37,Consumer
+T000086,U00228,2023-05-12,West,Beauty,621.41,Active,Boise,NV,42.0,Basic,01/31/2023 12:43:00,useru00228@gmail.com,user_141,,10,S010,Product_126,0.32,Home Office
+T000243,U00329,2023-07-08,Central,Home & Kitchen,25.35,Active,Seattle,NV,20.0,Premium,2024-12-31 20:48:00,useru00329@outlook.com,user_164,2184.4,3,S011,Product_168,0.4,Corporate
+T000699,U00028,2024-12-04,Central,Home & Kitchen,3172.89,Pending,Portland,IL,35.0,Free,2024-12-16 02:43:00,useru00028@gmail.com,user_94,787.8,10,S006,Product_031,0.01,Home Office
+T000160,U00393,2024-10-15,East,Toys,3515.73,Active,Atlanta,TX,50.0,Premium,06/11/2023 17:38:00,useru00393@yahoo.com,user_167,1033.8,14,S012,Product_166,0.3,Consumer
+T000525,U00330,2023-10-17,East,Electronics,,Pending,Phoenix,TX,46.0,Premium,2023-06-05 03:33:00,useru00330@gmail.com,user_185,848.7,13,S002,Product_253,,Corporate
+T000036,U00038,2024-01-31,East,Books,4128.3,Pending,Chicago,TX,21.0,Standard,2023-12-14 17:23:00,useru00038@outlook.com,user_21,346.91,8,S009,Product_234,0.07,Consumer
+T000541,U00118,2024-12-31,East,Clothing,516.67,Pending,New York,NV,,Basic,2024-12-16T13:01:00,useru00118@outlook.com,user_279,1186.78,9,S012,Product_217,,Home Office
+T000171,U00493,2024-02-26,East,Books,768.27,Active,Phoenix,CA,63.0,Basic,2024-09-12 18:39:00,useru00493@gmail.com,user_184,1950.67,14,S010,Product_241,0.36,Corporate
+T000655,U00361,2023-07-21,West,Furniture,916.81,Inactive,Chicago,AZ,43.0,Basic,2023-09-17 15:01:00,useru00361@gmail.com,user_344,1943.63,3,S014,Product_226,0.46,Corporate
+T000891,U00192,2023-05-13,West,Books,384.52,Active,Los Angeles,CO,51.0,Standard,09/28/2023 23:47:00,useru00192@outlook.com,user_356,2295.16,6,S012,Product_236,0.06,Consumer
+T000858,U00169,2023-08-12,East,Beauty,3384.5,Active,Los Angeles,CO,63.0,Basic,2023-11-08 21:52:00,useru00169@outlook.com,user_258,,14,S006,Product_166,0.42,Home Office
+T000848,U00185,2024-03-16,West,Clothing,2391.3,Active,New York,IL,54.0,Standard,2023-03-28 18:14:00,useru00185@gmail.com,user_91,748.21,2,S010,Product_114,,Consumer
+T000945,U00119,2023-10-06,South,Sports,2386.43,Churned,New York,IL,58.0,Standard,2023-10-16T01:52:00,useru00119@outlook.com,user_373,182.54,10,S004,Product_020,0.04,Home Office
+T000734,U00480,2023-08-01,South,Books,1023.05,Pending,Los Angeles,OR,36.0,Premium,2024-06-08T21:46:00,useru00480@gmail.com,user_75,,14,S001,Product_179,0.24,Corporate
+T000096,U00215,2024-07-02,Central,Toys,2867.84,Active,Denver,OR,69.0,Basic,2024-06-13T18:43:00,useru00215@yahoo.com,user_86,2022.11,7,S002,Product_223,0.1,Consumer
+T000564,U00499,2024-02-19,West,Books,4010.35,Churned,Chicago,GA,29.0,Premium,2023-09-12 14:57:00,useru00499@outlook.com,user_186,1002.63,5,S002,Product_125,0.08,Home Office
+T000241,U00018,2024-11-09,Central,Electronics,3456.51,Active,Austin,GA,39.0,Free,2024-01-07T21:07:00,useru00018@yahoo.com,user_202,2295.23,15,S014,Product_121,0.15,Consumer
+T000743,U00209,2023-08-01,Central,Electronics,1513.28,Pending,Phoenix,OR,47.0,Standard,2024-11-04T12:50:00,useru00209@gmail.com,user_334,1771.08,14,S005,Product_196,0.38,Consumer
+T000575,U00375,2023-09-22,West,Books,3362.34,,Portland,IL,61.0,Premium,2023-10-23T09:34:00,useru00375@gmail.com,user_80,,4,S002,Product_139,0.48,Corporate
+T000691,U00002,2024-08-14,West,Beauty,,Inactive,Phoenix,CA,19.0,Premium,12/22/2024 10:26:00,useru00002@yahoo.com,"",2119.81,3,S009,Product_084,0.46,Home Office
+T000461,U00391,2023-08-26,West,Books,1606.88,Active,Phoenix,WA,54.0,Standard,11/28/2023 05:12:00,useru00391@gmail.com,user_81,1293.58,10,S013,Product_214,0.39,Corporate
+T000554,U00246,2023-06-11,West,Sports,4231.05,Active,Los Angeles,IL,20.0,Premium,2024-09-22 22:35:00,useru00246@outlook.com,user_232,358.38,14,S015,Product_096,0.11,Home Office
+T000889,U00146,2023-10-17,Central,Furniture,4901.95,Active,Phoenix,AZ,24.0,Basic,02/23/2023 10:44:00,useru00146@gmail.com,user_210,1052.9,9,S007,Product_016,0.22,Home Office
+T000207,U00061,2024-06-26,South,Beauty,4315.03,Inactive,Los Angeles,CO,64.0,Premium,2023-02-24 06:07:00,useru00061@yahoo.com,user_82,112.57,5,S004,Product_223,0.13,Corporate
+T000393,U00069,2024-10-14,East,Sports,986.63,Pending,Chicago,IL,27.0,Basic,,useru00069@outlook.com,user_18,2233.76,7,S010,Product_280,0.43,Home Office
+T000795,U00221,2023-04-12,Central,Sports,,Inactive,Chicago,CO,59.0,Premium,2023-06-05T01:02:00,useru00221@gmail.com,,343.18,4,S007,Product_279,,Corporate
+T000398,U00460,2024-09-22,South,Beauty,1765.43,,Tucson,IL,29.0,Premium,2024-02-27T23:48:00,useru00460@gmail.com,user_128,196.15,3,S005,Product_023,0.16,Consumer
+T000767,U00414,2024-06-30,West,Furniture,1471.91,Active,Reno,WA,,Basic,11/09/2024 20:32:00,useru00414@yahoo.com,user_61,2466.53,3,S008,Product_021,0.2,Home Office
+T000849,U00215,2023-01-22,South,Home & Kitchen,2312.4,Active,New York,WA,40.0,Standard,03/04/2024 01:30:00,useru00215@yahoo.com,user_363,,10,S006,Product_117,0.23,Corporate
+T000218,U00472,2023-01-26,East,Toys,3844.91,,Tucson,TX,15.0,Basic,2024-06-03T10:41:00,useru00472@yahoo.com,user_387,1436.45,10,S012,Product_227,0.17,Corporate
+T000005,U00326,2024-04-20,South,Books,3249.7,Active,Boise,CA,34.0,Premium,08/29/2023 17:08:00,useru00326@outlook.com,user_357,1050.72,3,S015,Product_213,0.33,Home Office
+T000769,U00284,2023-12-22,East,Sports,82.7,Inactive,Chicago,AZ,,Premium,11/26/2024 11:46:00,useru00284@yahoo.com,user_399,,6,S007,Product_150,0.05,Home Office
+T000643,U00225,2023-01-03,West,Home & Kitchen,2206.31,Active,Chicago,NV,44.0,Free,2023-04-26T06:31:00,useru00225@yahoo.com,user_286,1299.77,1,S013,Product_051,0.07,Home Office
+T000930,U00467,2024-07-02,West,Electronics,1510.44,,Chicago,NY,31.0,Premium,2024-12-13T02:23:00,useru00467@outlook.com,user_77,290.57,10,S008,Product_270,0.26,Corporate
+T000613,U00151,2023-01-22,Central,Books,2851.71,Churned,Houston,TX,27.0,Standard,2023-08-17 09:49:00,useru00151@yahoo.com,user_287,141.66,1,S009,Product_243,0.08,Corporate
+T000739,U00009,2024-06-22,Central,Home & Kitchen,,Active,Houston,OR,23.0,Basic,2023-08-12T18:42:00,useru00009@outlook.com,user_139,398.44,15,S013,Product_293,,Consumer
+T000547,U00211,2023-10-13,West,Furniture,3351.73,Pending,Atlanta,TX,66.0,Premium,2024-12-04T21:23:00,useru00211@yahoo.com,user_237,437.67,15,S005,Product_127,0.1,Corporate
+T000726,U00354,2024-12-11,South,Sports,3911.47,Active,Atlanta,OR,20.0,Free,2024-04-25 12:05:00,,user_96,1247.1,13,S009,Product_082,0.41,Consumer
+T000684,U00198,2023-05-05,West,Clothing,4090.97,Active,Portland,NY,33.0,Standard,07/20/2024 09:59:00,useru00198@outlook.com,user_302,123.17,7,S013,Product_282,0.32,Corporate
+T000099,U00160,2023-10-15,South,Clothing,4862.76,Active,Seattle,CO,64.0,Premium,2024-03-02 19:41:00,useru00160@gmail.com,user_209,1899.94,14,S001,Product_264,,Home Office
+T000805,U00126,2023-02-11,West,Books,3424.64,Active,Houston,NY,61.0,Free,2023-03-26 03:33:00,useru00126@outlook.com,user_331,651.55,13,S010,Product_159,,Home Office
+T000728,U00068,2023-05-29,West,Sports,4910.94,Active,Chicago,TX,60.0,Basic,2024-09-14 09:16:00,useru00068@outlook.com,user_290,2040.14,11,S014,Product_095,0.09,Corporate
+T000574,U00009,2024-05-28,South,Books,3846.82,Inactive,Reno,NV,28.0,Basic,04/29/2023 07:59:00,useru00009@yahoo.com,user_336,,11,S004,Product_246,0.01,Home Office
+T000407,U00017,2024-11-03,Central,Furniture,3815.43,,Los Angeles,IL,51.0,Basic,2024-07-15T23:26:00,useru00017@outlook.com,user_311,1313.5,5,S004,Product_295,0.15,Consumer
+T000503,U00036,2023-09-09,Central,Books,2788.7,,Chicago,CA,22.0,Basic,2024-07-01T00:39:00,useru00036@yahoo.com,user_74,,1,S010,Product_030,0.41,Consumer
+T000048,U00448,2024-07-06,West,Beauty,601.98,Active,Chicago,TX,61.0,Standard,2023-01-24T09:29:00,useru00448@yahoo.com,"",1154.26,4,S015,Product_058,0.02,Home Office
+T000033,U00214,2024-09-24,Central,Toys,4446.09,Pending,Phoenix,WA,45.0,Standard,2024-02-20 09:29:00,useru00214@gmail.com,user_248,853.78,14,S012,Product_164,0.37,Corporate
+T000780,U00481,2024-06-10,Central,Books,3100.07,Churned,Phoenix,NV,61.0,Basic,06/24/2023 17:58:00,useru00481@yahoo.com,user_364,1886.81,9,S012,Product_057,,Consumer
+T000840,U00202,2023-11-17,South,Home & Kitchen,4757.38,Active,Los Angeles,CO,40.0,Basic,11/13/2023 18:23:00,useru00202@gmail.com,user_305,674.16,4,S015,Product_230,0.17,Consumer
+T000201,U00295,2023-01-04,East,Toys,2395.92,Pending,Los Angeles,NY,49.0,Basic,2024-12-06T15:07:00,useru00295@yahoo.com,user_156,1582.52,2,S006,Product_274,0.43,Corporate
+T000135,U00351,2024-03-05,South,Clothing,895.34,Inactive,Los Angeles,GA,47.0,Premium,2024-11-06T04:57:00,useru00351@gmail.com,user_397,1081.58,14,S001,Product_272,0.21,Corporate
+T000028,U00406,2023-02-28,West,Furniture,1822.92,Pending,Tucson,CA,24.0,Standard,2024-03-24 01:08:00,useru00406@outlook.com,user_197,85.8,8,S006,Product_191,,Consumer
+T000881,U00205,2024-12-01,South,Electronics,3303.76,Active,Los Angeles,OR,35.0,Standard,2023-04-03T12:18:00,useru00205@outlook.com,user_105,859.65,4,S001,Product_098,0.3,Corporate
+T000231,U00129,2024-05-16,East,Home & Kitchen,158.32,Churned,Chicago,CO,,Premium,2024-09-11 21:20:00,useru00129@outlook.com,user_40,1302.27,8,S004,Product_151,0.33,Corporate
+T000490,U00225,2024-05-24,East,Clothing,4766.29,Inactive,Chicago,GA,56.0,Premium,2024-12-24T04:04:00,useru00225@outlook.com,user_130,1820.76,8,S007,Product_069,0.49,Corporate
+T000773,U00426,2023-03-25,South,Books,1671.75,Active,New York,NV,,Premium,2023-05-11 21:11:00,useru00426@gmail.com,user_399,2308.22,11,S008,Product_254,0.08,Home Office
+T000379,U00327,2023-10-22,Central,Books,3672.07,Inactive,Chicago,NV,45.0,Standard,12/05/2024 07:10:00,useru00327@gmail.com,user_234,36.77,6,S001,Product_091,0.49,Consumer
+T000289,U00181,2023-08-24,East,Toys,2566.19,Inactive,Los Angeles,OR,41.0,Basic,2023-10-07 12:01:00,useru00181@yahoo.com,user_184,739.82,9,S011,Product_041,0.39,Consumer
+T000419,U00393,2024-07-20,West,Electronics,2598.06,Active,Reno,TX,68.0,Standard,2023-08-23 09:51:00,useru00393@yahoo.com,user_284,,1,S013,Product_270,0.05,Corporate
+T000675,U00203,2024-05-07,Central,Home & Kitchen,987.46,Inactive,Atlanta,AZ,43.0,Standard,2023-10-07T14:08:00,useru00203@yahoo.com,user_327,194.97,15,S003,Product_028,0.1,Home Office
+T000392,U00479,2024-11-26,East,Sports,4906.83,Pending,Atlanta,IL,21.0,Premium,2024-01-29 13:59:00,useru00479@yahoo.com,user_384,1909.56,14,S001,Product_090,0.16,Corporate
+T000593,U00018,2024-06-29,West,Furniture,551.54,Active,Houston,TX,41.0,Premium,2023-06-20T08:45:00,useru00018@outlook.com,user_303,2293.26,15,S008,Product_081,0.41,Home Office
+T000499,U00338,2023-12-05,South,Furniture,4134.6,Churned,Phoenix,CA,24.0,Premium,11/15/2024 08:56:00,useru00338@outlook.com,user_321,2350.98,15,S005,Product_210,0.35,Corporate
+T000139,U00485,2023-06-29,Central,Toys,63.44,,Austin,GA,33.0,Standard,2024-06-06 16:44:00,,user_123,2439.24,5,S013,Product_205,0.18,Home Office
+T000063,U00038,2024-04-04,South,Toys,2915.4,,Phoenix,OR,,Free,2024-12-19T17:38:00,useru00038@gmail.com,user_337,420.01,10,S011,Product_205,0.48,Corporate
+T000472,U00317,2024-02-29,South,Furniture,870.38,,New York,TX,38.0,Premium,2023-06-16 00:31:00,useru00317@outlook.com,user_136,,1,S015,Product_241,0.02,Corporate
+T000648,U00474,2024-09-29,Central,Sports,194.74,Inactive,Los Angeles,AZ,28.0,Standard,2024-04-11T20:56:00,useru00474@outlook.com,user_392,444.46,1,S013,Product_286,0.34,Consumer
+T000129,U00250,2024-07-18,West,Clothing,4210.55,Active,Los Angeles,GA,27.0,Standard,2023-03-20 23:04:00,,user_298,1924.15,1,S009,Product_134,0.27,Corporate
+T000420,U00022,2023-06-10,West,Electronics,1157.73,Active,Portland,WA,62.0,Standard,2024-11-02T12:08:00,useru00022@gmail.com,user_259,1907.15,1,S012,Product_278,0.3,Home Office
+T000521,U00466,2023-11-17,Central,Toys,3936.16,Inactive,Denver,AZ,59.0,Premium,2023-11-26 20:36:00,useru00466@outlook.com,"",1410.43,6,S009,Product_049,0.19,Corporate
+T000839,U00387,2023-09-09,West,Home & Kitchen,1479.77,,Chicago,NV,42.0,Standard,2023-01-28T11:36:00,useru00387@outlook.com,user_65,1972.71,2,S003,Product_297,0.03,Home Office
+T000483,U00311,2024-06-15,South,Furniture,220.09,Churned,Atlanta,NY,51.0,Free,2023-09-02T11:37:00,useru00311@outlook.com,user_202,104.46,8,S014,Product_236,0.29,Corporate
+T000065,U00267,2024-05-09,East,Clothing,2196.45,Active,New York,WA,17.0,Premium,2023-12-18T20:06:00,useru00267@outlook.com,user_90,830.82,8,S004,Product_208,0.31,Home Office
+T000813,U00031,2024-10-16,West,Electronics,192.13,Active,Phoenix,GA,34.0,Basic,2023-11-05 04:08:00,useru00031@yahoo.com,user_158,1816.52,13,S007,Product_281,0.08,Consumer
+T000015,U00236,2024-12-07,South,Clothing,2189.19,Inactive,Houston,OR,48.0,Standard,2023-12-14 07:21:00,useru00236@outlook.com,user_262,1941.69,14,S011,Product_076,0.12,Consumer
+T000157,U00152,2023-09-27,East,Toys,13.59,Active,Phoenix,TX,16.0,Basic,2024-09-27T07:20:00,useru00152@outlook.com,user_98,1246.39,10,S005,Product_166,0.2,Consumer
+T000041,U00056,2024-09-22,Central,Sports,1219.87,Inactive,Seattle,IL,18.0,Premium,,useru00056@outlook.com,user_81,2337.91,8,S011,Product_103,0.38,Corporate
+T000493,U00103,2023-08-21,East,Clothing,1705.2,Inactive,Houston,CA,53.0,Basic,,,user_168,74.0,10,S006,Product_036,0.48,Home Office
+T000380,U00348,2023-01-10,East,Toys,2919.96,Active,Houston,NY,17.0,Basic,2023-10-25T07:33:00,useru00348@gmail.com,user_52,1841.79,12,S006,Product_280,0.13,Corporate
+T000188,U00197,2023-03-09,East,Furniture,3923.73,Churned,Omaha,GA,59.0,Standard,2023-03-21T23:59:00,useru00197@yahoo.com,user_306,1389.94,3,S005,Product_208,0.03,Home Office
+T000764,U00356,2023-04-24,East,Furniture,2901.98,Active,Phoenix,WA,37.0,Premium,2024-11-22T00:45:00,useru00356@yahoo.com,user_357,1001.14,3,S010,Product_182,,Corporate
+T000217,U00365,2024-07-02,West,Home & Kitchen,4198.27,Pending,Houston,TX,25.0,Premium,11/21/2023 18:08:00,useru00365@gmail.com,,795.77,6,S008,Product_277,0.49,Consumer
+T000792,U00007,2024-09-29,South,Beauty,973.08,Churned,Phoenix,CA,26.0,Basic,2023-12-24 08:50:00,useru00007@yahoo.com,user_88,585.45,1,S012,Product_183,0.23,Corporate
+T000053,U00469,2023-07-28,East,Furniture,238.12,Pending,New York,CA,31.0,Basic,2024-03-03 09:09:00,useru00469@yahoo.com,user_126,1638.25,5,S013,Product_251,0.48,Corporate
+T000879,U00261,2023-01-02,East,Clothing,3647.31,Active,Phoenix,CO,31.0,Standard,2024-02-06 21:23:00,useru00261@gmail.com,user_25,,5,S001,Product_126,0.45,Home Office
+T000338,U00357,2023-05-13,West,Electronics,3974.01,Pending,Houston,OR,46.0,Standard,2023-03-18T05:28:00,useru00357@yahoo.com,user_140,13.98,10,S012,Product_005,0.44,Corporate
+T000749,U00401,2024-12-05,East,Furniture,3793.66,Active,Chicago,GA,61.0,Free,2024-05-12 07:40:00,useru00401@gmail.com,user_52,,9,S008,Product_263,0.02,Home Office
+T000720,U00437,2023-09-03,West,Books,692.18,Pending,Chicago,NY,32.0,Premium,10/20/2023 01:42:00,useru00437@outlook.com,,2352.69,5,S013,Product_163,0.44,Consumer
+T000725,U00014,2024-09-07,Central,Toys,3922.62,Pending,New York,NV,37.0,Standard,2024-11-30 06:58:00,useru00014@gmail.com,user_395,570.96,15,S009,Product_090,0.0,Corporate
+T000296,U00485,2023-02-14,West,Home & Kitchen,1376.14,Active,New York,NY,59.0,Free,2024-05-20T13:48:00,useru00485@yahoo.com,user_54,1949.88,3,S005,Product_107,0.25,Consumer
+T000702,U00498,2023-10-19,West,Books,3138.04,,Houston,AZ,54.0,Premium,2024-07-12 11:22:00,useru00498@outlook.com,user_76,,7,S008,Product_292,,Consumer
+T000252,U00341,2023-04-09,South,Sports,2453.22,Inactive,New York,NV,53.0,Standard,01/13/2024 19:11:00,,user_175,1692.72,12,S003,Product_254,0.26,Consumer
+T000727,U00051,2023-01-15,East,Home & Kitchen,1988.16,Churned,Chicago,GA,29.0,Basic,2024-07-27T20:11:00,useru00051@yahoo.com,user_323,1770.09,14,S005,Product_207,0.24,Corporate
+T000462,U00242,2023-11-07,East,Books,1675.27,Pending,Denver,CO,34.0,Basic,03/03/2024 00:48:00,useru00242@yahoo.com,,1144.94,14,S012,Product_104,0.1,Corporate
+T000456,U00332,2023-06-23,South,Toys,885.18,Active,Boise,NY,36.0,Premium,2023-06-03T08:38:00,useru00332@outlook.com,user_256,2282.19,14,S012,Product_269,0.45,Corporate
+T000171,U00493,2024-02-26,East,Books,768.27,Active,Phoenix,CA,63.0,Basic,2024-09-12 18:39:00,useru00493@gmail.com,user_184,1950.67,14,S010,Product_241,0.36,Corporate
+T000816,U00094,2023-04-04,West,Beauty,1561.9,Active,New York,TX,30.0,Premium,2024-02-16T01:19:00,useru00094@outlook.com,"",1244.19,12,S011,Product_259,0.19,Consumer
+T000863,U00139,2024-11-10,West,Clothing,1725.26,Inactive,Denver,CA,21.0,Standard,2024-08-17 23:42:00,useru00139@outlook.com,,2349.01,2,S008,Product_028,0.47,Corporate
+T000270,U00159,2024-07-28,Central,Clothing,970.21,Inactive,Houston,CA,51.0,Standard,2024-05-29T00:07:00,useru00159@gmail.com,user_141,616.99,15,S010,Product_228,0.04,Corporate
+T000202,U00390,2023-10-24,Central,Home & Kitchen,2776.83,Pending,Tucson,WA,59.0,Premium,2024-12-06 11:31:00,useru00390@yahoo.com,,68.28,4,S008,Product_200,0.03,Corporate
+T000162,U00080,2023-04-07,West,Beauty,788.97,Churned,Houston,IL,29.0,Premium,2024-08-07 12:36:00,useru00080@outlook.com,user_248,2065.13,10,S014,Product_049,0.3,Home Office
+T000556,U00274,2023-07-11,West,Electronics,1634.13,Active,Seattle,CA,47.0,Premium,05/19/2023 05:03:00,useru00274@gmail.com,user_312,1436.79,4,S008,Product_090,0.36,Consumer
+T000730,U00396,2023-05-05,Central,Beauty,751.0,Active,Phoenix,OR,26.0,Premium,2023-10-21 21:25:00,useru00396@outlook.com,user_188,788.01,8,S001,Product_186,0.16,Consumer
+T000402,U00175,2024-09-28,East,Furniture,3915.24,Churned,Los Angeles,NY,50.0,Standard,2024-11-25T09:54:00,useru00175@outlook.com,user_394,410.56,12,S015,Product_122,,Home Office
+T000703,U00204,2024-08-07,East,Electronics,377.7,Inactive,Phoenix,WA,17.0,Standard,2024-05-05T16:17:00,useru00204@outlook.com,user_112,1427.84,10,S012,Product_192,,Corporate
+T000477,U00494,2024-07-10,West,Sports,4875.69,Active,Chicago,WA,23.0,Premium,2024-03-22T17:05:00,useru00494@outlook.com,user_349,46.71,6,S009,Product_078,0.28,Consumer
+T000822,U00126,2024-08-14,South,Beauty,3487.94,,New York,NY,35.0,Premium,2024-02-21 09:52:00,useru00126@gmail.com,user_5,913.13,14,S011,Product_268,0.38,Consumer
+T000772,U00064,2024-09-15,West,Sports,1085.12,Pending,Omaha,CO,,Basic,2024-05-06T12:19:00,useru00064@yahoo.com,user_115,819.01,14,S014,Product_119,0.27,Corporate
+T000106,U00399,2023-03-24,East,Home & Kitchen,,Inactive,Atlanta,IL,63.0,Basic,2023-06-12 15:50:00,useru00399@yahoo.com,user_207,,9,S004,Product_192,0.48,Home Office
+T000566,U00437,2023-03-26,West,Clothing,,Inactive,Los Angeles,CO,20.0,Standard,,,user_150,920.08,14,S012,Product_183,,Consumer
+T000390,U00298,2023-11-07,West,Toys,222.73,,Austin,CO,61.0,Premium,2023-06-12T11:32:00,useru00298@outlook.com,user_263,1641.52,12,S010,Product_174,0.23,Consumer
+T000002,U00359,2023-10-30,West,Furniture,1379.66,Pending,Houston,CA,53.0,Standard,10/21/2023 07:38:00,useru00359@gmail.com,user_348,1919.84,3,S011,Product_050,0.45,Corporate
+T000938,U00492,2023-06-11,East,Sports,4362.96,Pending,Portland,OR,41.0,Premium,01/14/2024 07:15:00,useru00492@outlook.com,user_148,1944.75,15,S013,Product_202,0.22,Consumer
+T000850,U00047,2024-03-31,South,Home & Kitchen,4288.37,Active,Houston,IL,65.0,Premium,2024-09-24T08:18:00,useru00047@yahoo.com,user_103,975.78,14,S005,Product_060,0.46,Consumer
+T000562,U00489,2023-05-17,West,Sports,2093.77,Active,Chicago,GA,51.0,Free,2023-01-01 02:10:00,useru00489@yahoo.com,user_113,2453.09,8,S002,Product_041,0.33,Corporate
+T000081,U00462,2023-02-23,West,Electronics,,Inactive,Atlanta,WA,64.0,Premium,07/20/2024 14:00:00,useru00462@outlook.com,user_379,1162.5,8,S013,Product_101,0.37,Consumer
+T000206,U00362,2024-10-29,East,Books,2086.95,Churned,Los Angeles,TX,28.0,Premium,2024-04-06 13:15:00,useru00362@gmail.com,user_368,2375.99,13,S005,Product_179,0.21,Consumer
+T000035,U00484,2024-02-07,East,Sports,1083.57,Active,New York,CO,53.0,Standard,2024-04-26 09:34:00,useru00484@yahoo.com,user_136,1910.82,7,S001,Product_292,0.28,Corporate
+T000776,U00236,2023-07-24,West,Sports,192.87,Inactive,Seattle,CA,29.0,Basic,2024-03-07 02:55:00,useru00236@gmail.com,user_267,2451.11,1,S009,Product_243,0.25,Home Office
+T000509,U00244,2023-12-13,Central,Books,1523.17,Active,New York,TX,25.0,Basic,2024-09-25T13:10:00,useru00244@yahoo.com,user_144,2259.61,11,S003,Product_228,,Corporate
+T000428,U00476,2024-09-21,West,Home & Kitchen,,Active,Chicago,CA,23.0,Basic,11/11/2024 15:20:00,useru00476@gmail.com,user_202,966.9,5,S014,Product_268,,Home Office
+T000455,U00381,2024-12-12,West,Books,4297.15,Active,Los Angeles,IL,52.0,Basic,2023-09-23T11:46:00,useru00381@outlook.com,user_317,2431.15,10,S014,Product_257,0.16,Corporate
+T000367,U00040,2023-08-04,Central,Furniture,4449.67,Inactive,Los Angeles,TX,26.0,Free,2024-11-06T18:40:00,useru00040@gmail.com,user_178,1536.94,3,S009,Product_131,0.46,Consumer
+T000092,U00454,2023-12-10,East,Books,1056.32,Active,Denver,NY,,Basic,03/05/2024 05:56:00,useru00454@yahoo.com,user_193,1201.33,11,S013,Product_116,,Consumer
+T000340,U00310,2024-01-13,East,Books,3613.18,Pending,Reno,AZ,18.0,Premium,12/31/2023 07:46:00,useru00310@gmail.com,user_399,1460.24,12,S007,Product_132,0.44,Home Office
+T000898,U00044,2023-02-08,Central,Books,3642.34,Inactive,Seattle,CA,58.0,Basic,01/11/2024 16:10:00,useru00044@gmail.com,user_2,1077.1,14,S001,Product_126,0.35,Home Office
+T000565,U00034,2023-11-18,South,Electronics,2183.76,Active,Seattle,CO,16.0,Basic,11/12/2023 07:31:00,useru00034@yahoo.com,user_208,591.6,13,S003,Product_173,0.08,Corporate
+T000346,U00408,2024-05-04,South,Clothing,2893.44,Active,New York,NY,35.0,Premium,01/30/2024 11:20:00,useru00408@outlook.com,user_309,837.0,11,S015,Product_126,0.19,Home Office
+T000777,U00035,2023-12-28,Central,Toys,2721.09,Active,New York,GA,42.0,Standard,11/17/2023 05:07:00,useru00035@yahoo.com,user_339,821.96,13,S013,Product_263,0.03,Consumer
+T000242,U00469,2024-03-25,Central,Furniture,3948.69,Active,Los Angeles,CO,45.0,Free,2023-12-07 22:27:00,useru00469@outlook.com,user_34,1507.28,12,S006,Product_233,0.35,Home Office
+T000014,U00004,2024-05-24,Central,Home & Kitchen,654.64,Active,Los Angeles,GA,68.0,Basic,,useru00004@gmail.com,user_295,1014.04,5,S002,Product_208,0.01,Home Office
+T000316,U00409,2024-11-26,South,Home & Kitchen,2603.56,Active,Houston,OR,15.0,Basic,2023-05-29 09:53:00,useru00409@yahoo.com,user_146,1665.05,12,S001,Product_164,0.15,Consumer
+T000601,U00265,2023-07-18,East,Sports,,Active,Phoenix,TX,58.0,Standard,2024-09-25T21:18:00,useru00265@outlook.com,user_342,1022.06,4,S015,Product_215,0.38,Home Office
+T000388,U00320,2024-12-05,West,Clothing,10.18,Active,Austin,NY,30.0,Basic,2024-06-01 14:25:00,useru00320@yahoo.com,user_95,2105.09,14,S010,Product_225,0.43,Corporate
+T000274,U00498,2023-06-21,West,Toys,1373.78,Pending,New York,AZ,68.0,Basic,2024-06-06 09:02:00,useru00498@outlook.com,user_46,311.83,9,S005,Product_222,0.11,Corporate
+T000167,U00356,2024-12-16,Central,Furniture,2919.19,Active,Austin,TX,18.0,Standard,09/24/2024 08:03:00,useru00356@gmail.com,user_339,2130.95,14,S002,Product_010,0.15,Corporate
+T000841,U00301,2023-05-16,West,Toys,389.31,Inactive,Denver,IL,61.0,Free,2023-10-08 15:20:00,useru00301@outlook.com,user_205,261.7,12,S001,Product_218,0.06,Consumer
+T000500,U00194,2023-10-12,South,Sports,4085.46,Pending,Houston,OR,17.0,Basic,2024-11-09 22:14:00,useru00194@gmail.com,,462.48,12,S005,Product_204,0.14,Home Office
+T000647,U00474,2024-12-18,South,Furniture,2338.1,Active,New York,NV,64.0,Premium,2023-04-26 12:25:00,,user_317,1119.0,11,S012,Product_271,0.38,Consumer
+T000819,U00115,2023-12-12,East,Clothing,122.94,Inactive,New York,CO,48.0,Basic,2024-04-24 19:48:00,useru00115@yahoo.com,user_213,73.59,2,S013,Product_241,0.49,Consumer
+T000485,U00135,2023-06-14,West,Beauty,3706.12,Churned,Denver,TX,69.0,Premium,2023-12-27T19:34:00,useru00135@gmail.com,user_157,1806.24,6,S010,Product_255,0.32,Consumer
+T000363,U00402,2024-02-10,West,Beauty,3913.16,Active,Phoenix,WA,34.0,Standard,2024-02-29 21:15:00,,user_14,939.14,14,S012,Product_163,0.17,Corporate
+T000505,U00147,2024-10-14,Central,Furniture,4995.71,Active,New York,CA,42.0,Premium,2024-04-15T13:45:00,useru00147@yahoo.com,user_321,2354.99,7,S008,Product_232,0.22,Corporate
+T000832,U00062,2024-05-18,West,Home & Kitchen,295.46,Pending,Phoenix,GA,38.0,Premium,2024-07-19T12:36:00,useru00062@yahoo.com,user_54,,10,S014,Product_092,0.09,Home Office
+T000244,U00189,2023-07-06,East,Furniture,4724.34,Active,Atlanta,CA,50.0,Basic,04/02/2023 14:12:00,,user_317,654.09,6,S003,Product_291,0.06,Corporate
+T000567,U00458,2023-11-14,East,Electronics,4981.61,Active,New York,CA,67.0,Standard,02/05/2024 15:06:00,useru00458@outlook.com,user_37,,10,S014,Product_134,0.08,Home Office
+T000876,U00494,2023-03-16,Central,Toys,3305.78,Inactive,New York,CA,18.0,Basic,10/19/2024 05:04:00,useru00494@yahoo.com,user_215,1441.12,1,S003,Product_171,0.42,Home Office
+T000563,U00316,2024-01-17,South,Books,2889.45,,New York,AZ,55.0,Basic,2024-11-14T21:53:00,useru00316@outlook.com,user_305,617.01,7,S008,Product_140,0.16,Corporate
+T000687,U00390,2023-07-19,East,Sports,1478.06,Inactive,Portland,NV,51.0,Premium,2024-09-13 14:50:00,useru00390@outlook.com,user_285,1590.02,9,S011,Product_249,,Consumer
+T000190,U00299,2023-01-09,Central,Furniture,4239.71,Active,Tulsa,GA,,Basic,01/03/2024 03:55:00,useru00299@gmail.com,user_303,798.73,7,S007,Product_280,0.11,Consumer
+T000783,U00006,2023-01-24,Central,Home & Kitchen,4168.64,Inactive,Seattle,AZ,35.0,Standard,2024-03-09 18:13:00,useru00006@yahoo.com,"",1862.56,1,S013,Product_238,,Home Office
+T000700,U00471,2023-02-21,West,Clothing,1692.93,,Chicago,AZ,66.0,Standard,2023-09-23T14:40:00,useru00471@yahoo.com,"",1913.64,14,S003,Product_238,,Corporate
+T000476,U00208,2024-04-07,South,Toys,3110.35,Active,Chicago,WA,56.0,Free,12/12/2023 05:16:00,useru00208@yahoo.com,user_234,1671.69,9,S005,Product_033,0.39,Consumer
+T000682,U00019,2023-04-02,South,Furniture,3555.26,Active,Seattle,IL,68.0,Premium,2024-04-05 05:33:00,useru00019@gmail.com,user_58,1650.53,7,S015,Product_081,0.47,Consumer
+T000511,U00101,2024-10-11,East,Clothing,1780.01,Inactive,Seattle,NV,52.0,Premium,09/16/2023 06:32:00,useru00101@gmail.com,user_86,600.82,8,S007,Product_173,0.02,Home Office
+T000059,U00195,2024-12-29,Central,Home & Kitchen,3700.88,Active,Houston,CA,34.0,Standard,2023-04-15 04:05:00,useru00195@outlook.com,user_209,228.6,10,S010,Product_167,,Corporate
+T000475,U00390,2023-05-15,East,Beauty,3309.4,,Los Angeles,CA,62.0,Basic,2023-02-19 06:11:00,useru00390@gmail.com,user_122,809.72,8,S014,Product_177,0.09,Home Office
+T000561,U00453,2024-03-24,Central,Furniture,,Churned,Denver,NV,47.0,Free,2024-01-22T10:42:00,useru00453@outlook.com,user_74,2287.91,7,S005,Product_202,,Consumer
+T000857,U00228,2023-10-01,South,Sports,1064.26,Pending,Houston,IL,16.0,Basic,2023-05-04 17:59:00,useru00228@gmail.com,user_244,1607.72,10,S001,Product_263,0.23,Corporate
+T000748,U00426,2024-05-02,Central,Toys,1612.36,Active,Chicago,NV,70.0,Premium,2024-01-31T11:40:00,useru00426@yahoo.com,user_347,375.1,15,S002,Product_093,0.08,Home Office
+T000253,U00149,2024-04-24,East,Toys,1508.96,Pending,New York,WA,68.0,Basic,2024-08-05 01:35:00,useru00149@outlook.com,user_218,1164.32,14,S005,Product_182,,Home Office
+T000022,U00365,2024-06-12,South,Books,428.54,Inactive,Los Angeles,GA,24.0,Premium,08/16/2023 14:56:00,,user_258,968.48,4,S001,Product_164,0.47,Home Office
+T000314,U00359,2023-04-02,West,Electronics,809.57,,Phoenix,WA,29.0,Standard,2024-11-17 03:42:00,useru00359@outlook.com,user_47,835.34,10,S013,Product_034,0.32,Home Office
+T000460,U00154,2023-09-28,South,Sports,1712.3,Inactive,Tucson,CO,22.0,Free,2024-05-14T00:20:00,useru00154@gmail.com,user_390,765.08,8,S006,Product_276,0.41,Consumer
+T000161,U00193,2024-07-17,South,Books,1806.44,,Boise,CA,,Premium,,useru00193@gmail.com,,2055.74,5,S015,Product_284,0.26,Home Office
+T000277,U00414,2023-08-15,West,Toys,,Inactive,Chicago,NV,,Free,10/15/2024 12:07:00,useru00414@yahoo.com,user_100,1416.44,10,S003,Product_034,0.29,Consumer
+T000372,U00146,2023-01-19,Central,Electronics,4559.1,Churned,Houston,OR,17.0,Free,2023-02-10 10:41:00,useru00146@gmail.com,user_213,690.31,7,S002,Product_285,0.39,Consumer
+T000192,U00283,2024-04-05,East,Sports,937.1,Inactive,Denver,IL,60.0,Basic,2024-07-13 18:23:00,useru00283@outlook.com,user_189,1206.42,3,S012,Product_270,0.49,Corporate
+T000386,U00237,2023-01-29,South,Electronics,4787.88,Churned,Los Angeles,NV,34.0,Basic,2024-01-18T04:39:00,,user_202,1676.85,13,S014,Product_266,,Consumer
+T000806,U00134,2024-11-11,West,Beauty,1025.23,Active,Seattle,OR,16.0,Basic,08/11/2024 19:38:00,useru00134@outlook.com,user_208,,1,S009,Product_071,0.13,Consumer
+T000414,U00443,2023-05-21,South,Clothing,4842.51,Pending,Austin,IL,61.0,Premium,2023-12-10T08:29:00,useru00443@outlook.com,user_362,,2,S015,Product_267,0.16,Home Office
+T000492,U00308,2023-07-03,South,Electronics,3250.54,Active,Los Angeles,NY,21.0,Basic,12/02/2024 12:51:00,useru00308@yahoo.com,user_176,781.43,7,S015,Product_130,0.25,Corporate
+T000344,U00073,2023-01-02,South,Electronics,1141.11,Active,Phoenix,WA,29.0,Standard,2024-12-04 22:52:00,useru00073@gmail.com,user_145,1541.16,15,S015,Product_044,0.45,Consumer
+T000770,U00099,2024-03-24,South,Books,2165.65,Inactive,New York,CO,61.0,Standard,06/27/2024 15:10:00,,user_324,1072.18,2,S001,Product_119,0.14,Corporate
+T000309,U00204,2024-12-16,East,Home & Kitchen,,Active,Houston,OR,48.0,Premium,03/17/2024 05:11:00,useru00204@gmail.com,user_94,280.04,4,S003,Product_103,0.03,Consumer
+T000662,U00032,2023-01-27,West,Electronics,2099.75,Pending,New York,TX,68.0,Basic,2023-11-03 19:25:00,useru00032@outlook.com,user_81,1251.71,5,S013,Product_085,0.3,Home Office
+T000131,U00021,2023-08-13,Central,Sports,323.68,Active,Phoenix,IL,48.0,Basic,,useru00021@outlook.com,user_361,1585.75,12,S005,Product_297,0.27,Home Office
+T000664,U00284,2024-07-25,West,Furniture,1776.67,Inactive,Chicago,OR,26.0,Premium,2024-09-11T13:44:00,useru00284@outlook.com,user_280,665.75,1,S005,Product_232,0.26,Corporate
+T000872,U00098,2024-09-05,West,Home & Kitchen,,Churned,Houston,WA,,Free,12/16/2024 14:59:00,useru00098@outlook.com,user_35,765.87,4,S014,Product_018,0.44,Home Office
+T000100,U00260,2024-02-18,West,Electronics,876.95,Active,Atlanta,CA,,Premium,01/05/2024 22:12:00,useru00260@yahoo.com,user_326,1704.53,8,S010,Product_229,0.09,Home Office
+T000373,U00202,2023-11-02,Central,Toys,2471.75,,Los Angeles,AZ,54.0,Premium,01/11/2023 04:06:00,useru00202@outlook.com,user_88,1811.65,14,S015,Product_276,0.49,Consumer
+T000088,U00030,2024-04-28,East,Sports,4870.16,Pending,Reno,WA,49.0,Free,02/27/2023 07:36:00,useru00030@gmail.com,user_304,1846.57,10,S001,Product_181,0.47,Home Office
+T000459,U00302,2023-08-09,East,Books,2850.95,Churned,Phoenix,NY,61.0,Standard,2023-07-19T18:51:00,useru00302@yahoo.com,user_129,1505.38,3,S006,Product_260,0.24,Home Office
+T000331,U00271,2024-06-10,South,Furniture,627.97,Active,Phoenix,WA,29.0,Basic,2024-01-09 13:57:00,useru00271@yahoo.com,user_225,1101.19,12,S007,Product_003,0.18,Consumer
+T000215,U00201,2023-07-03,West,Clothing,555.73,Pending,Phoenix,CO,24.0,Basic,10/04/2024 00:18:00,useru00201@outlook.com,user_243,1112.43,5,S004,Product_033,0.01,Home Office
+T000467,U00313,2024-10-27,South,Clothing,3837.91,Active,Austin,CO,62.0,Premium,07/06/2023 20:36:00,useru00313@outlook.com,user_222,1006.66,10,S014,Product_200,0.01,Corporate
+T000122,U00027,2024-10-02,Central,Books,2457.85,Active,Los Angeles,AZ,48.0,Premium,03/11/2023 16:10:00,useru00027@yahoo.com,user_114,1660.02,5,S004,Product_272,0.24,Home Office
+T000615,U00455,2024-11-10,West,Home & Kitchen,4512.22,Inactive,Houston,CA,50.0,Standard,02/20/2024 18:48:00,useru00455@gmail.com,user_137,1378.78,6,S007,Product_038,0.46,Home Office
+T000021,U00313,2023-10-19,Central,Toys,1177.67,,Houston,CO,68.0,Standard,08/07/2024 14:29:00,useru00313@outlook.com,user_83,2004.14,5,S001,Product_247,0.44,Consumer
+T000701,U00363,2024-08-27,Central,Electronics,4568.14,Churned,Phoenix,CA,15.0,Premium,11/24/2024 19:13:00,useru00363@gmail.com,user_297,697.2,1,S015,Product_110,0.21,Home Office
+T000072,U00233,2024-05-14,East,Electronics,4345.85,Active,Seattle,CO,55.0,Basic,2023-03-06 17:25:00,useru00233@gmail.com,user_166,847.7,10,S014,Product_249,0.39,Consumer
+T000107,U00098,2023-01-19,Central,Sports,1139.07,Active,Houston,NY,39.0,Premium,03/08/2023 01:19:00,useru00098@outlook.com,user_173,1718.52,15,S008,Product_184,0.38,Corporate
+T000271,U00206,2024-08-26,West,Electronics,1706.38,Active,Houston,GA,35.0,Premium,04/12/2023 17:10:00,useru00206@yahoo.com,user_79,1021.15,10,S006,Product_093,,Corporate
+T000861,U00150,2023-06-11,West,Sports,4862.66,Churned,New York,AZ,34.0,Basic,12/09/2024 00:07:00,useru00150@outlook.com,user_215,2484.74,2,S010,Product_175,0.41,Consumer
+T000436,U00473,2023-04-29,East,Home & Kitchen,2381.3,Active,Los Angeles,NV,39.0,Free,2023-11-27T22:06:00,useru00473@gmail.com,user_244,1621.46,15,S006,Product_157,0.08,Consumer
+T000103,U00173,2023-10-11,Central,Books,1313.12,Churned,Boise,WA,27.0,Standard,2023-02-28T19:25:00,useru00173@gmail.com,user_336,742.53,7,S007,Product_019,0.29,Consumer
