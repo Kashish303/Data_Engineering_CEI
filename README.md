@@ -4,6 +4,360 @@
 <img width="1600" height="900" alt="Image2" src="https://github.com/user-attachments/assets/80922eaa-a569-42b7-bd67-5089e2f8adfc" />
 <img width="1600" height="900" alt="Image1" src="https://github.com/user-attachments/assets/cc291af3-4b42-400e-89f3-71535bea9432" />
 
+
+# 🚀 Apache Spark Fundamentals using PySpark
+## Week 6 Assignment | Celebal Technologies Data Engineering Internship
+
+---
+
+# Project Overview
+
+This repository contains my Week 6 assignment completed as part of the **Celebal Technologies Data Engineering Internship**.
+
+The objective of this assignment was not limited to writing PySpark code for the given questions. Instead, I approached it as a **mini Spark Data Engineering project**, where every concept was explored from three different perspectives:
+
+- Understanding the underlying Spark concept.
+- Implementing the concept using PySpark.
+- Relating the concept to real-world production Data Engineering systems.
+
+Instead of simply solving the questions, additional effort was invested in understanding Spark's internal execution model, optimization techniques, and industry best practices.
+
+---
+
+# Assignment Workflow
+
+The assignment was completed in a structured manner rather than solving questions independently.
+
+The complete workflow followed is shown below.
+
+```
+Understanding Spark Concepts
+            │
+            ▼
+Reading & Exploring Dataset
+            │
+            ▼
+Understanding Spark Architecture
+            │
+            ▼
+Understanding Spark Execution
+            │
+            ▼
+Performing DataFrame Operations
+            │
+            ▼
+Data Cleaning & Transformation
+            │
+            ▼
+Performance Optimization Concepts
+            │
+            ▼
+ETL Pipeline Concepts
+            │
+            ▼
+Production Best Practices
+```
+
+---
+
+# Step 1 — Understanding Apache Spark Architecture
+
+The assignment began by understanding how Apache Spark actually works internally before writing any code.
+
+Instead of memorizing the definitions of Driver, Cluster Manager, and Executors, I studied their complete workflow.
+
+The following concepts were covered:
+
+• Driver Program
+• Cluster Manager
+• Executors
+• Task Scheduling
+• Resource Allocation
+• Distributed Processing
+
+To make the explanation easier to understand, architecture diagrams and execution flow diagrams were included in the notebook.
+
+### Extra Effort
+
+Instead of writing textbook definitions, I explained how these components communicate during Spark job execution and related the concepts with Databricks architecture.
+
+---
+
+# Step 2 — Understanding Spark Execution
+
+Before performing DataFrame operations, it was important to understand how Spark executes code internally.
+
+For this reason, Lazy Evaluation and DAG execution were studied in detail.
+
+The notebook explains:
+
+• Why Spark delays execution
+• How Spark creates Logical Plans
+• Catalyst Optimizer
+• Physical Execution Plan
+• DAG Generation
+
+Rather than only writing theory, execution plans were inspected using:
+
+```python
+df.explain(True)
+```
+
+This helped visualize how Spark converts transformations into an optimized execution plan.
+
+### Extra Effort
+
+Execution Plan screenshots and observations were included instead of only writing definitions.
+
+---
+
+# Step 3 — Reading and Exploring Dataset
+
+The dataset was loaded into Databricks using PySpark.
+
+During this stage, the following validations were performed before processing the data:
+
+• Schema Validation
+
+• Column Validation
+
+• Row Count
+
+• Data Preview
+
+Instead of directly performing transformations, the dataset was explored to understand its structure.
+
+### Why this was important?
+
+Many Spark errors occur because of incorrect schema inference or unexpected data types.
+
+Validating the dataset before processing helps prevent such issues.
+
+---
+
+# Step 4 — Understanding Storage Formats
+
+The assignment required understanding the difference between CSV and Parquet.
+
+Instead of only comparing their definitions, I studied how Spark stores data internally.
+
+The following concepts were explored:
+
+• Row-based Storage
+
+• Columnar Storage
+
+• Compression
+
+• Query Performance
+
+• Memory Utilization
+
+Real-world examples were included to explain why modern Data Engineering platforms prefer Parquet over CSV.
+
+---
+
+# Step 5 — DataFrame Transformations
+
+After understanding Spark Architecture and data ingestion, various DataFrame transformations were implemented.
+
+These included:
+
+• Filtering
+
+• Selecting Columns
+
+• Renaming Columns
+
+• Creating New Columns
+
+• Type Casting
+
+• Conditional Filtering
+
+Each transformation was followed by validation to verify that the output matched the expected result.
+
+### Extra Effort
+
+Instead of displaying the complete DataFrame every time, only relevant columns were displayed to improve readability.
+
+---
+
+# Step 6 — Understanding Spark Immutability
+
+While renaming columns and changing data types, I explored one of Spark's most important concepts:
+
+DataFrame Immutability.
+
+Instead of simply applying transformations, the notebook demonstrates that every transformation creates a new DataFrame while leaving the original DataFrame unchanged.
+
+This concept was verified by comparing schemas before and after transformations.
+
+---
+
+# Step 7 — Understanding Spark Fault Tolerance
+
+One of the most interesting parts of the assignment was understanding how Spark recovers from failures.
+
+The notebook explains:
+
+• Lineage Graph
+
+• DAG
+
+• Partition Recovery
+
+• Worker Node Failure
+
+• Fault Tolerance
+
+Instead of giving only theoretical definitions, worker failure scenarios were explained using diagrams.
+
+---
+
+# Step 8 — Understanding Spark Performance
+
+A major focus of this assignment was learning how Spark improves performance.
+
+The following optimization techniques were explored:
+
+• Lazy Evaluation
+
+• Predicate Pushdown
+
+• Column Pruning
+
+• Early Filtering
+
+• Distributed Processing
+
+• Efficient Memory Usage
+
+Each optimization technique was connected with practical examples from the assignment.
+
+---
+
+# Step 9 — Building ETL Workflow
+
+The assignment also covered a simplified ETL pipeline.
+
+The workflow included:
+
+Extract
+
+↓
+
+Read Dataset
+
+↓
+
+Transform
+
+↓
+
+Filtering
+
+↓
+
+Column Transformation
+
+↓
+
+Data Cleaning
+
+↓
+
+Load
+
+↓
+
+Write Output
+
+This helped understand how Spark is used in real production environments.
+
+---
+
+# Additional Enhancements Beyond Assignment Requirements
+
+The original assignment mainly required writing code snippets.
+
+However, to make the notebook more meaningful and practical, several additional improvements were made.
+
+### These include:
+
+✔ Detailed theoretical explanations before every implementation.
+
+✔ Business scenarios explaining where each Spark concept is used in industry.
+
+✔ Production Insights describing how companies use these techniques.
+
+✔ Validation after every major operation.
+
+✔ Observation sections explaining the obtained output.
+
+✔ Interview Insights highlighting commonly asked Spark interview questions.
+
+✔ Architecture diagrams and execution flow diagrams.
+
+✔ Clean notebook structure for better readability.
+
+✔ Real-world ETL workflow explanations.
+
+These additions were not mandatory for the assignment but were included to strengthen conceptual understanding and make the notebook more informative.
+
+---
+
+# Key Learnings
+
+This assignment significantly improved my understanding of Apache Spark.
+
+Some of the major concepts learned include:
+
+• Spark Architecture
+
+• Driver Program
+
+• Executors
+
+• Cluster Manager
+
+• Lazy Evaluation
+
+• DAG Execution
+
+• Fault Tolerance
+
+• Predicate Pushdown
+
+• DataFrame Transformations
+
+• Actions
+
+• ETL Workflow
+
+• Spark Optimization
+
+• Distributed Computing
+
+More importantly, I learned not only how to write Spark code but also why Spark behaves the way it does internally.
+
+---
+
+# Personal Reflection
+
+While completing this assignment, I realized that Apache Spark is much more than a framework for processing large datasets.
+
+Its architecture, execution model, optimization techniques, and distributed processing capabilities are carefully designed to process massive volumes of data efficiently.
+
+Instead of treating each question as an individual coding problem, I tried to understand the reasoning behind every Spark concept and relate it to practical Data Engineering workflows.
+
+This approach helped me gain a much deeper understanding of Spark and improved my confidence in working with large-scale distributed data processing systems.
+
+---
+
+
+
+
 # ☁️ Week 5 - Spark Basics 
 
 # 📌 Project Overview
