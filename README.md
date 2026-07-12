@@ -4,6 +4,329 @@
 <img width="1600" height="900" alt="Image2" src="https://github.com/user-attachments/assets/80922eaa-a569-42b7-bd67-5089e2f8adfc" />
 <img width="1600" height="900" alt="Image1" src="https://github.com/user-attachments/assets/cc291af3-4b42-400e-89f3-71535bea9432" />
 
+# 🚀 Delta Lake Incremental Data Processing using Apache Spark
+### Week 7 Assignment | Celebal Technologies Data Engineering Internship
+
+---
+
+# 📖 Project Overview
+
+This repository contains my **Week 7 assignment** completed as part of the **Celebal Technologies Data Engineering Internship**.
+
+The objective of this assignment was to build an **Incremental Data Processing Pipeline** using **Apache Spark** and **Delta Lake** while understanding how modern Data Engineering systems efficiently process changing customer data.
+
+Instead of simply implementing the required tasks, I approached this assignment as a **mini production ETL project**, focusing on:
+
+- Understanding the business problem.
+- Building an end-to-end incremental data pipeline.
+- Applying Delta Lake MERGE operations.
+- Demonstrating Slowly Changing Dimension (SCD) techniques.
+- Validating each stage of the pipeline.
+- Documenting observations and production insights.
+
+The notebook is structured to reflect how incremental data pipelines are implemented in real-world enterprise environments.
+
+---
+
+# 🎯 Assignment Objective
+
+The primary objective of this assignment was to perform **Incremental Data Processing using Delta Lake**.
+
+The project includes:
+
+- Loading customer data into a Delta Table
+- Performing data cleaning and quality validation
+- Simulating incremental customer data
+- Applying Delta Lake MERGE operations
+- Implementing SCD Type 1
+- Demonstrating SCD Type 2
+- Validating the final pipeline
+
+---
+
+# 🏗️ Project Workflow
+
+The complete workflow followed during this assignment is shown below.
+
+```
+Customer Master Dataset
+            │
+            ▼
+Load into Delta Table
+            │
+            ▼
+Data Quality Analysis
+            │
+            ▼
+Data Cleaning
+            │
+            ▼
+Trusted Customer Master
+            │
+            ▼
+Create Incremental Dataset
+            │
+            ▼
+Delta MERGE (SCD Type 1)
+            │
+            ▼
+Validation
+            │
+            ▼
+SCD Type 2 Demonstration
+            │
+            ▼
+Final Validation Report
+```
+
+---
+
+# 📂 Project Structure
+
+```
+delta-lake-assignment/
+
+│
+├── data/
+│   ├── customer_master.csv
+│   └── customer_incremental.csv
+│
+├── notebooks/
+│   └── delta_scd_assignment.ipynb
+│
+├── screenshots/
+│   ├── data_loading/
+│   ├── data_cleaning/
+│   ├── scd1/
+│   ├── scd2/
+│   ├── validation/
+│   └── final_output/
+│
+├── report/
+│   └── assignment_summary.pdf
+│
+└── README.md
+```
+
+---
+
+# 🔍 Step 1 — Data Loading
+
+The customer master dataset was loaded into Apache Spark and stored as a Delta Table.
+
+Before processing, the dataset structure was verified by checking:
+
+- Number of rows
+- Number of columns
+- Schema validation
+- Data preview
+
+### Why?
+
+Validating the dataset before processing helps identify schema mismatches and prevents runtime errors during ETL execution.
+
+---
+
+# 🔍 Step 2 — Data Quality Analysis
+
+Before applying any transformations, a complete data quality assessment was performed.
+
+The following validations were carried out:
+
+- Missing Value Analysis
+- Duplicate Customer Detection
+- Unique Customer Count
+- Total Record Count
+
+### Extra Effort
+
+Instead of directly cleaning the data, a separate Data Quality Report was generated to understand the condition of the source dataset before processing.
+
+---
+
+# 🔍 Step 3 — Data Cleaning
+
+The dataset was cleaned before loading it into the trusted Delta table.
+
+The following operations were performed:
+
+- Handled missing values
+- Removed duplicate records
+- Validated cleaned data
+- Created a trusted customer master dataset
+
+### Production Insight
+
+Cleaning source data before loading it into Delta Lake improves data reliability and prevents poor-quality records from propagating into downstream systems.
+
+---
+
+# 🔍 Step 4 — Delta Table Creation
+
+The cleaned customer dataset was stored in a Delta Table.
+
+Delta Lake provides:
+
+- ACID Transactions
+- Version Control
+- Efficient MERGE Operations
+- Reliable Incremental Processing
+
+This Delta Table serves as the Customer Master table throughout the assignment.
+
+---
+
+# 🔍 Step 5 — Incremental Data Simulation
+
+To simulate a real-world ETL workflow, an incremental dataset was created.
+
+The incremental dataset contains:
+
+- Existing customers with updated information
+- Newly registered customers
+
+This simulates the daily customer updates received from operational systems.
+
+### Business Scenario
+
+Instead of processing the complete customer database every day, only the changed records are processed, making the ETL pipeline faster and more efficient.
+
+---
+
+# 🔍 Step 6 — Delta MERGE using SCD Type 1
+
+The incremental dataset was merged into the Customer Master Delta Table using the Delta Lake MERGE operation.
+
+The MERGE process performed:
+
+- UPDATE on existing customers
+- INSERT for new customers
+
+### SCD Type 1 Characteristics
+
+- Maintains only the latest customer information.
+- Historical values are overwritten.
+- Suitable for correcting customer information such as email, phone number, or city.
+
+---
+
+# 🔍 Step 7 — Validation
+
+After executing the MERGE operation, multiple validation checks were performed.
+
+The validation included:
+
+- Row Count Verification
+- Duplicate Customer Validation
+- Updated Record Verification
+- Newly Inserted Customer Verification
+- Final Data Integrity Check
+
+### Why?
+
+Validation ensures that the pipeline executed successfully and that no unintended changes occurred during processing.
+
+---
+
+# 🔍 Step 8 — Slowly Changing Dimension Type 2
+
+A separate Delta Table was created to demonstrate SCD Type 2.
+
+Unlike SCD Type 1, SCD Type 2 preserves historical records.
+
+Additional columns introduced:
+
+- effective_date
+- end_date
+- is_current
+
+Whenever a customer record changes:
+
+- Existing record is expired.
+- New version is inserted.
+- Historical information remains available.
+
+### Business Importance
+
+SCD Type 2 is widely used in enterprise Data Warehouses for auditing, compliance, and historical reporting.
+
+---
+
+# 🔍 Step 9 — Final Validation
+
+The complete pipeline was validated after implementing both SCD techniques.
+
+The validation confirmed:
+
+- Successful Delta MERGE execution
+- Correct insertion of new customers
+- Correct update of existing customers
+- Preservation of historical records
+- Successful end-to-end pipeline execution
+
+---
+
+# 📊 Technologies Used
+
+- Apache Spark (PySpark)
+- Delta Lake
+- Databricks
+- Python
+- SQL
+
+---
+
+# 📚 Key Learnings
+
+Through this assignment, I gained practical understanding of:
+
+- Apache Spark DataFrames
+- Delta Lake
+- Incremental Data Processing
+- Delta MERGE
+- SCD Type 1
+- SCD Type 2
+- ETL Pipeline Design
+- Data Quality Validation
+- Data Warehousing Concepts
+- Production-oriented Data Engineering Workflows
+
+---
+
+# 💡 Business Takeaways
+
+Modern organizations process only newly arrived and modified records instead of reprocessing the complete dataset.
+
+This project demonstrates how Delta Lake enables:
+
+- Faster processing
+- Reduced storage cost
+- Reliable data updates
+- ACID-compliant transactions
+- Historical data tracking
+
+These concepts form the foundation of modern Data Engineering platforms such as Azure Databricks, Microsoft Fabric, and Apache Spark-based ETL systems.
+
+---
+
+# Acknowledgement
+
+This project was completed as part of the **Celebal Technologies Data Engineering Internship (Week 7 Assignment)**.
+
+The assignment provided valuable hands-on experience in building incremental ETL pipelines using Delta Lake and Apache Spark while strengthening my understanding of modern Data Engineering practices.
+
+---
+
+## Repository Highlights
+
+- ✅ Structured notebook with detailed explanations
+- ✅ Business scenarios for every major step
+- ✅ Production insights and ETL best practices
+- ✅ Incremental Data Processing using Delta Lake
+- ✅ SCD Type 1 and SCD Type 2 implementation
+- ✅ End-to-end validation and documentation
+- ✅ Clean project structure with screenshots and supporting files
+
 
 # 🚀 Apache Spark Fundamentals using PySpark
 ## Week 6 Assignment | Celebal Technologies Data Engineering Internship
