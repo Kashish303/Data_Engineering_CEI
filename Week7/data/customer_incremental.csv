@@ -1,0 +1,9 @@
+customer_id,customer_name,email,phone,city,region,preferred_category,priority_tier,total_orders,total_amount,loyalty_tier,registration_date,is_active,last_updated
+U1018,Aditya Verma,aditya.verma29@email.com,9773715057,Delhi,North,Electronics,Medium,28,429.82,Bronze,2022-06-13,N,2024-01-01
+U1005,Arjun Mehta,arjun.mehta_updated@gmail.com,9199585092,Chandigarh,North,Books,High,4,31735.1,Gold,2023-01-25,Y,2024-01-01
+U1001,Vijay Singh,vijay.singh21@email.com,9734036506,Bangalore,South,Clothing,Low,5,37417.99,Gold,2023-03-09,Y,2024-01-01
+U1022,Rahul Joshi,rahul.joshi23@email.com,9771410971,Nagpur,West,Toys,High,4,20586.88,Gold,2022-11-02,Y,2024-01-01
+U1010,Sai Kapoor,Not Available,9819595113,Hyderabad,South,Toys,Low,4,50374.58,Platinum,2022-10-01,Y,2024-01-01
+U1210,Riya Sharma,riya.sharma@gmail.com,9876543210,Pune,West,Electronics,High,2,25999.0,Silver,2026-07-12,Y,2026-07-12
+U1211,Kabir Verma,kabir.verma@gmail.com,9876543211,Ahmedabad,West,Clothing,Low,1,5999.0,Bronze,2026-07-12,Y,2026-07-12
+U1212,Ananya Gupta,ananya.gupta@gmail.com,9876543212,Indore,West,Furniture,Medium,3,12499.0,Silver,2026-07-12,Y,2026-07-12
