@@ -1,3 +1,13 @@
+<img width="1920" height="1080" alt="Image1" src="https://github.com/user-attachments/assets/74053825-42e7-4e7b-a62f-680f60c02a73" />
+<img width="1920" height="1080" alt="Image2" src="https://github.com/user-attachments/assets/44afd19f-556e-4cc0-a4f2-83dbff901044" />
+<img width="1920" height="1080" alt="Image3" src="https://github.com/user-attachments/assets/274624b4-7cd3-47d6-b87f-16425f3d7e4f" />
+<img width="1920" height="1080" alt="Image4" src="https://github.com/user-attachments/assets/297cf0ad-a294-4c6a-9692-6acebb2f65f0" />
+<img width="1920" height="1080" alt="Image5" src="https://github.com/user-attachments/assets/e38e9c28-f9d5-40d6-9489-8e26e4bda62d" />
+<img width="1920" height="1080" alt="Image6" src="https://github.com/user-attachments/assets/91946759-f81a-4870-9d45-69200caeba57" />
+<img width="1920" height="1080" alt="Image7" src="https://github.com/user-attachments/assets/3d8538da-43eb-423a-a099-40ab7274b5fa" />
+
+
+
 # 🏪 RetailMart Lakehouse
 ### End-to-End Data Engineering Pipeline using Databricks, Apache Spark & Delta Lake
 
